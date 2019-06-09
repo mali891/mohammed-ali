@@ -1,14 +1,14 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
+import { Header } from "../components/"
+
 const blogTemplate = ({
   data: { markdownRemark },
   data,
   pageContext: { next, prev },
 }) => {
   const { frontmatter, html } = markdownRemark
-
-  console.warn(data)
 
   const renderNextPrev = nextPrev => {
     if (nextPrev) {
@@ -19,6 +19,7 @@ const blogTemplate = ({
 
   return (
     <Fragment>
+      <Header />
       <Link to="/">Home</Link>
       <br />
       <h1>{frontmatter.title}</h1>

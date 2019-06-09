@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
-import Header from "../components/Header"
+import { Header } from "../components"
 
 const SingleTagTemplate = ({ data, pageContext }) => {
   console.warn(pageContext)

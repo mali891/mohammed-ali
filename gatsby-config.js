@@ -8,9 +8,12 @@ module.exports = {
   siteMetadata: {
     title: "Mohammed Ali",
     description: "Freelance Front-end Developer",
+    strapline: "Hey! I'm Mohammed,\nfreelance Front-end Engineer.",
   },
   plugins: [
     `gatsby-transformer-remark`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
