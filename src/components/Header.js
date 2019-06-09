@@ -1,17 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-const TitleAndDescription = ({ data }) => {
-  const title = data.site.siteMetadata.title
-  const description = data.site.siteMetadata.description
-
-  return (
-    <React.Fragment>
-      <h1>{title}</h1>
-      <h2>{description}</h2>
-    </React.Fragment>
-  )
-}
+import TitleAndDescription from "./TitleAndDescription"
 
 const Header = () => (
   <StaticQuery

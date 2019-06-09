@@ -3,31 +3,27 @@ import { graphql, Link } from "gatsby"
 
 import Header from "../components/Header"
 
-const Homepage = ({ data }) => {
-  const { edges } = data.allMarkdownRemark
+const AllTagsTemplate = ({ data, pageContext }) => {
+  console.warn(pageContext)
 
   return (
     <Fragment>
       <Header />
-      {edges.map(edge => {
-        const { path, title } = edge.node.frontmatter
-
-        return (
-          <Link key={path} to={path}>
-            <h3>{title}</h3>
-          </Link>
-        )
-      })}
-
-      <br />
-      <Link to="/blog">Blog</Link>
+      <p>Tags bro</p>
+      <ul>
+        {pageContext.tags.map(tag => (
+          <li key={tag}>
+            <Link to={`/tags/${tag}`}>{tag}</Link>
+          </li>
+        ))}
+      </ul>
     </Fragment>
   )
 }
 
 // prettier-ignore
 export const query = graphql`
-  query HomepageQuery {
+  query AllTagsTemplateQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date]}) {
       edges {
         node {
@@ -42,4 +38,4 @@ export const query = graphql`
   }
 `
 
-export default Homepage
+export default AllTagsTemplate

@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import Header from "../components/Header"
 
-const Homepage = ({ data }) => {
+const Blog = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
   return (
@@ -20,14 +20,14 @@ const Homepage = ({ data }) => {
       })}
 
       <br />
-      <Link to="/blog">Blog</Link>
+      <Link to="/tags">Tags</Link>
     </Fragment>
   )
 }
 
 // prettier-ignore
 export const query = graphql`
-  query HomepageQuery {
+  query BlogPageQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date]}) {
       edges {
         node {
@@ -42,4 +42,4 @@ export const query = graphql`
   }
 `
 
-export default Homepage
+export default Blog
