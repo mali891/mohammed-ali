@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { styles } from "./Nav.styles"
 import Logo from "../../img/Logo"
@@ -7,9 +8,15 @@ const Nav = () => (
   <nav css={styles} className="c__nav">
     {<Logo />}
     <ul>
-      <li>Home</li>
-      <li>Reviews</li>
-      <li>Blog</li>
+      <li>
+        <Link to="/">Reviews</Link>
+      </li>
+      <li>
+        <Link to="/tags">Tags</Link>
+      </li>
+      <li>
+        <Link to="/blog">Blog</Link>
+      </li>
       <li>Contact</li>
     </ul>
   </nav>
