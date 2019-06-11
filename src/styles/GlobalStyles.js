@@ -1,6 +1,7 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
 import { colours, spacing, fontSizes, lineHeight } from "./"
+import "./fonts/fonts.css"
 
 const GlobalStyles = () => (
   <Global
@@ -16,11 +17,21 @@ const GlobalStyles = () => (
       }
 
       body {
-        font-family: "Rubik";
+        font-family: "Apercu Regular", "Apercu Medium", "system-ui",
+          "sans-serif";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: ${colours.dark};
         color: ${colours.white};
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Apercu Medium", "Apercu Regular", "system-ui",
+          "sans-serif";
       }
 
       a {

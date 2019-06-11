@@ -24,9 +24,9 @@ const Homepage = ({ data }) => {
         <ContentGroup>
           <p>
             I’m from sunny Huddersfield, and I’ve worked on React applications
-            for companies like Yorkshire Water and Intercept IP. I’ve worked
-            with companies like Gazprom, Capita, and The Institute of Customer
-            Service.
+            for companies like Yorkshire Water and Intercept IP. I’ve worked on
+            various front-end projects for companies like Gazprom, Capita, and
+            The Institute of Customer Service.
           </p>
           <br />
           <p>

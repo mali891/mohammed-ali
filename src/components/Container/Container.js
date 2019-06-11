@@ -1,13 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 
 import { styles } from "./Container.styles"
 
-const Container = ({ children, ...other }) => (
-  <div css={styles} className="c__container" {...other}>
-    {children}
-  </div>
-)
+const Container = ({ children, className, ...other }) => {
+  const dynamicClassNames = classNames([className], {
+    c__container: true,
+  })
+
+  return (
+    <div css={styles} className={dynamicClassNames} {...other}>
+      {children}
+    </div>
+  )
+}
 
 Container.propTypes = {
   children: PropTypes.oneOfType([

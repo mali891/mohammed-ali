@@ -10,8 +10,8 @@ const Logo = () => (
         y2="1"
         gradientUnits="objectBoundingBox"
       >
-        <stop offset="0" stop-color="#8fd3f4" />
-        <stop offset="1" stop-color="#37ecba" />
+        <stop offset="0" stopColor="#8fd3f4" />
+        <stop offset="1" stopColor="#37ecba" />
       </linearGradient>
     </defs>
     <g transform="translate(92 -61)" fill="url(#a)">

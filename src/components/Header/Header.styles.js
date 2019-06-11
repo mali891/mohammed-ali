@@ -15,7 +15,10 @@ export const styles = css`
 
   h1 {
     font-size: ${fontSizes.headingTwo};
+    font-size: 10rem;
     font-weight: 500;
+    line-height: 12rem;
+    letter-spacing: 0.1rem;
   }
 
   span {
