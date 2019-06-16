@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import { fontSizes, spacing, colours } from "../../styles"
+import { FONT_SIZES, SPACING, COLOURS } from "../../styles"
 
 export const styles = css`
   position: fixed;
@@ -10,16 +10,16 @@ export const styles = css`
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  height: ${spacing.l};
-  padding: 0 ${spacing.m};
-  background-color: ${colours.dark};
+  height: ${SPACING.LG};
+  padding: 0 ${SPACING.MD};
+  background-color: ${COLOURS.DARK};
   z-index: 1;
 
   ul {
     li {
       display: inline;
-      font-size: ${fontSizes.body};
-      margin-left: ${spacing.m};
+      font-size: ${FONT_SIZES.SM};
+      margin-left: ${SPACING.MD};
     }
   }
 `

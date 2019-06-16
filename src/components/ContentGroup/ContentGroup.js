@@ -6,7 +6,7 @@ import { styles } from "./ContentGroup.style"
 
 const ContentGroup = ({ children, className, ...other }) => {
   const dynamicClassNames = classNames([className], {
-    "c__content-group": true,
+    "c-content-group": true,
   })
 
   return (

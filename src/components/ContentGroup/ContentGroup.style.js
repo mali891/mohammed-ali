@@ -1,8 +1,8 @@
 import { css } from "@emotion/core"
-import { spacing } from "../../styles"
+import { SPACING } from "../../styles"
 
 export const styles = css`
   display: block;
   width: 100%;
-  margin-bottom: ${spacing.xl};
+  margin-bottom: ${SPACING.XL};
 `

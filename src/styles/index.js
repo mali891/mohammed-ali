@@ -1,6 +1,7 @@
 import GlobalStyles from "./GlobalStyles"
-import { colours } from "./colours"
-import { fontSizes, lineHeight } from "./type"
-import { spacing } from "./spacing"
+import { COLOURS } from "./colours"
+import { FONT_SIZES, LINE_HEIGHT } from "./type"
+import { SPACING } from "./spacing"
+import { TSHIRT_SIZES } from "./settings"
 
-export { GlobalStyles, colours, fontSizes, spacing, lineHeight }
+export { GlobalStyles, COLOURS, FONT_SIZES, SPACING, LINE_HEIGHT, TSHIRT_SIZES }

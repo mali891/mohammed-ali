@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
-import { Header, Container, ContentGroup } from "../components"
+import { Header, Container, ContentGroup, HeadingBlock } from "../components"
 
 const Homepage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
@@ -34,23 +34,35 @@ const Homepage = ({ data }) => {
             crafting beautiful, pixel-perfect UIs.
           </p>
         </ContentGroup>
+
         <ContentGroup>
-          <h2 className="c-heading--three">Tools</h2>
+          <HeadingBlock type="h2" size="md">
+            Tools
+          </HeadingBlock>
           <p>
             HTML5, CSS3, SCSS, BEM, JavaScript (ES5 - 8), React, Redux, Jest,
             Enzyme, GraphQL, Gastby, Agile.
           </p>
         </ContentGroup>
+
         <ContentGroup>
-          <h2 className="c-heading--three">Currently learning</h2>
+          <HeadingBlock type="h2" size="md">
+            Currently learning
+          </HeadingBlock>
           <p>NodeJS, TypeScript</p>
         </ContentGroup>
+
         <ContentGroup>
-          <h2 className="c-heading--three">Nerd talk</h2>
+          <HeadingBlock type="h2" size="md">
+            Nerd talk
+          </HeadingBlock>
           <p>NodeJS, TypeScript</p>
         </ContentGroup>
+
         <ContentGroup>
-          <h2 className="c-heading--three">Contact me</h2>
+          <HeadingBlock type="h2" size="md">
+            Contact me
+          </HeadingBlock>
           <p>NodeJS, TypeScript</p>
         </ContentGroup>
       </Container>

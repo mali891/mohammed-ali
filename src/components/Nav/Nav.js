@@ -5,7 +5,7 @@ import { styles } from "./Nav.styles"
 import Logo from "../../img/Logo"
 
 const Nav = () => (
-  <nav css={styles} className="c__nav">
+  <nav css={styles} className="c-nav">
     {<Logo />}
     <ul>
       <li>

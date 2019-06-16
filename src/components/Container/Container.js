@@ -6,7 +6,7 @@ import { styles } from "./Container.styles"
 
 const Container = ({ children, className, ...other }) => {
   const dynamicClassNames = classNames([className], {
-    c__container: true,
+    "c-container": true,
   })
 
   return (

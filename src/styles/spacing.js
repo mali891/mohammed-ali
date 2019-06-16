@@ -1,7 +1,7 @@
-export const spacing = {
-  xs: "1rem",
-  s: "2.5rem",
-  m: "5rem",
-  l: "10rem",
-  xl: "15rem",
+export const SPACING = {
+  XS: "1rem",
+  SM: "2.5rem",
+  MD: "5rem",
+  LG: "10rem",
+  XL: "15rem",
 }
