@@ -1,19 +1,29 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
-import { Header, Container, ContentGroup, HeadingBlock } from "../components"
+import {
+  Header,
+  Container,
+  ContentGroup,
+  HeadingBlock,
+  BlogTile,
+} from "../components"
 
 const Homepage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
   const renderBlogPosts = () =>
     edges.map(edge => {
-      const { path, title } = edge.node.frontmatter
+      const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <Link key={path} to={path}>
-          <h3>{title}</h3>
-        </Link>
+        <BlogTile
+          key={path}
+          title={title}
+          date={date}
+          length={length}
+          path={path}
+        />
       )
     })
 
@@ -25,8 +35,8 @@ const Homepage = ({ data }) => {
           <p>
             I’m from sunny Huddersfield, and I’ve worked on React applications
             for companies like Yorkshire Water and Intercept IP. I’ve worked on
-            various front-end projects for companies like Gazprom, Capita, and
-            The Institute of Customer Service.
+            various other front-end projects for companies like Gazprom, Capita,
+            and The Institute of Customer Service.
           </p>
           <br />
           <p>
@@ -39,9 +49,10 @@ const Homepage = ({ data }) => {
           <HeadingBlock type="h2" size="md">
             Tools
           </HeadingBlock>
+
           <p>
             HTML5, CSS3, SCSS, BEM, JavaScript (ES5 - 8), React, Redux, Jest,
-            Enzyme, GraphQL, Gastby, Agile.
+            Enzyme, GraphQL, Gatsby, Agile.
           </p>
         </ContentGroup>
 
@@ -49,23 +60,36 @@ const Homepage = ({ data }) => {
           <HeadingBlock type="h2" size="md">
             Currently learning
           </HeadingBlock>
+
           <p>NodeJS, TypeScript</p>
         </ContentGroup>
+      </Container>
 
-        <ContentGroup>
+      <ContentGroup>
+        <Container>
           <HeadingBlock type="h2" size="md">
             Nerd talk
           </HeadingBlock>
-          <p>NodeJS, TypeScript</p>
-        </ContentGroup>
+        </Container>
 
+        <div
+          data-info="temporary-blog-tile-container"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
+          {renderBlogPosts()}
+        </div>
+      </ContentGroup>
+
+      <Container>
         <ContentGroup>
           <HeadingBlock type="h2" size="md">
             Contact me
           </HeadingBlock>
+
           <p>NodeJS, TypeScript</p>
         </ContentGroup>
       </Container>
+
       <br />
       <Link to="/blog">Blog</Link>
     </Fragment>
@@ -82,6 +106,7 @@ export const query = graphql`
             title
             path
             date
+            length
           }
         }
       }

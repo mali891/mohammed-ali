@@ -28,6 +28,10 @@ const GlobalStyles = () => (
         min-height: 100%;
       }
 
+      ::selection {
+        background-color: ${COLOURS.GRADIENT_THREE.FIRST};
+      }
+
       img {
         max-width: 100%;
       }
@@ -40,6 +44,7 @@ const GlobalStyles = () => (
 
       a {
         color: ${COLOURS.LIGHT};
+        text-decoration: none;
       }
 
       p {

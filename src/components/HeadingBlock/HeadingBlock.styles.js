@@ -9,18 +9,21 @@ export const styles = css`
       font-size: ${FONT_SIZES.XS};
       line-height: ${LINE_HEIGHT.XS};
       margin-bottom: ${SPACING.XS};
+      font-weight: 400;
     }
 
     &--sm {
       font-size: ${FONT_SIZES.SM};
       line-height: ${LINE_HEIGHT.SM};
       margin-bottom: ${SPACING.SM};
+      font-weight: 400;
     }
 
     &--md {
       font-size: ${FONT_SIZES.MD};
       line-height: ${LINE_HEIGHT.MD};
       margin-bottom: ${SPACING.MD};
+      font-weight: 400;
       letter-spacing: 0.1rem;
     }
 
