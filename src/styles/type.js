@@ -11,5 +11,5 @@ export const LINE_HEIGHT = {
   SM: "4.5rem",
   MD: "7.5rem",
   LG: "11.25rem",
-  XL: "15rem",
+  XL: "14rem",
 }

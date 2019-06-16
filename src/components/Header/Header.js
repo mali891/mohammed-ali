@@ -13,7 +13,7 @@ const renderMainHeader = strapline => (
     <header css={styles}>
       <Nav />
       <Container>
-        <HeadingBlock type="h1" size="xl">
+        <HeadingBlock type="h1" size="xl" noMargin>
           {strapline}
         </HeadingBlock>
       </Container>

@@ -38,5 +38,9 @@ export const styles = css`
       margin-bottom: ${SPACING.XL};
       letter-spacing: 0.3rem;
     }
+
+    &__no-margin {
+      margin-bottom: 0;
+    }
   }
 `
