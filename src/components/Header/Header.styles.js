@@ -13,6 +13,10 @@ export const styles = css`
     justify-content: center;
   }
 
+  .c-heading {
+    margin-bottom: 0;
+  }
+
   span {
     position: absolute;
     transform: translate(-50%, -50%);
