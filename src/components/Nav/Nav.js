@@ -9,15 +9,17 @@ const Nav = () => (
     {<Logo />}
     <ul>
       <li>
-        <Link to="/">Reviews</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/tags">Tags</Link>
+        <Link to="/">Reviews</Link>
       </li>
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      <li>Contact</li>
+      <li>
+        <Link to="/">Contact</Link>
+      </li>
     </ul>
   </nav>
 )

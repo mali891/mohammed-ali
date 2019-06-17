@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import { FONT_SIZES, SPACING, COLOURS } from "../../styles"
+import { FONT_SIZES, SPACING, COLOURS } from "../../styles/settings"
 
 export const styles = css`
   position: fixed;

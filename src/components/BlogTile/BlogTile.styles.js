@@ -1,9 +1,16 @@
 import { css } from "@emotion/core"
-import { COLOURS, FONT_SIZES, EASINGS, SPACING } from "../../styles"
+import {
+  COLOURS,
+  FONT_SIZES,
+  EASINGS,
+  SPACING,
+  BORDER_RADIUS,
+} from "../../styles/settings"
 
 export const styles = css`
   display: flex;
-  width: 24%;
+  width: auto;
+  margin: 0 1%;
 
   .c-blog-tile__container {
     position: relative;
@@ -16,20 +23,29 @@ export const styles = css`
     padding: ${SPACING.MD};
     cursor: pointer;
     transition: all ${EASINGS.QUICK};
+    border-radius: ${BORDER_RADIUS.LG};
+    max-width: 40rem;
+    min-height: 50rem;
 
     &:hover {
       .c-blog-tile {
-        &__divider,
+        &__heading,
         &__border-bottom {
           &:after {
             width: 100%;
+          }
+        }
+        
+        &__heading {
+          &:after {
+            width: 15rem;
           }
         }
       }
     }
 
     .c-blog-tile {
-      &__divider {
+      /* &__divider {
         position: relative;
         display: block;
         width: ${SPACING.LG};
@@ -52,6 +68,32 @@ export const styles = css`
             ${COLOURS.GRADIENT_THREE.FIRST},
             ${COLOURS.GRADIENT_THREE.SECOND}
           );
+          border-radius: ${BORDER_RADIUS.LG};
+        }
+      } */
+
+      &__heading {
+        position: relative;
+        margin-bottom: ${SPACING.XL};
+        word-wrap: break-word;
+        hyphens: manual;
+
+        &:after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: -${SPACING.MD};
+          right: 0;
+          height: 0.2rem;
+          width: 10rem;
+          transition: all ${EASINGS.DEFAULT};
+          background-image: linear-gradient(
+            to right,
+            ${COLOURS.GRADIENT_THREE.FIRST},
+            ${COLOURS.GRADIENT_THREE.SECOND}
+          );
+          border-radius: ${BORDER_RADIUS.LG};
         }
       }
 
@@ -60,7 +102,6 @@ export const styles = css`
         display: flex;
         justify-content: space-between;
         font-size: ${FONT_SIZES.XS};
-        margin-bottom: ${SPACING.XS};
       }
 
       &__border-bottom {
@@ -71,6 +112,7 @@ export const styles = css`
         right: 0;
         height: ${SPACING.XS};
         background-color: ${COLOURS.LIGHT};
+        border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
 
         &:after {
           content: "";
@@ -88,6 +130,7 @@ export const styles = css`
             ${COLOURS.GRADIENT_THREE.FIRST},
             ${COLOURS.GRADIENT_THREE.SECOND}
           );
+          border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
         }
       }
     }

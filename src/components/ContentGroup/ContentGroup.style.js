@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import { SPACING } from "../../styles"
+import { SPACING } from "../../styles/settings"
 
 export const styles = css`
   display: block;

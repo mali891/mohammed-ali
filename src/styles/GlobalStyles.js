@@ -1,6 +1,13 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
-import { COLOURS, FONT_SIZES, LINE_HEIGHT } from "./"
+import {
+  COLOURS,
+  FONT_SIZES,
+  LINE_HEIGHT,
+  SPACING,
+  EASINGS,
+  BORDER_RADIUS,
+} from "./settings"
 import "./fonts/fonts.css"
 
 const GlobalStyles = () => (
@@ -42,16 +49,50 @@ const GlobalStyles = () => (
         border: 0;
       }
 
-      a {
+      /* LINKS */
+
+      a,
+      .c-link {
         color: ${COLOURS.LIGHT};
         text-decoration: none;
+        position: relative;
+        cursor: pointer;
+
+        &:not(.c-link__no-hover) {
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+
+          &:after {
+            content: "";
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: -1rem;
+            right: 0;
+            height: 0.4rem;
+            width: 0;
+            transition: all ${EASINGS.QUICK};
+            background-color: ${COLOURS.LIGHT};
+            border-radius: ${BORDER_RADIUS.LG};
+            /* background-image: linear-gradient(
+            to right,
+            ${COLOURS.GRADIENT_THREE.FIRST},
+            ${COLOURS.GRADIENT_THREE.SECOND}
+            ); */
+          }
+        }
       }
 
-      p {
-        font-size: ${FONT_SIZES.SM};
-        line-height: ${LINE_HEIGHT.SM};
-      }
-    `}
+      /* TYPE */
+
+        p {
+          font-size: ${FONT_SIZES.SM};
+          line-height: ${LINE_HEIGHT.SM};
+        }
+      `}
   />
 )
 

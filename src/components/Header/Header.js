@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import { Nav, HeadHelmet, Container, HeadingBlock } from "../"
-import { GlobalStyles } from "../../styles"
+import { GlobalStyles } from "../../styles/settings"
 import { styles } from "./Header.styles"
 import { scrollTo } from "../../functions"
 
@@ -17,7 +17,10 @@ const renderMainHeader = strapline => (
           {strapline}
         </HeadingBlock>
       </Container>
-      <span onClick={() => scrollTo(document.querySelector(".o-main"))}>
+      <span
+        className="c-link"
+        onClick={() => scrollTo(document.querySelector(".o-main"))}
+      >
         More
       </span>
     </header>

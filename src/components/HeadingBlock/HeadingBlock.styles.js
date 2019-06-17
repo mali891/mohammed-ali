@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import { FONT_SIZES, LINE_HEIGHT, SPACING } from "../../styles"
+import { FONT_SIZES, LINE_HEIGHT, SPACING } from "../../styles/settings"
 
 export const styles = css`
   font-family: "Apercu Medium", "Apercu Regular", "system-ui", "sans-serif";

@@ -4,11 +4,13 @@ import classNames from "classnames"
 import { Link } from "gatsby"
 
 import { HeadingBlock } from "../"
+import { formatDate } from "../../functions"
 import { styles } from "./BlogTile.styles"
 
 const BlogTile = ({ title, date, length, className, path, ...other }) => {
   const dynamicClassNames = classNames([className], {
     "c-blog-tile": true,
+    "c-link__no-hover": true,
   })
 
   return (
@@ -17,12 +19,11 @@ const BlogTile = ({ title, date, length, className, path, ...other }) => {
       className={dynamicClassNames}
       key={path}
       to={path}
-      className={dynamicClassNames}
       {...other}
     >
       <div className="c-blog-tile__container">
         <div className="c-blog-tile__heading">
-          <HeadingBlock type="h3" size="md" noMargin>
+          <HeadingBlock type="h3" size="sm" noMargin>
             {title}
           </HeadingBlock>
         </div>
@@ -30,7 +31,7 @@ const BlogTile = ({ title, date, length, className, path, ...other }) => {
         <span className="c-blog-tile__divider" />
 
         <div className="c-blog-tile__info">
-          <span>{date}</span>
+          <span>{formatDate(date)}</span>
           <span>{length} read</span>
         </div>
 

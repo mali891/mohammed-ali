@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import classNames from "classnames"
 
 import { styles } from "./HeadingBlock.styles"
-import { TSHIRT_SIZES } from "../../styles"
+import { TSHIRT_SIZES } from "../../styles/settings"
 
 const headingTypes = ["h1", "h2", "h3", "h4", "h5"]
 

@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import { FONT_SIZES, SPACING } from "../../styles"
+import { FONT_SIZES, SPACING } from "../../styles/settings"
 
 export const styles = css`
   height: 100vh;
