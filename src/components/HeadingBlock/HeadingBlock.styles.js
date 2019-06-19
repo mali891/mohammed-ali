@@ -1,8 +1,13 @@
 import { css } from "@emotion/core"
-import { FONT_SIZES, LINE_HEIGHT, SPACING } from "../../styles/settings"
+import {
+  FONT_SIZES,
+  LINE_HEIGHT,
+  SPACING,
+  FONT_FAMILY,
+} from "../../styles/settings"
 
 export const styles = css`
-  font-family: "Apercu Medium", "Apercu Regular", "system-ui", "sans-serif";
+  font-family: ${FONT_FAMILY.MEDIUM};
 
   &.c-heading {
     &--xs {

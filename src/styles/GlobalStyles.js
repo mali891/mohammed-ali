@@ -3,6 +3,7 @@ import { Global, css } from "@emotion/core"
 import {
   COLOURS,
   FONT_SIZES,
+  FONT_FAMILY,
   LINE_HEIGHT,
   SPACING,
   EASINGS,
@@ -29,13 +30,12 @@ const GlobalStyles = () => (
 
       html {
         font-size: 10px;
-        scroll-behavior: smooth;
         min-height: 100%;
+        scroll-behavior: smooth;
       }
 
       body {
-        font-family: "Apercu Regular", "Apercu Medium", "system-ui",
-          "sans-serif";
+        font-family: ${FONT_FAMILY.REGULAR};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: ${COLOURS.DARK};

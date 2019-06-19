@@ -1,3 +1,8 @@
+export const FONT_FAMILY = {
+  REGULAR: `'Apercu Regular', 'Apercu Medium', 'system-ui', 'sans-serif'`,
+  MEDIUM: `'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif'`,
+}
+
 export const FONT_SIZES = {
   XS: "2rem",
   SM: "3rem",

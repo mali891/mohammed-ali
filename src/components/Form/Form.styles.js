@@ -3,6 +3,7 @@ import {
   SPACING,
   COLOURS,
   FONT_SIZES,
+  FONT_FAMILY,
   LINE_HEIGHT,
 } from "../../styles/settings"
 
@@ -10,7 +11,7 @@ export const styles = css`
   width: 100%;
   display: block;
   font-size: ${FONT_SIZES.SM};
-  font-family: "Apercu Regular", "system-ui", sans-serif;
+  font-family: ${FONT_FAMILY.REGULAR};
 
   .c-form-input,
   .c-form-input__input,
@@ -22,7 +23,7 @@ export const styles = css`
 
   .c-form-input__input,
   .c-form-input__textarea {
-    padding: 1.5rem;
+    padding: ${SPACING.XS};
     border: none;
     background-color: ${COLOURS.BLACK};
     color: ${COLOURS.LIGHT};
