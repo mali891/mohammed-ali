@@ -29,18 +29,17 @@ export const styles = css`
 
     &:hover {
       .c-blog-tile {
-        &__heading,
         &__border-bottom {
           &:after {
             width: 100%;
           }
         }
         
-        &__heading {
+        /* &__heading {
           &:after {
             width: 15rem;
           }
-        }
+        } */
       }
     }
 

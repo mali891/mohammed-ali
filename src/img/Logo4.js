@@ -1,27 +1,7 @@
 import React from "react"
 
-const Logo2 = () => (
+const Logo4 = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-    <defs>
-      <linearGradient
-        id="linear-gradient"
-        x1="153.83"
-        y1="187.54"
-        x2="346.17"
-        y2="187.54"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset="0" stopColor="#8fd3f4" />
-        <stop offset=".11" stopColor="#7dd8e8" />
-        <stop offset=".13" stopColor="#7ad9e6" stopOpacity=".97" />
-        <stop offset=".26" stopColor="#6cdddd" stopOpacity=".8" />
-        <stop offset=".33" stopColor="#5de1d3" stopOpacity=".86" />
-        <stop offset=".46" stopColor="#46e8c4" stopOpacity=".96" />
-        <stop offset=".53" stopColor="#3deabe" />
-        <stop offset=".55" stopColor="#3ceabe" />
-        <stop offset=".83" stopColor="#37ecba" />
-      </linearGradient>
-    </defs>
     <g id="Layer_2" data-name="Layer 2">
       <g id="Layer_1-2" data-name="Layer 1">
         <path
@@ -29,8 +9,8 @@ const Logo2 = () => (
           d="M205 193.66l-10-17.32-40-69.28c-2.75-4.77-7.25-4.77-10 0l-40 69.28-10 17.32-40 69.28c-2.75 4.77-.5 8.66 5 8.66h180c5.5 0 7.75-3.89 5-8.66zm-125 66c-5.5 0-7.75-3.9-5-8.66l30-52 10-17.32 30-52c2.75-4.77 7.25-4.77 10 0l30 52L195 199l30 52c2.75 4.76.5 8.66-5 8.66H80z"
         />
         <path
+          class="cls-1"
           d="M305 193.66l-10-17.32-40-69.28c-2.75-4.77-7.25-4.77-10 0l-40 69.28-10 17.32-40 69.28c-2.75 4.77-.5 8.66 5 8.66h180c5.5 0 7.75-3.89 5-8.66zm-125 66c-5.5 0-7.75-3.9-5-8.66l30-52 10-17.32 30-52c2.75-4.77 7.25-4.77 10 0l30 52L295 199l30 52c2.75 4.76.5 8.66-5 8.66H180z"
-          fill="url(#linear-gradient)"
         />
         <path
           class="cls-1"
@@ -41,4 +21,4 @@ const Logo2 = () => (
   </svg>
 )
 
-export default Logo2
+export default Logo4

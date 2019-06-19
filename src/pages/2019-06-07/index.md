@@ -1,5 +1,5 @@
 ---
-path: "/second-post"
+path: "/blog/roll-your-own-scss-grid"
 date: "2019-06-07"
 title: "Roll Your Own: SCSS Grid"
 tags: ["eS6", "javascript", "react"]

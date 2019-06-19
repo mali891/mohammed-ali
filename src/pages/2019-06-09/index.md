@@ -1,5 +1,5 @@
 ---
-path: "/fourth-post"
+path: "/blog/unit-testing-with-react-testing-library"
 date: "2019-06-08"
 title: "Unit Testing with React Testing Library"
 tags: ["eS6", "javascript", "react"]

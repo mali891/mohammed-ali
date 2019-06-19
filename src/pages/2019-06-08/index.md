@@ -1,5 +1,5 @@
 ---
-path: "/third-post"
+path: "/blog/roll-your-own-react-tabs"
 date: "2019-06-08"
 title: "Roll Your Own: React Tabs"
 tags: ["eS6", "javascript", "react"]

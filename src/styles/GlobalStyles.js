@@ -17,6 +17,14 @@ const GlobalStyles = () => (
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
+        &:focus {
+          outline: ${COLOURS.GRADIENT_THREE.FIRST} auto 1px;
+        }
+      }
+      .cls-1,
+      .cls-2 {
+        fill : white;
       }
 
       html {

@@ -2,11 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { styles } from "./Nav.styles"
-import Logo from "../../img/Logo"
+import Logo5 from "../../img/Logo5"
 
 const Nav = () => (
   <nav css={styles} className="c-nav">
-    {<Logo />}
+    {
+      <Link className="c-link__no-hover" to="/">
+        <Logo5 />
+      </Link>
+    }
     <ul>
       <li>
         <Link to="/">Home</Link>

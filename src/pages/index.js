@@ -7,6 +7,7 @@ import {
   ContentGroup,
   HeadingBlock,
   BlogTile,
+  Form,
 } from "../components"
 
 const Homepage = ({ data }) => {
@@ -83,10 +84,10 @@ const Homepage = ({ data }) => {
       <Container>
         <ContentGroup>
           <HeadingBlock type="h2" size="md">
-            Contact me
+            Let's talk
           </HeadingBlock>
 
-          <p>NodeJS, TypeScript</p>
+          <Form />
         </ContentGroup>
       </Container>
 

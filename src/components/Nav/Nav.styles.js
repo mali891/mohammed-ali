@@ -15,6 +15,10 @@ export const styles = css`
   background-color: ${COLOURS.DARK};
   z-index: 1;
 
+  svg {
+    width: 75px;
+  }
+
   ul {
     li {
       display: inline;

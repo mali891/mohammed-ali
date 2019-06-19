@@ -1,5 +1,5 @@
 ---
-path: "/first-post"
+path: "/blog/a-comprehensive-guide-to-es6-iterables"
 date: "2019-06-06"
 title: "A Comprehensive Guide to ES6 Iterables"
 tags: ["eS6", "javascript", "react"]

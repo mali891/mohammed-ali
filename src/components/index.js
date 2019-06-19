@@ -5,6 +5,7 @@ import HeadHelmet from "./HeadHelmet/HeadHelmet"
 import Container from "./Container/Container"
 import HeadingBlock from "./HeadingBlock/HeadingBlock"
 import BlogTile from "./BlogTile/BlogTile"
+import Form from "./Form/Form"
 
 export {
   ContentGroup,
@@ -14,4 +15,5 @@ export {
   Container,
   HeadingBlock,
   BlogTile,
+  Form,
 }
