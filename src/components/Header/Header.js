@@ -6,7 +6,7 @@ import { GlobalStyles } from "../../styles/settings"
 import { styles } from "./Header.styles"
 import { scrollTo } from "../../functions"
 
-const renderMainHeader = strapline => (
+const renderMainHeader = title => (
   <Fragment>
     <GlobalStyles />
     <HeadHelmet />
@@ -14,7 +14,7 @@ const renderMainHeader = strapline => (
       <Nav />
       <Container>
         <HeadingBlock type="h1" size="xl" noMargin>
-          {strapline}
+          {title}
         </HeadingBlock>
       </Container>
       <span
@@ -27,21 +27,29 @@ const renderMainHeader = strapline => (
   </Fragment>
 )
 
-const Header = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            strapline
-          }
-        }
-      }
-    `}
-    render={data => renderMainHeader(data.site.siteMetadata.strapline)}
-  />
-)
+const Header = ({ title }) => {
+  return (
+    <Fragment>
+      {title ? (
+        renderMainHeader(title)
+      ) : (
+        <StaticQuery
+          query={graphql`
+            query {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  strapline
+                }
+              }
+            }
+          `}
+          render={data => renderMainHeader(data.site.siteMetadata.strapline)}
+        />
+      )}
+    </Fragment>
+  )
+}
 
 export default Header

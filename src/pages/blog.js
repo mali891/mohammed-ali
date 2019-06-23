@@ -8,7 +8,7 @@ const Blog = ({ data }) => {
 
   return (
     <Fragment>
-      <Header />
+      <Header title="Blog" />
       {edges.map(edge => {
         const { path, title } = edge.node.frontmatter
 

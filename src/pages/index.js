@@ -6,25 +6,25 @@ import {
   Container,
   ContentGroup,
   HeadingBlock,
-  BlogTile,
+  Card,
   Form,
 } from "../components"
+import { formatDate } from "../functions"
 
 const Homepage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
   const renderBlogPosts = () =>
-    edges.map(edge => {
+    edges.map((edge, i) => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <BlogTile
-          key={path}
-          title={title}
-          date={date}
-          length={length}
-          path={path}
-        />
+        <Link className="c-link__no-hover" to={path} key={path.split("/")[2]}>
+          <Card title={title}>
+            <span>{formatDate(date)}</span>
+            <span>{length} read</span>
+          </Card>
+        </Link>
       )
     })
 

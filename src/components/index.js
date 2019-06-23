@@ -4,7 +4,7 @@ import Nav from "./Nav/Nav"
 import HeadHelmet from "./HeadHelmet/HeadHelmet"
 import Container from "./Container/Container"
 import HeadingBlock from "./HeadingBlock/HeadingBlock"
-import BlogTile from "./BlogTile/BlogTile"
+import Card from "./Card/Card"
 import Form from "./Form/Form"
 
 export {
@@ -14,6 +14,6 @@ export {
   HeadHelmet,
   Container,
   HeadingBlock,
-  BlogTile,
+  Card,
   Form,
 }
