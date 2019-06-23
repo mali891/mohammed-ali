@@ -53,7 +53,7 @@ const Homepage = ({ data }) => {
 
           <p>
             HTML5, CSS3, SCSS, BEM, JavaScript (ES5 - 8), React, Redux, Jest,
-            Enzyme, GraphQL, Gatsby, Agile.
+            Enzyme, GraphQL, Gatsby, Git, Agile.
           </p>
         </ContentGroup>
 
