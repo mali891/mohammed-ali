@@ -10,9 +10,9 @@ const ContentGroup = ({ children, className, ...other }) => {
   })
 
   return (
-    <div css={styles} className={dynamicClassNames} {...other}>
+    <section css={styles} className={dynamicClassNames} {...other}>
       {children}
-    </div>
+    </section>
   )
 }
 

@@ -6,6 +6,7 @@ import Container from "./Container/Container"
 import HeadingBlock from "./HeadingBlock/HeadingBlock"
 import Card from "./Card/Card"
 import Form from "./Form/Form"
+import Footer from "./Footer/Footer"
 
 export {
   ContentGroup,
@@ -16,4 +17,5 @@ export {
   HeadingBlock,
   Card,
   Form,
+  Footer,
 }

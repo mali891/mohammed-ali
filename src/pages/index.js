@@ -8,6 +8,7 @@ import {
   HeadingBlock,
   Card,
   Form,
+  Footer,
 } from "../components"
 import { formatDate } from "../functions"
 
@@ -15,7 +16,7 @@ const Homepage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
   const renderBlogPosts = () =>
-    edges.map((edge, i) => {
+    edges.map(edge => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
@@ -91,8 +92,7 @@ const Homepage = ({ data }) => {
         </ContentGroup>
       </Container>
 
-      <br />
-      <Link to="/blog">Blog</Link>
+      <Footer />
     </Fragment>
   )
 }
