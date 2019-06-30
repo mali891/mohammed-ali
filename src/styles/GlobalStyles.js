@@ -5,9 +5,9 @@ import {
   FONT_SIZES,
   FONT_FAMILY,
   LINE_HEIGHT,
-  SPACING,
   EASINGS,
   BORDER_RADIUS,
+  SPACING,
 } from "./settings"
 import "./fonts/fonts.css"
 
@@ -96,11 +96,34 @@ const GlobalStyles = () => (
 
       /* TYPE */
 
-        p {
-          font-size: ${FONT_SIZES.SM};
-          line-height: ${LINE_HEIGHT.SM};
+      p {
+        font-size: ${FONT_SIZES.SM};
+        line-height: ${LINE_HEIGHT.SM};
+      }
+
+
+      /* ANIMATIONS */
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
         }
-      `}
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .u-anim--fade-in {
+        opacity: 0;
+        animation: fadeIn 400ms forwards ease-in-out 0ms;
+      }
+
+      .c-main {
+        display: block;
+        margin-top: ${SPACING.LG}
+      }
+      
+    `}
   />
 )
 

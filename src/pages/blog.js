@@ -1,27 +1,33 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
 
-import { Header } from "../components"
+import { Header, Container } from "../components"
+import { URLS } from "../constants"
 
 const Blog = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
   return (
-    <Fragment>
+    <div className="u-anim--fade-in">
       <Header title="Blog" />
-      {edges.map(edge => {
-        const { path, title } = edge.node.frontmatter
 
-        return (
-          <Link key={path} to={path}>
-            <h3>{title}</h3>
-          </Link>
-        )
-      })}
+      <main className="c-main">
+        <Container className="o-main">
+          {edges.map(edge => {
+            const { path, title } = edge.node.frontmatter
 
-      <br />
-      <Link to="/tags">Tags</Link>
-    </Fragment>
+            return (
+              <Link key={path} to={path}>
+                <h3>{title}</h3>
+              </Link>
+            )
+          })}
+
+          <br />
+          <Link to={URLS.TAGS}>Tags</Link>
+        </Container>
+      </main>
+    </div>
   )
 }
 

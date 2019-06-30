@@ -1,31 +1,26 @@
 import React, { Fragment } from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import { Nav, HeadHelmet, Container, HeadingBlock } from "../"
-import { GlobalStyles } from "../../styles/settings"
+import { Container, HeadingBlock } from "../"
 import { styles } from "./Header.styles"
 import { scrollTo } from "../../functions"
 
 const renderMainHeader = title => (
-  <Fragment>
-    <GlobalStyles />
-    <HeadHelmet />
-    <header css={styles}>
-      <Nav />
-      <Container>
-        <HeadingBlock type="h1" size="xl" noMargin>
-          {title}
-        </HeadingBlock>
-      </Container>
-      <span
-        className="c-link"
-        onClick={() => scrollTo(document.querySelector(".o-main"))}
-      >
-        More
-      </span>
-    </header>
-  </Fragment>
+  <header className="c-header" css={styles}>
+    <Container>
+      <HeadingBlock type="h1" size="xl" noMargin>
+        {title}
+      </HeadingBlock>
+    </Container>
+    <span className="c-link" onClick={handleScroll}>
+      More
+    </span>
+  </header>
 )
+
+const handleScroll = () => {
+  scrollTo(document.querySelector(".c-main"))
+}
 
 const Header = ({ title }) => {
   return (

@@ -1,14 +1,5 @@
-import React, { Fragment } from "react"
-import { graphql, Link } from "gatsby"
-
-import {
-  Header,
-  Container,
-  ContentGroup,
-  HeadingBlock,
-  Card,
-  Form,
-} from "../components"
+import React from "react"
+import { Header, Container, ContentGroup } from "../components"
 
 const Reviews = ({ data }) => {
   // const { edges } = data.allMarkdownRemark
@@ -29,26 +20,29 @@ const Reviews = ({ data }) => {
   //   })
 
   return (
-    <Fragment>
+    <div className="u-anim--fade-in">
       <Header title="Reviews" />
-      <Container className="o-main">
-        <ContentGroup>
-          <p>
-            I’ve been lucky enough to work with some amazing people during my
-            career. Here's what some of them have said about me.
-          </p>
-        </ContentGroup>
-      </Container>
 
-      <ContentGroup>
-        <div
-          data-info="temporary-blog-tile-container"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
-          {/* {renderBlogPosts()} */}
-        </div>
-      </ContentGroup>
-    </Fragment>
+      <main className="c-main">
+        <Container className="o-main">
+          <ContentGroup>
+            <p>
+              I’ve been lucky enough to work with some amazing people during my
+              career. Here's what some of them have said about me.
+            </p>
+          </ContentGroup>
+        </Container>
+
+        <ContentGroup>
+          <div
+            data-info="temporary-blog-tile-container"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            {/* {renderBlogPosts()} */}
+          </div>
+        </ContentGroup>
+      </main>
+    </div>
   )
 }
 
