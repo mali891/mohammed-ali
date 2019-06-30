@@ -1,31 +1,48 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
-import { Header, Container } from "../components"
+import { Header, Container, Card, ContentGroup } from "../components"
 import { URLS } from "../constants"
+import { formatDate } from "../functions"
 
 const Blog = ({ data }) => {
   const { edges } = data.allMarkdownRemark
+
+  const renderBlogPosts = () =>
+    edges.map(edge => {
+      const { path, title, date, length } = edge.node.frontmatter
+
+      return (
+        <Link
+          className="c-link--no-hover"
+          style={{ margin: "0 1%", width: "40rem", maxWidth: "20%" }}
+          to={path}
+          key={path.split("/")[2]}
+        >
+          <Card title={title} link>
+            <span>{formatDate(date)}</span>
+            <span>{length} read</span>
+          </Card>
+        </Link>
+      )
+    })
 
   return (
     <div className="u-anim--fade-in">
       <Header title="Blog" />
 
       <main className="c-main">
-        <Container className="o-main">
-          {edges.map(edge => {
-            const { path, title } = edge.node.frontmatter
+        <ContentGroup>
+          <div
+            data-info="temporary-blog-tile-container"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            {renderBlogPosts()}
+          </div>
+        </ContentGroup>
 
-            return (
-              <Link key={path} to={path}>
-                <h3>{title}</h3>
-              </Link>
-            )
-          })}
-
-          <br />
-          <Link to={URLS.TAGS}>Tags</Link>
-        </Container>
+        <br />
+        <Link to={URLS.TAGS}>Tags</Link>
       </main>
     </div>
   )

@@ -19,11 +19,12 @@ export const styles = css`
     display: block;
     width: 100%;
     margin-bottom: ${SPACING.SM};
+    border-radius: 2rem;
   }
 
   .c-form-input__input,
   .c-form-input__textarea {
-    padding: ${SPACING.XS};
+    padding: ${SPACING.XS} ${SPACING.SM};
     border: none;
     background-color: ${COLOURS.BLACK};
     color: ${COLOURS.LIGHT};

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
-import { Header } from "../components/"
+import { Header, Container, ContentGroup } from "../components/"
 
 const blogTemplate = ({
   data: { markdownRemark },
@@ -13,22 +13,32 @@ const blogTemplate = ({
   const renderNextPrev = nextPrev => {
     if (nextPrev) {
       const { path, title } = nextPrev.frontmatter
-      return <Link to={path}>{title}</Link>
+      return (
+        <p>
+          <Link to={path}>{title}</Link>
+        </p>
+      )
     }
   }
 
   return (
-    <Fragment>
-      <Header />
-      <Link to="/">Home</Link>
-      <br />
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <br />
-      {renderNextPrev(prev)}
-      <br />
-      {renderNextPrev(next)}
-    </Fragment>
+    <div className="u-anim--fade-in">
+      <Header title={frontmatter.title} />
+      <main className="c-main">
+        <Container>
+          <ContentGroup>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <br />
+          </ContentGroup>
+
+          <ContentGroup>
+            {renderNextPrev(prev)}
+            <br />
+            {renderNextPrev(next)}
+          </ContentGroup>
+        </Container>
+      </main>
+    </div>
   )
 }
 

@@ -21,11 +21,11 @@ const Homepage = ({ data }) => {
       return (
         <Link
           className="c-link--no-hover"
-          style={{ margin: "0 1%" }}
+          style={{ margin: "0 1%", width: "40rem", maxWidth: "20%" }}
           to={path}
           key={path.split("/")[2]}
         >
-          <Card title={title}>
+          <Card title={title} link>
             <span>{formatDate(date)}</span>
             <span>{length} read</span>
           </Card>
@@ -88,7 +88,7 @@ const Homepage = ({ data }) => {
           </div>
         </ContentGroup>
 
-        <Container>
+        {/* <Container>
           <ContentGroup>
             <HeadingBlock type="h2" size="md">
               Let's talk
@@ -96,7 +96,7 @@ const Homepage = ({ data }) => {
 
             <Form />
           </ContentGroup>
-        </Container>
+        </Container> */}
       </main>
     </div>
   )

@@ -101,6 +101,32 @@ const GlobalStyles = () => (
         line-height: ${LINE_HEIGHT.SM};
       }
 
+      .u-text {
+        &--centre {
+          text-align: center;
+        }
+
+        &--xs {
+          font-size: ${FONT_SIZES.XS};
+          line-height: ${LINE_HEIGHT.XS}
+        }
+        
+        &--sm {
+          font-size: ${FONT_SIZES.SM};
+          line-height: ${LINE_HEIGHT.SM}
+        }
+        
+        &--md {
+          font-size: ${FONT_SIZES.MD};
+          line-height: ${LINE_HEIGHT.MD}
+        }
+        
+        &--lg {
+          font-size: ${FONT_SIZES.LG};
+          line-height: ${LINE_HEIGHT.LG}
+        }
+      }
+
 
       /* ANIMATIONS */
 

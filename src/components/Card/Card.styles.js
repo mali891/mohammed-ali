@@ -5,6 +5,7 @@ import {
   EASINGS,
   SPACING,
   BORDER_RADIUS,
+  LINE_HEIGHT,
 } from "../../styles/settings"
 
 export const styles = css`
@@ -16,11 +17,9 @@ export const styles = css`
   margin: 0 3%;
   background-color: ${COLOURS.BLACK};
   padding: ${SPACING.MD};
-  cursor: pointer;
   transition: all ${EASINGS.QUICK};
   border-radius: ${BORDER_RADIUS.LG};
-  width: 40rem;
-  max-width: 50rem;
+  width: 100%;
   min-height: 50rem;
 
   &:hover {
@@ -28,6 +27,18 @@ export const styles = css`
       &__border-bottom {
         &:after {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  &.c-card {
+    &--condensed {
+      min-height: 40rem;
+
+      .c-card {
+        &__heading {
+          margin-bottom: ${SPACING.MD};
         }
       }
     }
@@ -57,6 +68,11 @@ export const styles = css`
         );
         border-radius: ${BORDER_RADIUS.LG};
       }
+    }
+
+    &__subtitle {
+      font-size: ${FONT_SIZES.XS};
+      line-height: ${LINE_HEIGHT.XS};
     }
 
     &__content {
