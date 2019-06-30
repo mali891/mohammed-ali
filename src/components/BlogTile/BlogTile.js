@@ -10,7 +10,7 @@ import { styles } from "./BlogTile.styles"
 const BlogTile = ({ title, date, length, className, path, ...other }) => {
   const dynamicClassNames = classNames([className], {
     "c-blog-tile": true,
-    "c-link__no-hover": true,
+    "c-link--no-hover": true,
   })
 
   return (

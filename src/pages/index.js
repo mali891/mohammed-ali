@@ -15,11 +15,16 @@ const Homepage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
 
   const renderBlogPosts = () =>
-    edges.map(edge => {
+    edges.slice(0, 4).map(edge => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <Link className="c-link__no-hover" to={path} key={path.split("/")[2]}>
+        <Link
+          className="c-link--no-hover"
+          style={{ margin: "0 1%" }}
+          to={path}
+          key={path.split("/")[2]}
+        >
           <Card title={title}>
             <span>{formatDate(date)}</span>
             <span>{length} read</span>
@@ -54,8 +59,8 @@ const Homepage = ({ data }) => {
             </HeadingBlock>
 
             <p>
-              HTML5, CSS3, SCSS, BEM, JavaScript (ES5 - 8), React, Redux, Jest,
-              Enzyme, GraphQL, Gatsby, Git, Agile.
+              HTML5, CSS3, SCSS, BEM, JavaScript (ES5 - 8), React, Redux,
+              Webpack, Grunt, Gulp, Jest, Enzyme, GraphQL, Gatsby, Git, Agile.
             </p>
           </ContentGroup>
 

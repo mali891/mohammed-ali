@@ -66,7 +66,7 @@ const GlobalStyles = () => (
         position: relative;
         cursor: pointer;
 
-        &:not(.c-link__no-hover) {
+        &:not(.c-link--no-hover) {
           &:hover {
             &:after {
               width: 100%;

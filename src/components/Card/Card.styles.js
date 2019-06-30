@@ -19,6 +19,7 @@ export const styles = css`
   cursor: pointer;
   transition: all ${EASINGS.QUICK};
   border-radius: ${BORDER_RADIUS.LG};
+  width: 40rem;
   max-width: 50rem;
   min-height: 50rem;
 

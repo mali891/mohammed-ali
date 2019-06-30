@@ -8,22 +8,30 @@ import { URLS } from "../../constants"
 const Nav = () => (
   <nav css={styles} className="c-nav">
     {
-      <Link className="c-link__no-hover" to={URLS.HOME}>
+      <Link className="c-link--no-hover" to={URLS.HOME}>
         <Logo5 />
       </Link>
     }
     <ul>
       <li>
-        <Link to={URLS.HOME}>Home</Link>
+        <Link activeClassName="c-link--active" to={URLS.HOME}>
+          Home
+        </Link>
       </li>
       <li>
-        <Link to={URLS.REVIEWS}>Reviews</Link>
+        <Link activeClassName="c-link--active" to={URLS.REVIEWS}>
+          Reviews
+        </Link>
       </li>
       <li>
-        <Link to={URLS.BLOG}>Blog</Link>
+        <Link activeClassName="c-link--active" to={URLS.BLOG}>
+          Blog
+        </Link>
       </li>
       <li>
-        <Link to={URLS.CONTACT}>Contact</Link>
+        <Link activeClassName="c-link--active" to={URLS.CONTACT}>
+          Contact
+        </Link>
       </li>
     </ul>
   </nav>

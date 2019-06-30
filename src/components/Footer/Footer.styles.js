@@ -14,6 +14,23 @@ export const styles = css`
   }
 
   .c-footer {
+    &__social {
+      margin-top: ${SPACING.LG};
+
+      &-icon {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: inline-block;
+        margin: 0 ${SPACING.SM};
+
+        svg {
+          width: 100%;
+        }
+      }
+    }
+
     &__blurb {
       width: 100vw;
       display: flex;
