@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import { Link } from "../"
 import { styles } from "./Nav.styles"
 import Logo5 from "../../img/Logo5"
 import { URLS } from "../../constants"
@@ -11,40 +11,24 @@ const scrollToFooter = () => scrollTo(document.querySelector(".c-footer"))
 const Nav = () => (
   <nav css={styles} className="c-nav">
     {
-      <Link className="c-link c-link--no-hover" to={URLS.HOME}>
+      <Link to={URLS.HOME} noHover>
         <Logo5 />
       </Link>
     }
     <ul>
       <li>
-        <Link
-          className="c-link"
-          activeClassName="c-link--active"
-          to={URLS.HOME}
-        >
-          Home
-        </Link>
+        <Link to={URLS.HOME}>Home</Link>
       </li>
       <li>
-        <Link
-          className="c-link"
-          activeClassName="c-link--active"
-          to={URLS.REVIEWS}
-        >
-          Reviews
-        </Link>
+        <Link to={URLS.REVIEWS}>Reviews</Link>
       </li>
       <li>
-        <Link
-          className="c-link"
-          activeClassName="c-link--active"
-          to={URLS.BLOG}
-        >
-          Blog
-        </Link>
+        <Link to={URLS.BLOG}>Blog</Link>
       </li>
       <li onClick={scrollToFooter}>
-        <button className="c-link">Contact</button>
+        <Link to={URLS.BLOG} type="button">
+          Contact
+        </Link>
       </li>
     </ul>
   </nav>

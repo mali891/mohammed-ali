@@ -1,7 +1,7 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import { Header, Card, ContentGroup } from "../components"
+import { Header, Card, ContentGroup, Link } from "../components"
 import { URLS } from "../constants"
 import { formatDate } from "../functions"
 
@@ -14,9 +14,9 @@ const Blog = ({ data }) => {
 
       return (
         <Link
-          className="c-link c-link--no-hover"
           style={{ margin: "0 1%", width: "40rem", maxWidth: "20%" }}
           to={path}
+          noHover
           key={path.split("/")[2]}
         >
           <Card title={title} link>
@@ -42,9 +42,7 @@ const Blog = ({ data }) => {
         </ContentGroup>
 
         <br />
-        <Link className="c-link" to={URLS.TAGS}>
-          Tags
-        </Link>
+        <Link to={URLS.TAGS}>Tags</Link>
       </main>
     </div>
   )

@@ -7,6 +7,7 @@ import HeadingBlock from "./HeadingBlock/HeadingBlock"
 import Card from "./Card/Card"
 import Form from "./Form/Form"
 import Footer from "./Footer/Footer"
+import Link from "./Link/Link"
 
 export {
   ContentGroup,
@@ -18,4 +19,5 @@ export {
   Card,
   Form,
   Footer,
+  Link,
 }

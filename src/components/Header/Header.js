@@ -1,9 +1,11 @@
 import React, { Fragment } from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import { Container, HeadingBlock } from "../"
+import { Container, HeadingBlock, Link } from "../"
 import { styles } from "./Header.styles"
 import { scrollTo } from "../../functions"
+
+const handleScroll = () => scrollTo(document.querySelector("main"))
 
 const renderMainHeader = title => (
   <header className="c-header" css={styles}>
@@ -12,15 +14,11 @@ const renderMainHeader = title => (
         {title}
       </HeadingBlock>
     </Container>
-    <button className="c-link" onClick={handleScroll}>
+    <Link type="button" onClick={handleScroll}>
       More
-    </button>
+    </Link>
   </header>
 )
-
-const handleScroll = () => {
-  scrollTo(document.querySelector(".c-main"))
-}
 
 const Header = ({ title }) => {
   return (

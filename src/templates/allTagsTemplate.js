@@ -1,7 +1,6 @@
 import React, { Fragment } from "react"
-import { graphql, Link } from "gatsby"
 
-import { Header } from "../components"
+import { Header, Link } from "../components"
 
 const AllTagsTemplate = ({ data, pageContext }) => {
   console.warn(pageContext)
@@ -13,9 +12,7 @@ const AllTagsTemplate = ({ data, pageContext }) => {
       <ul>
         {pageContext.tags.map(tag => (
           <li key={tag}>
-            <Link className="c-link" to={`/tags/${tag}`}>
-              {tag}
-            </Link>
+            <Link to={`/tags/${tag}`}>{tag}</Link>
           </li>
         ))}
       </ul>

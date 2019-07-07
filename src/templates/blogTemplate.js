@@ -1,11 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import { Header, Container, ContentGroup } from "../components/"
+import { Header, Container, ContentGroup, Link } from "../components/"
 
 const blogTemplate = ({
   data: { markdownRemark },
-  data,
   pageContext: { next, prev },
 }) => {
   const { frontmatter, html } = markdownRemark
@@ -15,11 +14,9 @@ const blogTemplate = ({
       const { path, title } = nextPrev.frontmatter
 
       return (
-        <p className="u-text--xs">
+        <p>
           {nextPrev === next ? "Next: " : "Previous: "}
-          <Link className="c-link" to={path}>
-            {title}
-          </Link>
+          <Link to={path}>{title}</Link>
         </p>
       )
     }
@@ -32,7 +29,6 @@ const blogTemplate = ({
         <Container>
           <ContentGroup>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <br />
           </ContentGroup>
 
           <ContentGroup>
