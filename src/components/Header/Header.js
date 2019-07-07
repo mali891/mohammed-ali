@@ -5,7 +5,8 @@ import { Container, HeadingBlock, Link } from "../"
 import { styles } from "./Header.styles"
 import { scrollTo } from "../../functions"
 
-const handleScroll = () => scrollTo(document.querySelector("main"))
+const handleScroll = () =>
+  scrollTo(document.querySelectorAll("button.c-link")[1])
 
 const renderMainHeader = title => (
   <header className="c-header" css={styles}>
