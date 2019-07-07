@@ -13,7 +13,9 @@ const AllTagsTemplate = ({ data, pageContext }) => {
       <ul>
         {pageContext.tags.map(tag => (
           <li key={tag}>
-            <Link to={`/tags/${tag}`}>{tag}</Link>
+            <Link className="c-link" to={`/tags/${tag}`}>
+              {tag}
+            </Link>
           </li>
         ))}
       </ul>

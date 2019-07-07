@@ -23,8 +23,8 @@ export const styles = css`
   min-height: 50rem;
 
   &:hover {
-    .c-card {
-      &__border-bottom {
+    &.c-card--link {
+      .c-card__border-bottom {
         &:after {
           width: 100%;
         }
@@ -32,14 +32,12 @@ export const styles = css`
     }
   }
 
-  &.c-card {
-    &--condensed {
-      min-height: 40rem;
+  &.c-card--condensed {
+    min-height: 40rem;
 
-      .c-card {
-        &__heading {
-          margin-bottom: ${SPACING.MD};
-        }
+    .c-card {
+      &__heading {
+        margin-bottom: ${SPACING.MD};
       }
     }
   }

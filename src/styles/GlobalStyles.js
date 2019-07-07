@@ -25,7 +25,7 @@ const GlobalStyles = () => (
       }
       .cls-1,
       .cls-2 {
-        fill : white;
+        fill: white;
       }
 
       html {
@@ -59,9 +59,11 @@ const GlobalStyles = () => (
 
       /* LINKS */
 
-      a,
       .c-link {
+        font-family: ${FONT_FAMILY.MEDIUM};
         color: ${COLOURS.LIGHT};
+        background: none;
+        border: none;
         text-decoration: none;
         position: relative;
         cursor: pointer;
@@ -85,11 +87,14 @@ const GlobalStyles = () => (
             transition: all ${EASINGS.QUICK};
             background-color: ${COLOURS.LIGHT};
             border-radius: ${BORDER_RADIUS.LG};
-            /* background-image: linear-gradient(
-            to right,
-            ${COLOURS.GRADIENT_THREE.FIRST},
-            ${COLOURS.GRADIENT_THREE.SECOND}
-            ); */
+          }
+        }
+
+        &--active {
+          &:not(.c-link--no-hover) {
+            &:after {
+              width: 100%;
+            }
           }
         }
       }
@@ -108,25 +113,24 @@ const GlobalStyles = () => (
 
         &--xs {
           font-size: ${FONT_SIZES.XS};
-          line-height: ${LINE_HEIGHT.XS}
+          line-height: ${LINE_HEIGHT.XS};
         }
-        
+
         &--sm {
           font-size: ${FONT_SIZES.SM};
-          line-height: ${LINE_HEIGHT.SM}
+          line-height: ${LINE_HEIGHT.SM};
         }
-        
+
         &--md {
           font-size: ${FONT_SIZES.MD};
-          line-height: ${LINE_HEIGHT.MD}
+          line-height: ${LINE_HEIGHT.MD};
         }
-        
+
         &--lg {
           font-size: ${FONT_SIZES.LG};
-          line-height: ${LINE_HEIGHT.LG}
+          line-height: ${LINE_HEIGHT.LG};
         }
       }
-
 
       /* ANIMATIONS */
 
@@ -146,9 +150,8 @@ const GlobalStyles = () => (
 
       .c-main {
         display: block;
-        margin-top: ${SPACING.LG}
+        margin-top: ${SPACING.LG};
       }
-      
     `}
   />
 )

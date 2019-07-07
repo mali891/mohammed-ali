@@ -13,7 +13,7 @@ export const styles = css`
     justify-content: center;
   }
 
-  span {
+  .c-link {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;

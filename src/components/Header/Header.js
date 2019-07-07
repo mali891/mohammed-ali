@@ -12,9 +12,9 @@ const renderMainHeader = title => (
         {title}
       </HeadingBlock>
     </Container>
-    <span className="c-link" onClick={handleScroll}>
+    <button className="c-link" onClick={handleScroll}>
       More
-    </span>
+    </button>
   </header>
 )
 

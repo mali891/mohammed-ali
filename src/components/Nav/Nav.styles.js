@@ -22,8 +22,11 @@ export const styles = css`
   ul {
     li {
       display: inline;
-      font-size: ${FONT_SIZES.SM};
       margin-left: ${SPACING.MD};
     }
+  }
+
+  .c-link {
+    font-size: ${FONT_SIZES.SM};
   }
 `

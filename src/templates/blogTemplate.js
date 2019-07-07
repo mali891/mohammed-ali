@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
 
 import { Header, Container, ContentGroup } from "../components/"
@@ -13,9 +13,13 @@ const blogTemplate = ({
   const renderNextPrev = nextPrev => {
     if (nextPrev) {
       const { path, title } = nextPrev.frontmatter
+
       return (
-        <p>
-          <Link to={path}>{title}</Link>
+        <p className="u-text--xs">
+          {nextPrev === next ? "Next: " : "Previous: "}
+          <Link className="c-link" to={path}>
+            {title}
+          </Link>
         </p>
       )
     }

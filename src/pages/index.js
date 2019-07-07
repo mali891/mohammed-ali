@@ -6,7 +6,6 @@ import {
   ContentGroup,
   HeadingBlock,
   Card,
-  Form,
   Header,
 } from "../components"
 import { formatDate } from "../functions"
@@ -20,7 +19,7 @@ const Homepage = ({ data }) => {
 
       return (
         <Link
-          className="c-link--no-hover"
+          className="c-link c-link--no-hover"
           style={{ margin: "0 1%", width: "40rem", maxWidth: "20%" }}
           to={path}
           key={path.split("/")[2]}

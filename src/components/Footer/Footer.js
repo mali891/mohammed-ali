@@ -2,14 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Logo5 from "../../img/Logo5"
-import {
-  EnvelopeDark,
-  GithubDark,
-  LinkedInDark,
-  EnvelopeLight,
-  GithubLight,
-  LinkedInLight,
-} from "../../icons"
+import { EnvelopeDark, GithubDark, LinkedInDark } from "../../icons"
 import { styles } from "./Footer.styles"
 import { URLS } from "../../constants"
 
@@ -19,17 +12,17 @@ const Footer = () => (
       <Logo5 />
     </Link>
     <div className="c-footer__social">
-      <Link className="c-link--no-hover" to="#!">
+      <Link className="c-link c-link--no-hover" to="#!">
         <i className="c-footer__social-icon">
           <EnvelopeDark />
         </i>
       </Link>
-      <Link className="c-link--no-hover" to="#!">
+      <Link className="c-link c-link--no-hover" to="#!">
         <i className="c-footer__social-icon">
           <GithubDark />
         </i>
       </Link>
-      <Link className="c-link--no-hover" to="#!">
+      <Link className="c-link c-link--no-hover" to="#!">
         <i className="c-footer__social-icon">
           <LinkedInDark />
         </i>
@@ -37,7 +30,11 @@ const Footer = () => (
     </div>
     <div className="c-footer__blurb">
       <p>
-        Made with React, GraphQL and Gatsby. <a href="#!">See source code</a>.
+        Made with React, GraphQL and Gatsby.{" "}
+        <a className="c-link" href="#!">
+          See source code
+        </a>
+        .
       </p>
     </div>
   </footer>
