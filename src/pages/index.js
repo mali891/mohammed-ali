@@ -87,16 +87,6 @@ const Homepage = ({ data }) => {
             {renderBlogPosts()}
           </div>
         </ContentGroup>
-
-        {/* <Container>
-          <ContentGroup>
-            <HeadingBlock type="h2" size="md">
-              Let's talk
-            </HeadingBlock>
-
-            <Form />
-          </ContentGroup>
-        </Container> */}
       </main>
     </div>
   )

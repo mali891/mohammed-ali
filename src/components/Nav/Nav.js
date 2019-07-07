@@ -1,10 +1,10 @@
 import React from "react"
 
 import { Link } from "../"
-import { styles } from "./Nav.styles"
 import Logo5 from "../../img/Logo5"
 import { URLS } from "../../constants"
 import { scrollTo } from "../../functions"
+import { styles } from "./Nav.styles"
 
 const scrollToFooter = () => scrollTo(document.querySelector(".c-footer"))
 

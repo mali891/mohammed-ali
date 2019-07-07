@@ -21,7 +21,7 @@ const Card = ({
   })
 
   return (
-    <div css={styles} className={dynamicClassNames}>
+    <aside css={styles} className={dynamicClassNames}>
       <div className="c-card__heading">
         <HeadingBlock type="h3" size="sm" noMargin>
           {title}
@@ -32,7 +32,7 @@ const Card = ({
       <div className="c-card__content">{children}</div>
 
       <span className="c-card__border-bottom" />
-    </div>
+    </aside>
   )
 }
 
