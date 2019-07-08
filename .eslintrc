@@ -1,0 +1,26 @@
+{
+	"extends": ["react-app", "prettier", "eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+	"plugins": ["react-hooks"],
+	"settings": {
+		"react": {
+			"createClass": "createReactClass",
+			"pragma": "React",
+			"version": "detect"
+		}
+	},
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true,
+		"jest": true
+	},
+	"rules": {
+		"jsx-a11y/anchor-is-valid": ["off"],
+		"no-console": ["warn"],
+		"react/display-name": ["off"],
+		"react/no-unescaped-entities": ["error"],
+		"react/prop-types": ["error"],
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "error"
+	}
+}

@@ -12,23 +12,19 @@
  */
 
 @font-face {
-  font-family: "Apercu Medium";
-  src: url("apercu-medium-pro.eot");
-  src: url("apercu-medium-pro.eot?#iefix") format("embedded-opentype"),
-    url("apercu-medium-pro.woff2") format("woff2"),
-    url("apercu-medium-pro.woff") format("woff"),
-    fonts url("apercu-medium-pro.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Apercu Medium';
+	src: url('apercu-medium-pro.eot');
+	src: url('apercu-medium-pro.eot?#iefix') format('embedded-opentype'), url('apercu-medium-pro.woff2') format('woff2'),
+		url('apercu-medium-pro.woff') format('woff'), fonts url('apercu-medium-pro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "Apercu Regular";
-  src: url("apercu-regular-pro.eot");
-  src: url("apercu-regular-pro.eot?#iefix") format("embedded-opentype"),
-    url("apercu-regular-pro.woff2") format("woff2"),
-    url("apercu-regular-pro.woff") format("woff"),
-    url("apercu-regular-pro.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Apercu Regular';
+	src: url('apercu-regular-pro.eot');
+	src: url('apercu-regular-pro.eot?#iefix') format('embedded-opentype'), url('apercu-regular-pro.woff2') format('woff2'),
+		url('apercu-regular-pro.woff') format('woff'), url('apercu-regular-pro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
