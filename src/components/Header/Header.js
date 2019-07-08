@@ -8,41 +8,41 @@ import { scrollTo } from '../../functions'
 const handleScroll = () => scrollTo(document.querySelector('.c-header__more-link'))
 
 const renderMainHeader = title => (
-	<header className="c-header" css={styles}>
-		<Container className="c-header__container">
-			<HeadingBlock type="h1" size="xl" noMargin>
-				{title}
-			</HeadingBlock>
-		</Container>
-		<Link className="c-header__more-link" type="button" onClick={handleScroll}>
-			More
-		</Link>
-	</header>
+  <header className="c-header" css={styles}>
+    <Container className="c-header__container">
+      <HeadingBlock type="h1" size="xl" noMargin>
+        {title}
+      </HeadingBlock>
+    </Container>
+    <Link className="c-header__more-link" type="button" onClick={handleScroll}>
+      More
+    </Link>
+  </header>
 )
 
 const Header = ({ title }) => {
-	return (
-		<Fragment>
-			{title ? (
-				renderMainHeader(title)
-			) : (
-				<StaticQuery
-					query={graphql`
-						query {
-							site {
-								siteMetadata {
-									title
-									description
-									strapline
-								}
-							}
-						}
-					`}
-					render={data => renderMainHeader(data.site.siteMetadata.strapline)}
-				/>
-			)}
-		</Fragment>
-	)
+  return (
+    <Fragment>
+      {title ? (
+        renderMainHeader(title)
+      ) : (
+        <StaticQuery
+          query={graphql`
+            query {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  strapline
+                }
+              }
+            }
+          `}
+          render={data => renderMainHeader(data.site.siteMetadata.strapline)}
+        />
+      )}
+    </Fragment>
+  )
 }
 
 export default Header

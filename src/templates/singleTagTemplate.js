@@ -4,23 +4,23 @@ import { graphql } from 'gatsby'
 import { Header, Link } from '../components'
 
 const SingleTagTemplate = ({ data, pageContext }) => {
-	console.warn(pageContext)
+  console.warn(pageContext)
 
-	return (
-		<Fragment>
-			<Header />
-			<h2>{pageContext.tag}</h2>
-			<ul>
-				{pageContext.posts.map(post => (
-					<li key={post.frontmatter.title}>
-						<Link className="c-link" to={post.frontmatter.path}>
-							{post.frontmatter.title}
-						</Link>
-					</li>
-				))}
-			</ul>
-		</Fragment>
-	)
+  return (
+    <Fragment>
+      <Header />
+      <h2>{pageContext.tag}</h2>
+      <ul>
+        {pageContext.posts.map(post => (
+          <li key={post.frontmatter.title}>
+            <Link className="c-link" to={post.frontmatter.path}>
+              {post.frontmatter.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Fragment>
+  )
 }
 
 // prettier-ignore

@@ -3,21 +3,21 @@ import React, { Fragment } from 'react'
 import { Header, Link } from '../components'
 
 const AllTagsTemplate = ({ data, pageContext }) => {
-	console.warn(pageContext)
+  console.warn(pageContext)
 
-	return (
-		<Fragment>
-			<Header />
-			<p>Tags bro</p>
-			<ul>
-				{pageContext.tags.map(tag => (
-					<li key={tag}>
-						<Link to={`/tags/${tag}`}>{tag}</Link>
-					</li>
-				))}
-			</ul>
-		</Fragment>
-	)
+  return (
+    <Fragment>
+      <Header />
+      <p>Tags bro</p>
+      <ul>
+        {pageContext.tags.map(tag => (
+          <li key={tag}>
+            <Link to={`/tags/${tag}`}>{tag}</Link>
+          </li>
+        ))}
+      </ul>
+    </Fragment>
+  )
 }
 
 // prettier-ignore

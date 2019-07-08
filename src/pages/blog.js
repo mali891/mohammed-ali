@@ -6,38 +6,38 @@ import { URLS } from '../constants'
 import { formatDate } from '../functions'
 
 const Blog = ({ data }) => {
-	const { edges } = data.allMarkdownRemark
+  const { edges } = data.allMarkdownRemark
 
-	const renderBlogPosts = () =>
-		edges.map(edge => {
-			const { path, title, date, length } = edge.node.frontmatter
+  const renderBlogPosts = () =>
+    edges.map(edge => {
+      const { path, title, date, length } = edge.node.frontmatter
 
-			return (
-				<Link style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} to={path} noHover key={path.split('/')[2]}>
-					<Card title={title} link>
-						<span>{formatDate(date)}</span>
-						<span>{length} read</span>
-					</Card>
-				</Link>
-			)
-		})
+      return (
+        <Link style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} to={path} noHover key={path.split('/')[2]}>
+          <Card title={title} link>
+            <span>{formatDate(date)}</span>
+            <span>{length} read</span>
+          </Card>
+        </Link>
+      )
+    })
 
-	return (
-		<div className="u-anim--fade-in">
-			<Header title="Blog" />
+  return (
+    <div className="u-anim--fade-in">
+      <Header title="Blog" />
 
-			<main className="c-main">
-				<ContentGroup>
-					<div data-info="temporary-blog-tile-container" style={{ display: 'flex', justifyContent: 'center' }}>
-						{renderBlogPosts()}
-					</div>
-				</ContentGroup>
+      <main className="c-main">
+        <ContentGroup>
+          <div data-info="temporary-blog-tile-container" style={{ display: 'flex', justifyContent: 'center' }}>
+            {renderBlogPosts()}
+          </div>
+        </ContentGroup>
 
-				<br />
-				<Link to={URLS.TAGS}>Tags</Link>
-			</main>
-		</div>
-	)
+        <br />
+        <Link to={URLS.TAGS}>Tags</Link>
+      </main>
+    </div>
+  )
 }
 
 // prettier-ignore

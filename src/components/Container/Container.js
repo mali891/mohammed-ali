@@ -5,19 +5,19 @@ import classNames from 'classnames'
 import { styles } from './Container.styles'
 
 const Container = ({ children, className, ...other }) => {
-	const dynamicClassNames = classNames([className], {
-		'c-container': true
-	})
+  const dynamicClassNames = classNames([className], {
+    'c-container': true
+  })
 
-	return (
-		<div css={styles} className={dynamicClassNames} {...other}>
-			{children}
-		</div>
-	)
+  return (
+    <div css={styles} className={dynamicClassNames} {...other}>
+      {children}
+    </div>
+  )
 }
 
 Container.propTypes = {
-	children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 }
 
 export default Container
