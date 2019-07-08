@@ -37,12 +37,10 @@ export const styles = css`
     }
   }
 
-  &.c-link {
-    &--active {
-      &:not(.c-link--no-hover) {
-        &:after {
-          width: 100%;
-        }
+  &.c-link--active {
+    &:not(.c-link--no-hover) {
+      &:after {
+        width: 100%;
       }
     }
   }

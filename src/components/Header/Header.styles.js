@@ -6,14 +6,14 @@ export const styles = css`
   width: 100vw;
   margin-bottom: ${SPACING.XL};
 
-  .c-container {
+  .c-header__container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .c-link {
+  .c-header__more-link {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;

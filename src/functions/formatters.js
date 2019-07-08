@@ -18,7 +18,10 @@ export const formatDate = date => {
   let month = date.split("-")[1]
   const year = date.split("-")[0]
 
+  // Days which end with 'st'
   const sts = [1, 21, 31]
+
+  // Days which end with 'nd'
   const nds = [2, 22]
 
   if (parseInt(day) < 10) day = day.split("0")[1]

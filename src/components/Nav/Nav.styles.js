@@ -15,18 +15,16 @@ export const styles = css`
   background-color: ${COLOURS.DARK};
   z-index: 1;
 
-  svg {
-    width: 75px;
+  .c-nav__logo {
+    width: 7.5rem;
   }
 
-  ul {
-    li {
-      display: inline;
-      margin-left: ${SPACING.MD};
-    }
+  .c-nav__list-item {
+    display: inline;
+    margin-left: ${SPACING.MD};
   }
 
-  .c-link {
+  .c-nav__link {
     font-size: ${FONT_SIZES.SM};
   }
 `

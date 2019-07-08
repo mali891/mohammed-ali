@@ -5,7 +5,6 @@ import HeadHelmet from "./HeadHelmet/HeadHelmet"
 import Container from "./Container/Container"
 import HeadingBlock from "./HeadingBlock/HeadingBlock"
 import Card from "./Card/Card"
-import Form from "./Form/Form"
 import Footer from "./Footer/Footer"
 import Link from "./Link/Link"
 
@@ -17,7 +16,6 @@ export {
   Container,
   HeadingBlock,
   Card,
-  Form,
   Footer,
   Link,
 }

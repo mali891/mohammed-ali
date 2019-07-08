@@ -1,7 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const Logo5 = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+const Logo5 = ({ className }) => (
+  <svg
+    className={className ? className : ""}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 400 400"
+  >
     <defs>
       <linearGradient
         id="linear-gradient"
@@ -40,5 +45,9 @@ const Logo5 = () => (
     </g>
   </svg>
 )
+
+Logo5.propTypes = {
+  className: PropTypes.string,
+}
 
 export default Logo5

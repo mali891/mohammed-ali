@@ -42,72 +42,70 @@ export const styles = css`
     }
   }
 
-  .c-card {
-    &__heading {
-      position: relative;
-      margin-bottom: ${SPACING.XL};
-      word-wrap: break-word;
-      hyphens: manual;
+  .c-card__heading {
+    position: relative;
+    margin-bottom: ${SPACING.XL};
+    word-wrap: break-word;
+    hyphens: manual;
 
-      &:after {
-        content: "";
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -${SPACING.MD};
-        right: 0;
-        height: 0.2rem;
-        width: 10rem;
-        transition: all ${EASINGS.DEFAULT};
-        background-image: linear-gradient(
-          to right,
-          ${COLOURS.GRADIENT_THREE.FIRST},
-          ${COLOURS.GRADIENT_THREE.SECOND}
-        );
-        border-radius: ${BORDER_RADIUS.LG};
-      }
-    }
-
-    &__subtitle {
-      font-size: ${FONT_SIZES.XS};
-      line-height: ${LINE_HEIGHT.XS};
-    }
-
-    &__content {
+    &:after {
+      content: "";
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      font-size: ${FONT_SIZES.XS};
+      position: absolute;
+      left: 0;
+      bottom: -${SPACING.MD};
+      right: 0;
+      height: 0.2rem;
+      width: 10rem;
+      transition: all ${EASINGS.DEFAULT};
+      background-image: linear-gradient(
+        to right,
+        ${COLOURS.GRADIENT_THREE.FIRST},
+        ${COLOURS.GRADIENT_THREE.SECOND}
+      );
+      border-radius: ${BORDER_RADIUS.LG};
     }
+  }
 
-    &__border-bottom {
-      width: 100%;
+  .c-card__subtitle {
+    font-size: ${FONT_SIZES.XS};
+    line-height: ${LINE_HEIGHT.XS};
+  }
+
+  .c-card__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: ${FONT_SIZES.XS};
+  }
+
+  .c-card__border-bottom {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: ${SPACING.XS};
+    background-color: ${COLOURS.LIGHT};
+    border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
+
+    &:after {
+      content: "";
+      width: 0;
       position: absolute;
       left: 0;
       bottom: 0;
       right: 0;
+      height: 0.2rem;
+      width: 0;
       height: ${SPACING.XS};
-      background-color: ${COLOURS.LIGHT};
+      transition: all ${EASINGS.DEFAULT};
+      background-image: linear-gradient(
+        to right,
+        ${COLOURS.GRADIENT_THREE.FIRST},
+        ${COLOURS.GRADIENT_THREE.SECOND}
+      );
       border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
-
-      &:after {
-        content: "";
-        width: 0;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 0.2rem;
-        width: 0;
-        height: ${SPACING.XS};
-        transition: all ${EASINGS.DEFAULT};
-        background-image: linear-gradient(
-          to right,
-          ${COLOURS.GRADIENT_THREE.FIRST},
-          ${COLOURS.GRADIENT_THREE.SECOND}
-        );
-        border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
-      }
     }
   }
 `

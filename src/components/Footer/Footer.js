@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Link } from "../"
-import Logo5 from "../../img/Logo5"
+import Logo5 from "../../img/logo/Logo5"
 import { EnvelopeDark, GithubDark, LinkedInDark } from "../../icons"
 import { styles } from "./Footer.styles"
 import { URLS } from "../../constants"
@@ -9,26 +9,28 @@ import { URLS } from "../../constants"
 const Footer = () => (
   <footer className="c-footer" css={styles}>
     <Link to={URLS.HOME} noHover>
-      <Logo5 />
+      <Logo5 className="c-footer__logo" />
     </Link>
+
     <div className="c-footer__social">
       <Link to="#!" noHover>
-        <i className="c-footer__social-icon">
+        <i className="c-footer__social__icon">
           <EnvelopeDark />
         </i>
       </Link>
       <Link to="#!" noHover>
-        <i className="c-footer__social-icon">
+        <i className="c-footer__social__icon">
           <GithubDark />
         </i>
       </Link>
       <Link to="#!" noHover>
-        <i className="c-footer__social-icon">
+        <i className="c-footer__social__icon">
           <LinkedInDark />
         </i>
       </Link>
     </div>
-    <div className="c-footer__blurb">
+
+    <section className="c-footer__blurb">
       <p>
         Made with React, GraphQL and Gatsby.{" "}
         <Link type="anchor" to="#!">
@@ -36,7 +38,7 @@ const Footer = () => (
         </Link>
         .
       </p>
-    </div>
+    </section>
   </footer>
 )
 
