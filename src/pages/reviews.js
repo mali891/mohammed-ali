@@ -12,8 +12,8 @@ const Reviews = () => {
         <Container className="o-main">
           <ContentGroup>
             <p>
-              I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have
-              said about me.
+              I&apos;ve been lucky enough to work with some amazing people during my career. Here&apos;s what some of
+              them have said about me.
             </p>
           </ContentGroup>
         </Container>

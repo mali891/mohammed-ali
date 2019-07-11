@@ -28,6 +28,7 @@ const HeadingBlock = ({ children, className, type, size, noMargin, ...other }) =
 
 HeadingBlock.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+  className: PropTypes.string,
   noMargin: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(TSHIRT_SIZES)).isRequired,
   type: PropTypes.oneOf(headingTypes).isRequired

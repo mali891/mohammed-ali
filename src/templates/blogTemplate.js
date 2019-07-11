@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { Header, Container, ContentGroup, Link } from '../components/'
@@ -49,5 +50,10 @@ export const query = graphql`
     }
   }
 `
+
+blogTemplate.propTypes = {
+  data: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired
+}
 
 export default blogTemplate

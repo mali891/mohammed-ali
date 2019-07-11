@@ -1,46 +1,54 @@
 {
-	"name": "mohammed-ali",
-	"private": true,
-	"description": "Mohammed Ali, freelance Front-end Engineer",
-	"version": "1.0.0",
-	"license": "MIT",
-	"scripts": {
-		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"start": "npm run develop",
-		"serve": "gatsby serve",
-		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-		"test:coverage": "yarn test --coverage --no-cache --watchAll=false",
-		"format": "prettier --write \"src/**/*.{js,jsx,css,scss,json}\"",
-		"format:check": "prettier --list-different \"src/**/*.{js,jsx,css,scss,json}\"",
-		"lint": "eslint ./src --ext .js",
-		"lint:fix": "eslint --fix ./src --ext .js"
-	},
-	"dependencies": {
-		"@emotion/core": "^10.0.10",
-		"@emotion/styled": "^10.0.12",
-		"classnames": "^2.2.6",
-		"gatsby": "^2.8.5",
-		"gatsby-plugin-emotion": "^4.0.7",
-		"gatsby-plugin-layout": "^1.1.0",
-		"gatsby-plugin-react-helmet": "^3.0.12",
-		"gatsby-source-filesystem": "^2.0.38",
-		"gatsby-transformer-remark": "^2.3.12",
-		"prop-types": "^15.7.2",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"react-helmet": "^5.2.1"
-	},
-	"devDependencies": {
-		"eslint-config-prettier": "^6.0.0",
-		"eslint-plugin-react-hooks": "^1.6.1",
-		"prettier": "^1.17.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-	},
-	"bugs": {
-		"url": "https://github.com/gatsbyjs/gatsby/issues"
-	}
+  "name": "mohammed-ali",
+  "private": true,
+  "description": "Mohammed Ali, freelance Front-end Engineer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage --no-cache --watchAll=false",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,scss,json}\"",
+    "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,scss,json}\"",
+    "lint": "eslint ./src --ext .js",
+    "lint:fix": "eslint --fix ./src --ext .js"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.12",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.8.5",
+    "gatsby-plugin-emotion": "^4.0.7",
+    "gatsby-plugin-layout": "^1.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-transformer-remark": "^2.3.12",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.2.2",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "husky": "^3.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "react-test-renderer": "^16.8.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test && yarn lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  }
 }

@@ -22,6 +22,7 @@ export const styles = css`
   .c-nav__list-item {
     display: inline;
     margin-left: ${SPACING.MD};
+    background-color: none;
   }
 
   .c-nav__link {

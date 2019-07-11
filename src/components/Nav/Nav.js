@@ -31,8 +31,8 @@ const Nav = () => (
           Blog
         </Link>
       </li>
-      <li className="c-nav__list-item" onClick={scrollToFooter}>
-        <Link className="c-nav__link" to={URLS.BLOG} type="button">
+      <li className="c-nav__list-item">
+        <Link className="c-nav__link" to={URLS.BLOG} onClick={scrollToFooter} type="button">
           Contact
         </Link>
       </li>

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { Container, ContentGroup, HeadingBlock, Card, Header, Link } from '../components'
@@ -29,9 +30,9 @@ const Homepage = ({ data }) => {
         <Container className="o-main">
           <ContentGroup>
             <p>
-              I’m from sunny Huddersfield, and I've helped companies like Yorkshire Water and Intercept IP build React
-              applications. I’ve worked on various other front-end projects for companies like Gazprom, Capita, and The
-              Institute of Customer Service.
+              I’m from sunny Huddersfield, and I&apos;ve helped companies like Yorkshire Water and Intercept IP build
+              React applications. I’ve worked on various other front-end projects for companies like Gazprom, Capita,
+              and The Institute of Customer Service.
             </p>
             <br />
             <p>I get a kick out of working on complex web applications, and crafting beautiful, pixel-perfect UIs.</p>
@@ -90,5 +91,9 @@ export const query = graphql`
     }
   }
 `
+
+Homepage.propTypes = {
+  data: PropTypes.object.isRequired
+}
 
 export default Homepage

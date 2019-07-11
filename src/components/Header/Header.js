@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import { Container, HeadingBlock, Link } from '../'
@@ -43,6 +44,10 @@ const Header = ({ title }) => {
       )}
     </Fragment>
   )
+}
+
+Header.propTypes = {
+  title: PropTypes.string
 }
 
 export default Header

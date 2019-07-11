@@ -17,7 +17,8 @@ const Container = ({ children, className, ...other }) => {
 }
 
 Container.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+  className: PropTypes.string
 }
 
 export default Container

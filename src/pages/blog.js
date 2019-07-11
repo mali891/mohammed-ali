@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { Header, Card, ContentGroup, Link } from '../components'
@@ -56,5 +57,9 @@ export const query = graphql`
     }
   }
 `
+
+Blog.propTypes = {
+  data: PropTypes.object.isRequired
+}
 
 export default Blog
