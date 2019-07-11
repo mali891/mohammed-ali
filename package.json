@@ -7,9 +7,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "jest",
+    "test:watch": "jest --watch",
     "test:coverage": "yarn test --coverage --no-cache --watchAll=false",
     "format": "prettier --write \"src/**/*.{js,jsx,css,scss,json}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,scss,json}\"",

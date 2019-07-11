@@ -4,8 +4,8 @@ import renderer from 'react-test-renderer'
 import Header from '../Header'
 
 describe('Header', () => {
-  xit('renders correctly', () => {
-    const tree = renderer.create(<Header itle="Default Starter" />).toJSON()
+  it('renders correctly', () => {
+    const tree = renderer.create(<Header title="Dummy title" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
