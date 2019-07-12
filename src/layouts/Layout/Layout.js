@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { ThemeProvider } from '../../context/ThemeContext'
 import { Footer, HeadHelmet, Nav } from '../../components'
 import { GlobalStyles } from '../../styles/settings'
 
@@ -8,9 +9,11 @@ const Layout = ({ children }) => (
   <div className="u-anim--fade-in">
     <GlobalStyles />
     <HeadHelmet />
-    <Nav />
-    {children}
-    <Footer />
+    <ThemeProvider>
+      <Nav />
+      {children}
+      <Footer />
+    </ThemeProvider>
   </div>
 )
 
