@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import { styles } from './ContentGroup.style'
 
-const ContentGroup = ({ children, className, ...other }) => {
+const ContentGroup = React.memo(({ children, className, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-content-group': true
   })
@@ -14,7 +14,7 @@ const ContentGroup = ({ children, className, ...other }) => {
       {children}
     </section>
   )
-}
+})
 
 ContentGroup.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),

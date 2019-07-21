@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ThemeConsumer } from '../../context/ThemeContext'
-import { Link } from '../'
+import { Link, ThemeToggle } from '../'
 import Logo5 from '../../img/logo/Logo5'
 import { URLS } from '../../constants'
 import { scrollTo } from '../../functions'
@@ -20,6 +20,7 @@ const Nav = React.memo(() => (
             <Logo5 className="c-nav__logo" />
           </Link>
         }
+        {/* <ThemeToggle /> */}
         <ul className="c-nav__list">
           <li className="c-nav__list-item">
             <Link className="c-nav__link" to={URLS.HOME}>

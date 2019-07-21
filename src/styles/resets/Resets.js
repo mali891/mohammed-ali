@@ -28,6 +28,8 @@ const Resets = () => (
         background-color: ${COLOURS.DARK};
         color: ${COLOURS.LIGHT};
         min-height: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
 
         &.mode--light {
           background-color: ${COLOURS.LIGHT};

@@ -7,7 +7,7 @@ import { styles } from './Link.styles'
 
 const linkTypes = ['gatsby', 'anchor', 'button']
 
-const Link = ({ children, className, newTab, noHover, to, type, ...other }) => {
+const Link = React.memo(({ children, className, newTab, noHover, to, type, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-link': true,
     'c-link--no-hover': noHover
@@ -41,7 +41,7 @@ const Link = ({ children, className, newTab, noHover, to, type, ...other }) => {
       )}
     </Fragment>
   )
-}
+})
 
 Link.defaultProps = {
   newTab: false,

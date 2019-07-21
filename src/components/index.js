@@ -7,5 +7,6 @@ import HeadingBlock from './HeadingBlock/HeadingBlock'
 import Card from './Card/Card'
 import Footer from './Footer/Footer'
 import Link from './Link/Link'
+import ThemeToggle from './ThemeToggle/ThemeToggle'
 
-export { ContentGroup, Header, Nav, HeadHelmet, Container, HeadingBlock, Card, Footer, Link }
+export { ContentGroup, Header, Nav, HeadHelmet, Container, HeadingBlock, Card, Footer, Link, ThemeToggle }

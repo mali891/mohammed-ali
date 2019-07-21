@@ -6,7 +6,7 @@ import { EnvelopeDark, GithubDark, LinkedInDark } from '../../icons'
 import { styles } from './Footer.styles'
 import { URLS } from '../../constants'
 
-const Footer = () => (
+const Footer = React.memo(() => (
   <footer className="c-footer" css={styles}>
     <Link to={URLS.HOME} noHover>
       <Logo5 className="c-footer__logo" />
@@ -40,6 +40,6 @@ const Footer = () => (
       </p>
     </section>
   </footer>
-)
+))
 
 export default Footer

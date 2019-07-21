@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import { styles } from './Container.styles'
 
-const Container = ({ children, className, ...other }) => {
+const Container = React.memo(({ children, className, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-container': true
   })
@@ -14,7 +14,7 @@ const Container = ({ children, className, ...other }) => {
       {children}
     </div>
   )
-}
+})
 
 Container.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),

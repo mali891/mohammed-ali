@@ -21,7 +21,7 @@ const renderMainHeader = title => (
   </header>
 )
 
-const Header = ({ title }) => {
+const Header = React.memo(({ title }) => {
   return (
     <Fragment>
       {title ? (
@@ -44,7 +44,7 @@ const Header = ({ title }) => {
       )}
     </Fragment>
   )
-}
+})
 
 Header.propTypes = {
   title: PropTypes.string
