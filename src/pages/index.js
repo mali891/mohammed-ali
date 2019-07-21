@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Container, ContentGroup, HeadingBlock, Card, Header, Link } from '../components'
+import { Container, ContentGroup, HeadingBlock, Card, Header, Link, CardContainer } from '../components'
 import { formatDate } from '../functions'
 
 const Homepage = ({ data }) => {
@@ -13,12 +13,10 @@ const Homepage = ({ data }) => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <Link style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} to={path} noHover key={path.split('/')[2]}>
-          <Card title={title} link>
-            <span>{formatDate(date)}</span>
-            <span>{length} read</span>
-          </Card>
-        </Link>
+        <Card title={title} path={path} key={path.split('/')[2]} link>
+          <span>{formatDate(date)}</span>
+          <span>{length} read</span>
+        </Card>
       )
     })
 
@@ -27,7 +25,7 @@ const Homepage = ({ data }) => {
       <Header />
 
       <main className="c-main">
-        <Container className="o-main">
+        <Container>
           <ContentGroup>
             <p>
               I’m from sunny Huddersfield, and I&apos;ve helped companies like Yorkshire Water and Intercept IP build
@@ -65,9 +63,7 @@ const Homepage = ({ data }) => {
             </HeadingBlock>
           </Container>
 
-          <div data-info="temporary-blog-tile-container" style={{ display: 'flex', justifyContent: 'center' }}>
-            {renderBlogPosts()}
-          </div>
+          <CardContainer>{renderBlogPosts()}</CardContainer>
         </ContentGroup>
       </main>
     </div>

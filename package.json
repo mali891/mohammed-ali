@@ -9,8 +9,8 @@
     "develop": "gatsby develop",
     "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --watch",
+    "test:nowatch": "jest",
     "test:coverage": "yarn test --coverage --no-cache --watchAll=false",
     "format": "prettier --write \"src/**/*.{js,jsx,css,scss,json}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,scss,json}\"",
@@ -45,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test && yarn lint"
+      "pre-commit": "yarn test:nowatch && yarn lint"
     }
   },
   "repository": {

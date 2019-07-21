@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Card, ContentGroup, Link } from '../components'
+import { Header, Card, ContentGroup, Link, CardContainer } from '../components'
 import { URLS } from '../constants'
 import { formatDate } from '../functions'
 
@@ -14,12 +14,10 @@ const Blog = ({ data }) => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <Link style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} to={path} noHover key={path.split('/')[2]}>
-          <Card title={title} link>
-            <span>{formatDate(date)}</span>
-            <span>{length} read</span>
-          </Card>
-        </Link>
+        <Card title={title} key={path.split('/')[2]} link>
+          <span>{formatDate(date)}</span>
+          <span>{length} read</span>
+        </Card>
       )
     })
 
@@ -29,9 +27,7 @@ const Blog = ({ data }) => {
 
       <main className="c-main">
         <ContentGroup>
-          <div data-info="temporary-blog-tile-container" style={{ display: 'flex', justifyContent: 'center' }}>
-            {renderBlogPosts()}
-          </div>
+          <CardContainer>{renderBlogPosts()}</CardContainer>
         </ContentGroup>
 
         <br />

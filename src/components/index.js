@@ -8,5 +8,18 @@ import Card from './Card/Card'
 import Footer from './Footer/Footer'
 import Link from './Link/Link'
 import ThemeToggle from './ThemeToggle/ThemeToggle'
+import CardContainer from './CardContainer/CardContainer'
 
-export { ContentGroup, Header, Nav, HeadHelmet, Container, HeadingBlock, Card, Footer, Link, ThemeToggle }
+export {
+  ContentGroup,
+  Header,
+  Nav,
+  HeadHelmet,
+  Container,
+  HeadingBlock,
+  Card,
+  Footer,
+  Link,
+  ThemeToggle,
+  CardContainer
+}

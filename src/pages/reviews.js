@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Container, ContentGroup, Card } from '../components'
+import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
 import reviews from '../pages/reviews/reviews'
 
 const Reviews = () => {
@@ -9,7 +9,7 @@ const Reviews = () => {
       <Header title="Reviews" />
 
       <main className="c-main">
-        <Container className="o-main">
+        <Container>
           <ContentGroup>
             <p>
               I&apos;ve been lucky enough to work with some amazing people during my career. Here&apos;s what some of
@@ -19,68 +19,29 @@ const Reviews = () => {
         </Container>
 
         <ContentGroup>
-          <div
-            data-info="temporary-blog-tile-container"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              marginBottom: '100px'
-            }}
-          >
-            {reviews.slice(0, 4).map(review => {
-              const { name, jobTitle, content } = review
+          <CardContainer marginBottom>
+            {reviews.slice(0, 4).map(({ name, jobTitle, content }) => (
+              <Card title={name} subtitle={jobTitle} key={name} condensed>
+                <span>{content}</span>
+              </Card>
+            ))}
+          </CardContainer>
 
-              return (
-                <div style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} key={name}>
-                  <Card title={name} subtitle={jobTitle} condensed>
-                    <p className="u-text--xs">{content}</p>
-                  </Card>
-                </div>
-              )
-            })}
-          </div>
+          <CardContainer marginBottom>
+            {reviews.slice(4, 8).map(({ name, jobTitle, content }) => (
+              <Card title={name} subtitle={jobTitle} key={name} condensed>
+                <span>{content}</span>
+              </Card>
+            ))}
+          </CardContainer>
 
-          <div
-            data-info="temporary-blog-tile-container"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              marginBottom: '100px'
-            }}
-          >
-            {reviews.slice(4, 8).map(review => {
-              const { name, jobTitle, content } = review
-
-              return (
-                <div style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} key={name}>
-                  <Card title={name} subtitle={jobTitle} condensed>
-                    <p className="u-text--xs">{content}</p>
-                  </Card>
-                </div>
-              )
-            })}
-          </div>
-
-          <div
-            data-info="temporary-blog-tile-container"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              marginBottom: '100px'
-            }}
-          >
-            {reviews.slice(8, 12).map(review => {
-              const { name, jobTitle, content } = review
-
-              return (
-                <div style={{ margin: '0 1%', width: '40rem', maxWidth: '20%' }} key={name}>
-                  <Card title={name} subtitle={jobTitle} condensed>
-                    <p className="u-text--xs">{content}</p>
-                  </Card>
-                </div>
-              )
-            })}
-          </div>
+          <CardContainer marginBottom>
+            {reviews.slice(8, 12).map(({ name, jobTitle, content }) => (
+              <Card title={name} subtitle={jobTitle} key={name} condensed>
+                <span>{content}</span>
+              </Card>
+            ))}
+          </CardContainer>
         </ContentGroup>
       </main>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ThemeConsumer } from '../../context/ThemeContext'
-import { Link, ThemeToggle } from '../'
+import { Link } from '../'
 import Logo5 from '../../img/logo/Logo5'
 import { URLS } from '../../constants'
 import { scrollTo } from '../../functions'

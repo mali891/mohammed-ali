@@ -5,21 +5,21 @@ export const FONT_FAMILY = {
 
 export const FONT_SIZES = {
   MOBILE: {
-    XS: '1rem',
-    SM: '2rem',
+    XS: '2rem',
+    SM: '2.5rem',
     MD: '3rem',
     LG: '3.75rem',
     XL: '5rem'
   },
   TABLET: {
-    XS: '1.25rem',
-    SM: '2.25rem',
+    XS: '2rem',
+    SM: '2.5rem',
     MD: '3.5rem',
     LG: '5rem',
     XL: '6.5rem'
   },
   NOTEBOOK: {
-    XS: '1.5rem',
+    XS: '2rem',
     SM: '2.5rem',
     MD: '4rem',
     LG: '6rem',
@@ -41,21 +41,21 @@ export const FONT_SIZES = {
 
 export const LINE_HEIGHT = {
   MOBILE: {
-    XS: '1.5rem',
-    SM: '3rem',
+    XS: '3rem',
+    SM: '4.25rem',
     MD: '4.5rem',
     LG: '5.625rem',
     XL: '7.5rem'
   },
   TABLET: {
-    XS: '1.875rem',
-    SM: '3.375rem',
+    XS: '3rem',
+    SM: '4.25rem',
     MD: '5.25rem',
     LG: '7.5rem',
     XL: '9.75rem'
   },
   NOTEBOOK: {
-    XS: '2.25rem',
+    XS: '3rem',
     SM: '4.25rem',
     MD: '6rem',
     LG: '9rem',

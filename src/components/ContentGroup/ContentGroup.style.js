@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { SPACING, MEDIA_QUERIES } from '../../styles/settings'
+import { SPACING, MEDIA_QUERIES, VIEWPORT_SIZES } from '../../styles/settings'
 
 export const styles = css`
   display: block;
@@ -7,7 +7,10 @@ export const styles = css`
   margin-bottom: ${SPACING.XL};
   padding: 0 1rem;
 
-  @media (min-width: ${MEDIA_QUERIES.DESKTOP}) {
-    padding: 0;
-  }
+  ${VIEWPORT_SIZES.map(
+    viewport =>
+      `@media (min-width: ${MEDIA_QUERIES[`${viewport}`]}) {
+        margin-bottom: ${SPACING[`${viewport}`].XL};
+      }`
+  )}
 `
