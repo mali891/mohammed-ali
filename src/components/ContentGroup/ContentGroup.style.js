@@ -5,7 +5,6 @@ export const styles = css`
   display: block;
   width: 100%;
   margin-bottom: ${SPACING.XL};
-  padding: 0 1rem;
 
   ${VIEWPORT_SIZES.map(
     viewport =>
@@ -13,4 +12,12 @@ export const styles = css`
         margin-bottom: ${SPACING[`${viewport}`].XL};
       }`
   )}
+
+  @media (min-width: ${MEDIA_QUERIES.MOBILE}) {
+    padding: 0 ${SPACING.MOBILE.SM};
+  }
+
+  @media (min-width: ${MEDIA_QUERIES.DESKTOP}) {
+    padding: 0;
+  }
 `

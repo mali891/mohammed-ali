@@ -9,14 +9,14 @@ export const FONT_SIZES = {
     SM: '2.5rem',
     MD: '3rem',
     LG: '3.75rem',
-    XL: '5rem'
+    XL: '4.25rem'
   },
   TABLET: {
     XS: '2rem',
     SM: '2.5rem',
     MD: '3.5rem',
     LG: '5rem',
-    XL: '6.5rem'
+    XL: '6rem'
   },
   NOTEBOOK: {
     XS: '2rem',
@@ -45,21 +45,21 @@ export const LINE_HEIGHT = {
     SM: '4.25rem',
     MD: '4.5rem',
     LG: '5.625rem',
-    XL: '7.5rem'
+    XL: '6rem'
   },
   TABLET: {
     XS: '3rem',
     SM: '4.25rem',
     MD: '5.25rem',
     LG: '7.5rem',
-    XL: '9.75rem'
+    XL: '8.5rem'
   },
   NOTEBOOK: {
     XS: '3rem',
     SM: '4.25rem',
     MD: '6rem',
     LG: '9rem',
-    XL: '12rem'
+    XL: '10rem'
   },
   DESKTOP: {
     XS: '3rem',

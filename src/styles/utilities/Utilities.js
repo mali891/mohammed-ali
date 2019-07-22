@@ -13,7 +13,6 @@ const Utilities = () => (
       }
 
       /*** ANIMATIONS ***/
-
       @keyframes fadeIn {
         0% {
           opacity: 0;

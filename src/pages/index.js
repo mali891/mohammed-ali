@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Container, ContentGroup, HeadingBlock, Card, Header, Link, CardContainer } from '../components'
+import { Container, ContentGroup, HeadingBlock, Card, Header, CardContainer } from '../components'
 import { formatDate } from '../functions'
 
 const Homepage = ({ data }) => {

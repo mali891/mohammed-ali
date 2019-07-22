@@ -47,4 +47,8 @@ export const styles = css`
           }
         }`
   )}
+
+  &.c-heading__no-margin {
+    margin-bottom: 0;
+  }
 `

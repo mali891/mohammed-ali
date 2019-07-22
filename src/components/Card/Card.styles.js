@@ -92,7 +92,7 @@ export const styles = css`
     left: 0;
     bottom: 0;
     right: 0;
-    height: ${SPACING.MOBILE.XS};
+    height: 0.5rem;
     background-color: ${COLOURS.LIGHT};
     border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
 
@@ -105,7 +105,7 @@ export const styles = css`
       right: 0;
       height: 0.2rem;
       width: 0;
-      height: ${SPACING.MOBILE.XS};
+      height: 0.5rem;
       transition: all ${EASINGS.DEFAULT};
       background-image: linear-gradient(to right, ${COLOURS.GRADIENT_THREE.FIRST}, ${COLOURS.GRADIENT_THREE.SECOND});
       border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
@@ -127,6 +127,14 @@ export const styles = css`
 
   @media (min-width: ${MEDIA_QUERIES.NOTEBOOK}) {
     padding: ${SPACING.TABLET.MD};
+
+    .c-card__border-bottom {
+      height: ${SPACING.MOBILE.XS};
+
+      &:after {
+        height: ${SPACING.MOBILE.XS};
+      }
+    }
   }
 
   @media (min-width: ${MEDIA_QUERIES.DESKTOP}) {
