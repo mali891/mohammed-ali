@@ -4,9 +4,10 @@ import classNames from 'classnames'
 
 import { styles } from './ContentGroup.style'
 
-const ContentGroup = React.memo(({ children, className, ...other }) => {
+const ContentGroup = React.memo(({ children, className, noMargin, ...other }) => {
   const dynamicClassNames = classNames([className], {
-    'c-content-group': true
+    'c-content-group': true,
+    'c-content-group--no-margin': noMargin
   })
 
   return (
@@ -16,9 +17,14 @@ const ContentGroup = React.memo(({ children, className, ...other }) => {
   )
 })
 
+ContentGroup.defaultProps = {
+  noMargin: false
+}
+
 ContentGroup.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-  className: PropTypes.string
+  className: PropTypes.string,
+  noMargin: PropTypes.bool
 }
 
 export default ContentGroup

@@ -1,28 +1,29 @@
 import { css } from '@emotion/core'
-import { FONT_SIZES, SPACING, COLOURS } from '../../styles/settings'
+import { FONT_SIZES, SPACING, COLOURS, MEDIA_QUERIES, VIEWPORT_SIZES } from '../../styles/settings'
 
 export const styles = css`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${SPACING.LG} ${SPACING.LG} 0 ${SPACING.LG};
-  border-top: ${SPACING.XS} solid ${COLOURS.BLACK};
+  background-color: ${COLOURS.BLACK};
 
   .c-footer__logo {
-    width: ${SPACING.LG};
+    width: ${SPACING.MOBILE.XL};
   }
 
   .c-footer__social {
-    margin-top: ${SPACING.LG};
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__icon {
-      width: 7.5rem;
-      height: 7.5rem;
+      width: 5rem;
+      height: 5rem;
       border-radius: 50%;
-      border: 2px solid white;
+      border: 1px solid white;
       display: inline-block;
-      margin: 0 ${SPACING.SM};
+      margin: 0 ${SPACING.MOBILE.XS};
 
       svg {
         width: 100%;
@@ -34,8 +35,8 @@ export const styles = css`
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: ${SPACING.XS};
-    margin-top: ${SPACING.LG};
+    padding: ${SPACING.MOBILE.XS};
+    margin-top: ${SPACING.MOBILE.LG};
     background-color: ${COLOURS.BLACK};
     text-align: center;
 
@@ -44,4 +45,116 @@ export const styles = css`
       text-align: center;
     }
   }
+
+  ${VIEWPORT_SIZES.map(
+    viewport =>
+      `@media (min-width: ${MEDIA_QUERIES[`${viewport}`]}) {
+        padding: ${SPACING[`${viewport}`].LG} ${SPACING[`${viewport}`].LG} 0 ${SPACING[`${viewport}`].LG};
+
+        .c-footer__social {
+          margin-top: ${SPACING[`${viewport}`].LG};
+        }
+
+        .c-footer__blurb {
+          padding: ${SPACING[`${viewport}`].XS};
+          margin-top: ${SPACING[`${viewport}`].LG};
+
+          p {
+            font-size: ${FONT_SIZES[`${viewport}`].XS};
+            text-align: center;
+          }
+        }
+    }`
+  )}
+
+  @media (min-width: ${MEDIA_QUERIES.TABLET}) {
+    .c-footer__logo {
+      width: ${SPACING.TABLET.LG};
+    }
+
+    .c-footer__social {
+      &__icon {
+        margin: 0 ${SPACING.TABLET.SM};
+      }
+    }
+  }
+
+  @media (min-width: ${MEDIA_QUERIES.NOTEBOOK}) {
+    .c-footer__logo {
+      width: ${SPACING.NOTEBOOK.LG};
+    }
+
+    .c-footer__social {
+      &__icon {
+        margin: 0 ${SPACING.NOTEBOOK.SM};
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  @media (min-width: ${MEDIA_QUERIES.DESKTOP}) {
+    .c-footer__logo {
+      width: ${SPACING.DESKTOP.LG};
+    }
+
+    .c-footer__social {
+      &__icon {
+        margin: 0 ${SPACING.DESKTOP.SM};
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+  }
 `
+
+// position: relative;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// border-top: ${SPACING.XS} solid ${COLOURS.BLACK};
+
+// ${VIEWPORT_SIZES.map(
+//   viewport =>
+//     `@media (min-width: ${MEDIA_QUERIES[`${viewport}`]}) {
+//       padding: ${SPACING[`${viewport}`].LG} ${SPACING[`${viewport}`].LG} 0 ${SPACING[`${viewport}`].LG};
+
+//       .c-footer__social {
+//         margin-top: ${SPACING[`${viewport}`].LG};
+//       }
+//   }`
+// )}
+
+// .c-footer__logo {
+//   width: ${SPACING.MOBILE.XL};
+// }
+
+// .c-footer__social {
+//   &__icon {
+//     width: 7.5rem;
+//     height: 7.5rem;
+//     border-radius: 50%;
+//     border: 2px solid white;
+//     display: inline-block;
+//     margin: 0 ${SPACING.SM};
+
+//     svg {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// .c-footer__blurb {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   padding: ${SPACING.XS};
+//   margin-top: ${SPACING.LG};
+//   background-color: ${COLOURS.BLACK};
+//   text-align: center;
+
+//   p {
+//     font-size: ${FONT_SIZES.XS};
+//     text-align: center;
+//   }
+// }

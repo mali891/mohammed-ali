@@ -5,8 +5,8 @@ export const FONT_FAMILY = {
 
 export const FONT_SIZES = {
   MOBILE: {
-    XS: '2rem',
-    SM: '2.5rem',
+    XS: '1.8rem',
+    SM: '2.2rem',
     MD: '3rem',
     LG: '3.75rem',
     XL: '4.25rem'
@@ -42,7 +42,7 @@ export const FONT_SIZES = {
 export const LINE_HEIGHT = {
   MOBILE: {
     XS: '3rem',
-    SM: '4.25rem',
+    SM: '3.6rem',
     MD: '4.5rem',
     LG: '5.625rem',
     XL: '6rem'

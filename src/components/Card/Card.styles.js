@@ -3,7 +3,7 @@ import { COLOURS, FONT_SIZES, EASINGS, SPACING, BORDER_RADIUS, LINE_HEIGHT, MEDI
 
 export const styles = css`
   width: 100%;
-  min-height: 25rem;
+  min-height: 30rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -81,8 +81,8 @@ export const styles = css`
     margin-top: ${SPACING.MOBILE.XL};
 
     p {
-      font-size: ${FONT_SIZES.MOBILE.SM} !important;
-      line-height: ${LINE_HEIGHT.MOBILE.SM} !important;
+      font-size: ${FONT_SIZES.MOBILE.SM};
+      line-height: ${LINE_HEIGHT.MOBILE.SM};
     }
   }
 

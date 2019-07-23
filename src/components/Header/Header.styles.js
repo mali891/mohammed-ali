@@ -32,20 +32,20 @@ export const styles = css`
 
   @media (min-width: ${MEDIA_QUERIES.MOBILE}) {
     .c-heading {
-      width: 80%;
+      /* width: 80%; */
       text-align: center;
     }
   }
 
   @media (min-width: ${MEDIA_QUERIES.TABLET}) {
     .c-heading {
-      width: 90%;
+      /* width: 90%; */
     }
   }
   
   @media (min-width: ${MEDIA_QUERIES.NOTEBOOK}) {
     .c-heading {
-      width: unset;
+      /* width: unset; */
     }
   }
   
