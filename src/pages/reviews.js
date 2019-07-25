@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
-import { colleagueReviews } from '../pages/reviews/reviews'
+import colleagueReviews from './reviews/colleagueReviews'
 
 const Reviews = () => {
   return (
