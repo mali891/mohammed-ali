@@ -1,4 +1,4 @@
-const reviews = [
+export const colleagueReviews = [
   {
     name: 'Gob Bluth 1',
     jobTitle: 'JavaScript Engineer',
@@ -72,5 +72,3 @@ const reviews = [
       "I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me."
   }
 ]
-
-export default reviews

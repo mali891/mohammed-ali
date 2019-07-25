@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
-import reviews from '../pages/reviews/reviews'
+import { colleagueReviews } from '../pages/reviews/reviews'
 
 const Reviews = () => {
   return (
@@ -20,7 +20,7 @@ const Reviews = () => {
 
         <ContentGroup>
           <CardContainer marginBottom>
-            {reviews.slice(0, 4).map(({ name, jobTitle, content }) => (
+            {colleagueReviews.slice(0, 4).map(({ name, jobTitle, content }) => (
               <Card title={name} subtitle={jobTitle} key={name} condensed>
                 <span>{content}</span>
               </Card>
@@ -28,7 +28,7 @@ const Reviews = () => {
           </CardContainer>
 
           <CardContainer marginBottom>
-            {reviews.slice(4, 8).map(({ name, jobTitle, content }) => (
+            {colleagueReviews.slice(4, 8).map(({ name, jobTitle, content }) => (
               <Card title={name} subtitle={jobTitle} key={name} condensed>
                 <span>{content}</span>
               </Card>
@@ -36,7 +36,7 @@ const Reviews = () => {
           </CardContainer>
 
           <CardContainer marginBottom>
-            {reviews.slice(8, 12).map(({ name, jobTitle, content }) => (
+            {colleagueReviews.slice(8, 12).map(({ name, jobTitle, content }) => (
               <Card title={name} subtitle={jobTitle} key={name} condensed>
                 <span>{content}</span>
               </Card>
