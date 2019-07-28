@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { FONT_SIZES, SPACING, COLOURS, MEDIA_QUERIES, EASINGS } from '../../../styles/settings'
+import { COLOURS, MEDIA_QUERIES, EASINGS } from '../../../styles/settings'
 
 export const styles = css`
   /*!

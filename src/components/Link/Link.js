@@ -62,6 +62,7 @@ Link.propTypes = {
   className: PropTypes.string,
   newTab: PropTypes.bool,
   noHover: PropTypes.bool,
+  onClick: PropTypes.func,
   to: PropTypes.string,
   type: PropTypes.oneOf(linkTypes)
 }

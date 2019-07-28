@@ -16,7 +16,7 @@ export const styles = css`
   z-index: 1;
 
   .c-nav__logo {
-    width: ${SPACING.MOBILE.LG};
+    width: 5rem;
   }
 
   .c-nav__list-item {
