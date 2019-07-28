@@ -1,14 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<header
-  className="c-header"
-  css={
+<div
+  style={
     Object {
-      "map": undefined,
-      "name": "1stn43d",
-      "next": undefined,
-      "styles": "
+      "height": "768px",
+    }
+  }
+>
+  <header
+    className="c-header"
+    css={
+      Object {
+        "map": undefined,
+        "name": "1stn43d",
+        "next": undefined,
+        "styles": "
   height: 100vh;
   width: 100vw;
 
@@ -77,32 +84,32 @@ exports[`Header renders correctly 1`] = `
     }
   }
 ",
+      }
     }
-  }
->
-  <div
-    className="c-header__container c-container"
-    css={
-      Object {
-        "map": undefined,
-        "name": "3v6n4o",
-        "next": undefined,
-        "styles": "
+  >
+    <div
+      className="c-header__container c-container"
+      css={
+        Object {
+          "map": undefined,
+          "name": "3v6n4o",
+          "next": undefined,
+          "styles": "
   margin: 0 auto;
   width: auto;
   max-width: 100rem;
 ",
+        }
       }
-    }
-  >
-    <h1
-      className="c-heading c-heading--xl c-heading__no-margin"
-      css={
-        Object {
-          "map": undefined,
-          "name": "9ntw85",
-          "next": undefined,
-          "styles": "
+    >
+      <h1
+        className="c-heading c-heading--xl c-heading__no-margin"
+        css={
+          Object {
+            "map": undefined,
+            "name": "9ntw85",
+            "next": undefined,
+            "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
 
   @media (min-width: 0px) {
@@ -267,20 +274,20 @@ exports[`Header renders correctly 1`] = `
     margin-bottom: 0;
   }
 ",
+          }
         }
-      }
-    >
-      Dummy title
-    </h1>
-  </div>
-  <button
-    className="c-header__more-link c-link"
-    css={
-      Object {
-        "map": undefined,
-        "name": "jy9qpw",
-        "next": undefined,
-        "styles": "
+      >
+        Dummy title
+      </h1>
+    </div>
+    <button
+      className="c-header__more-link c-link"
+      css={
+        Object {
+          "map": undefined,
+          "name": "jy9qpw",
+          "next": undefined,
+          "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
   color: #ffffff;
   background: none;
@@ -319,11 +326,12 @@ exports[`Header renders correctly 1`] = `
     }
   }
 ",
+        }
       }
-    }
-    onClick={[Function]}
-  >
-    More
-  </button>
-</header>
+      onClick={[Function]}
+    >
+      More
+    </button>
+  </header>
+</div>
 `;
