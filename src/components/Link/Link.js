@@ -7,7 +7,7 @@ import { styles } from './Link.styles'
 
 const linkTypes = ['gatsby', 'anchor', 'button']
 
-const Link = React.memo(({ children, className, newTab, noHover, to, type, ...other }) => {
+const Link = React.memo(({ children, className, newTab, noHover, to, type, onClick, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-link': true,
     'c-link--no-hover': noHover
@@ -16,7 +16,14 @@ const Link = React.memo(({ children, className, newTab, noHover, to, type, ...ot
   return (
     <Fragment>
       {type === 'gatsby' && (
-        <GatsbyLink css={styles} className={dynamicClassNames} activeClassName="c-link--active" to={to} {...other}>
+        <GatsbyLink
+          css={styles}
+          className={dynamicClassNames}
+          activeClassName="c-link--active"
+          to={to}
+          onClick={onClick}
+          {...other}
+        >
           {children}
         </GatsbyLink>
       )}
@@ -28,6 +35,7 @@ const Link = React.memo(({ children, className, newTab, noHover, to, type, ...ot
           href={to}
           target={newTab ? '_blank' : null}
           rel={newTab ? 'noopener noreferrer' : null}
+          onClick={onClick}
           {...other}
         >
           {children}
@@ -35,7 +43,7 @@ const Link = React.memo(({ children, className, newTab, noHover, to, type, ...ot
       )}
 
       {type === 'button' && (
-        <button css={styles} className={dynamicClassNames} {...other}>
+        <button css={styles} className={dynamicClassNames} onClick={onClick} {...other}>
           {children}
         </button>
       )}
