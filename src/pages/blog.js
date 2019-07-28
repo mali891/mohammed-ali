@@ -14,7 +14,7 @@ const Blog = ({ data }) => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <Card title={title} key={path.split('/')[2]} link>
+        <Card title={title} path={path} key={path.split('/')[2]} link>
           <span>{formatDate(date)}</span>
           <span>{length} read</span>
         </Card>
