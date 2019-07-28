@@ -3,6 +3,16 @@ import React from 'react'
 import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
 import { reviews } from '../reviews/reviews'
 
+const renderReviews = (index1, index2) => (
+  <CardContainer marginBottom>
+    {reviews.slice(index1, index2).map(({ name, jobTitle, quote }) => (
+      <Card title={name} subtitle={jobTitle} key={name} condensed>
+        <span>{quote}</span>
+      </Card>
+    ))}
+  </CardContainer>
+)
+
 const Reviews = () => {
   return (
     <div className="u-anim--fade-in">
@@ -19,29 +29,9 @@ const Reviews = () => {
         </Container>
 
         <ContentGroup>
-          <CardContainer marginBottom>
-            {reviews.slice(0, 4).map(({ name, jobTitle, content }) => (
-              <Card title={name} subtitle={jobTitle} key={name} condensed>
-                <span>{content}</span>
-              </Card>
-            ))}
-          </CardContainer>
-
-          <CardContainer marginBottom>
-            {reviews.slice(4, 8).map(({ name, jobTitle, content }) => (
-              <Card title={name} subtitle={jobTitle} key={name} condensed>
-                <span>{content}</span>
-              </Card>
-            ))}
-          </CardContainer>
-
-          <CardContainer marginBottom>
-            {reviews.slice(8, 12).map(({ name, jobTitle, content }) => (
-              <Card title={name} subtitle={jobTitle} key={name} condensed>
-                <span>{content}</span>
-              </Card>
-            ))}
-          </CardContainer>
+          {renderReviews(0, 4)}
+          {renderReviews(4, 8)}
+          {renderReviews(8, 12)}
         </ContentGroup>
       </main>
     </div>
