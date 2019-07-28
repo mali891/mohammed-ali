@@ -9,7 +9,7 @@ export const FONT_SIZES = {
     SM: '2.2rem',
     MD: '3rem',
     LG: '3.75rem',
-    XL: '4.25rem'
+    XL: '4rem'
   },
   TABLET: {
     XS: '2rem',
@@ -45,7 +45,7 @@ export const LINE_HEIGHT = {
     SM: '3.6rem',
     MD: '4.5rem',
     LG: '5.625rem',
-    XL: '6rem'
+    XL: '5rem'
   },
   TABLET: {
     XS: '3rem',

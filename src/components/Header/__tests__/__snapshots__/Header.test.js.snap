@@ -6,7 +6,7 @@ exports[`Header renders correctly 1`] = `
   css={
     Object {
       "map": undefined,
-      "name": "ta349t",
+      "name": "1stn43d",
       "next": undefined,
       "styles": "
   height: 100vh;
@@ -23,7 +23,7 @@ exports[`Header renders correctly 1`] = `
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 2rem;
+    bottom: 2%;
   }
 
   @media (min-width: 0px) {
@@ -100,7 +100,7 @@ exports[`Header renders correctly 1`] = `
       css={
         Object {
           "map": undefined,
-          "name": "1nwccsw",
+          "name": "9ntw85",
           "next": undefined,
           "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
@@ -138,8 +138,8 @@ exports[`Header renders correctly 1`] = `
 
             &--xl {
               font-weight: 500;
-              font-size: 4.25rem;
-              line-height: 6rem;
+              font-size: 4rem;
+              line-height: 5rem;
               margin-bottom: 7rem;
               letter-spacing: 0.3rem;
             }
