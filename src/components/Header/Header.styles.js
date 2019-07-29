@@ -16,7 +16,7 @@ export const styles = css`
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: ${SPACING.MOBILE.XS};
+    bottom: 0.5rem;
   }
 
   ${VIEWPORT_SIZES.map(
