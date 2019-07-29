@@ -1,21 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<div
-  style={
+<header
+  className="c-header"
+  css={
     Object {
-      "height": "768px",
-    }
-  }
->
-  <header
-    className="c-header"
-    css={
-      Object {
-        "map": undefined,
-        "name": "1stn43d",
-        "next": undefined,
-        "styles": "
+      "map": undefined,
+      "name": "ta349t",
+      "next": undefined,
+      "styles": "
   height: 100vh;
   width: 100vw;
 
@@ -30,7 +23,7 @@ exports[`Header renders correctly 1`] = `
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 2%;
+    bottom: 2rem;
   }
 
   @media (min-width: 0px) {
@@ -84,32 +77,32 @@ exports[`Header renders correctly 1`] = `
     }
   }
 ",
-      }
     }
-  >
-    <div
-      className="c-header__container c-container"
-      css={
-        Object {
-          "map": undefined,
-          "name": "3v6n4o",
-          "next": undefined,
-          "styles": "
+  }
+>
+  <div
+    className="c-header__container c-container"
+    css={
+      Object {
+        "map": undefined,
+        "name": "3v6n4o",
+        "next": undefined,
+        "styles": "
   margin: 0 auto;
   width: auto;
   max-width: 100rem;
 ",
-        }
       }
-    >
-      <h1
-        className="c-heading c-heading--xl c-heading__no-margin"
-        css={
-          Object {
-            "map": undefined,
-            "name": "9ntw85",
-            "next": undefined,
-            "styles": "
+    }
+  >
+    <h1
+      className="c-heading c-heading--xl c-heading__no-margin"
+      css={
+        Object {
+          "map": undefined,
+          "name": "1ctrhck",
+          "next": undefined,
+          "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
 
   @media (min-width: 0px) {
@@ -123,14 +116,14 @@ exports[`Header renders correctly 1`] = `
 
             &--sm {
               font-size: 2.2rem;
-              line-height: 3.6rem;
+              line-height: 3.4rem;
               margin-bottom: 2.5rem;
               font-weight: 400;
             }
 
             &--md {
               font-size: 3rem;
-              line-height: 4.5rem;
+              line-height: 4rem;
               margin-bottom: 3.5rem;
               font-weight: 400;
               letter-spacing: 0.1rem;
@@ -138,7 +131,7 @@ exports[`Header renders correctly 1`] = `
 
             &--lg {
               font-size: 3.75rem;
-              line-height: 5.625rem;
+              line-height: 5rem;
               margin-bottom: 4rem;
               letter-spacing: 0.2rem;
             }
@@ -146,7 +139,7 @@ exports[`Header renders correctly 1`] = `
             &--xl {
               font-weight: 500;
               font-size: 4rem;
-              line-height: 5rem;
+              line-height: 5.25rem;
               margin-bottom: 7rem;
               letter-spacing: 0.3rem;
             }
@@ -274,20 +267,20 @@ exports[`Header renders correctly 1`] = `
     margin-bottom: 0;
   }
 ",
-          }
         }
-      >
-        Dummy title
-      </h1>
-    </div>
-    <button
-      className="c-header__more-link c-link"
-      css={
-        Object {
-          "map": undefined,
-          "name": "jy9qpw",
-          "next": undefined,
-          "styles": "
+      }
+    >
+      Dummy title
+    </h1>
+  </div>
+  <button
+    className="c-header__more-link c-link"
+    css={
+      Object {
+        "map": undefined,
+        "name": "jy9qpw",
+        "next": undefined,
+        "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
   color: #ffffff;
   background: none;
@@ -326,12 +319,11 @@ exports[`Header renders correctly 1`] = `
     }
   }
 ",
-        }
       }
-      onClick={[Function]}
-    >
-      More
-    </button>
-  </header>
-</div>
+    }
+    onClick={[Function]}
+  >
+    More
+  </button>
+</header>
 `;

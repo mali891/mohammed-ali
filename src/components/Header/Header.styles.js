@@ -16,7 +16,7 @@ export const styles = css`
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 2%;
+    bottom: 2rem;
   }
 
   ${VIEWPORT_SIZES.map(

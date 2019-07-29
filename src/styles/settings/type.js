@@ -42,10 +42,10 @@ export const FONT_SIZES = {
 export const LINE_HEIGHT = {
   MOBILE: {
     XS: '3rem',
-    SM: '3.6rem',
-    MD: '4.5rem',
-    LG: '5.625rem',
-    XL: '5rem'
+    SM: '3.4rem',
+    MD: '4rem',
+    LG: '5rem',
+    XL: '5.25rem'
   },
   TABLET: {
     XS: '3rem',
