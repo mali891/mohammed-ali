@@ -16,7 +16,7 @@ export const styles = css`
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 2rem;
+    bottom: ${SPACING.MOBILE.XS};
   }
 
   ${VIEWPORT_SIZES.map(
@@ -44,6 +44,10 @@ export const styles = css`
   }
   
   @media (min-width: ${MEDIA_QUERIES.NOTEBOOK}) {
+    .c-header__more-link {
+      bottom: ${SPACING.NOTEBOOK.SM}
+    }
+
     .c-heading {
       padding: unset;
     }

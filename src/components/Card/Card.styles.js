@@ -11,7 +11,7 @@ export const styles = css`
   margin: 0 0 ${SPACING.MOBILE.SM} 0;
   background-color: ${COLOURS.BLACK};
   transition: all ${EASINGS.QUICK};
-  border-radius: ${BORDER_RADIUS.LG};
+  border-radius: ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG} 0 0;
   padding: ${SPACING.MOBILE.MD};
 
   &:hover {

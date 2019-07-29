@@ -6,7 +6,7 @@ exports[`Header renders correctly 1`] = `
   css={
     Object {
       "map": undefined,
-      "name": "ta349t",
+      "name": "z22vn9",
       "next": undefined,
       "styles": "
   height: 100vh;
@@ -23,7 +23,7 @@ exports[`Header renders correctly 1`] = `
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 2rem;
+    bottom: 1rem;
   }
 
   @media (min-width: 0px) {
@@ -66,6 +66,10 @@ exports[`Header renders correctly 1`] = `
   }
   
   @media (min-width: 992px) {
+    .c-header__more-link {
+      bottom: 2.5rem
+    }
+
     .c-heading {
       padding: unset;
     }
