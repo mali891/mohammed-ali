@@ -46,11 +46,11 @@ export const styles = css`
     word-wrap: break-word;
     hyphens: manual;
 
-    .c-heading {
+    /* .c-heading {
       font-size: ${FONT_SIZES.MOBILE.SM};
       line-height: ${LINE_HEIGHT.MOBILE.SM};
       margin-bottom: 0;
-    }
+    } */
 
     &:after {
       content: '';

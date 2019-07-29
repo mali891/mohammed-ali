@@ -7,7 +7,7 @@ const renderReviews = (index1, index2) => (
   <CardContainer marginBottom>
     {reviews.slice(index1, index2).map(({ name, jobTitle, quote }) => (
       <Card title={name} subtitle={jobTitle} key={name} condensed>
-        <span>{quote}</span>
+        <p>{quote}</p>
       </Card>
     ))}
   </CardContainer>

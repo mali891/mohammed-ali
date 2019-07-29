@@ -47,6 +47,7 @@ export const query = graphql`
             title
             path
             date
+            length
           }
         }
       }
