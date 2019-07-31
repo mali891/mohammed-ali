@@ -9,6 +9,7 @@ import Footer from './Footer/Footer'
 import Link from './Link/Link'
 import ThemeToggle from './ThemeToggle/ThemeToggle'
 import CardContainer from './CardContainer/CardContainer'
+import CodeBlock from './CodeBlock/CodeBlock'
 
 export {
   ContentGroup,
@@ -21,5 +22,6 @@ export {
   Footer,
   Link,
   ThemeToggle,
-  CardContainer
+  CardContainer,
+  CodeBlock
 }

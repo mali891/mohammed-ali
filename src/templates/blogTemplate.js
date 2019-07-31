@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Container, ContentGroup, Link } from '../components/'
+import { Header, Container, ContentGroup, Link, CodeBlock } from '../components/'
 
 const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } }) => {
+  useEffect(() => Prism.highlightAll(), [])
+
   const { frontmatter, html } = markdownRemark
 
   const renderNextPrev = nextPrev => {
@@ -20,6 +22,10 @@ const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } })
     }
   }
 
+  // const mapAllTheThings = () => (
+  //   things.map(thing => console.warn(\`hello I am \${thing}\`));
+  // )
+
   return (
     <div className="u-anim--fade-in">
       <Header title={frontmatter.title} />
@@ -27,6 +33,13 @@ const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } })
         <Container>
           <ContentGroup>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+          </ContentGroup>
+          <ContentGroup>
+            <CodeBlock>
+              {`const mapAllTheThings = () => (
+    things.map(thing => console.warn(\`hello I am \${thing}\`));
+)`}
+            </CodeBlock>
           </ContentGroup>
 
           <ContentGroup>
