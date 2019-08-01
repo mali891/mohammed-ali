@@ -53,7 +53,7 @@ export const styles = css`
   .c-hamburger__inner::after {
     width: 40px;
     height: 4px;
-    background-color: ${COLOURS.LIGHT};
+    background-color: var(--colour-secondary);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

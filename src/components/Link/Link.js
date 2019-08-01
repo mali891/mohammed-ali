@@ -10,6 +10,7 @@ const linkTypes = ['gatsby', 'anchor', 'button']
 const Link = React.memo(({ children, className, newTab, noHover, to, type, onClick, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-link': true,
+    'u-clr--secondary': true,
     'c-link--no-hover': noHover
   })
 

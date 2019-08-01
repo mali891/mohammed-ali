@@ -12,7 +12,6 @@ export const styles = css`
   width: 100vw;
   height: ${SPACING.MOBILE.XL};
   padding: 0 ${SPACING.MOBILE.SM};
-  background-color: ${COLOURS.DARK};
   z-index: 1;
 
   .c-nav__logo {
@@ -38,7 +37,7 @@ export const styles = css`
     right: 0;
     bottom: 0;
     padding: ${SPACING.MOBILE.XL} ${SPACING.MOBILE.SM} ${SPACING.MOBILE.SM};
-    background-color: ${COLOURS.BLACK};
+    background-color: var(--colour-tertiary);
     transform: translateX(100%);
     transition: ${EASINGS.SLOW};
 

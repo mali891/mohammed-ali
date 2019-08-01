@@ -3,7 +3,6 @@ import { COLOURS, FONT_FAMILY, EASINGS, BORDER_RADIUS } from '../../styles/setti
 
 export const styles = css`
   font-family: ${FONT_FAMILY.MEDIUM};
-  color: ${COLOURS.LIGHT};
   background: none;
   border: none;
   text-decoration: none;
@@ -27,7 +26,7 @@ export const styles = css`
       height: 0.4rem;
       width: 0;
       transition: all ${EASINGS.QUICK};
-      background-color: ${COLOURS.LIGHT};
+      background-color: var(--colour-secondary);
       border-radius: ${BORDER_RADIUS.LG};
     }
   }

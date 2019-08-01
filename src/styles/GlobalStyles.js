@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Global, css } from '@emotion/core'
-import { Resets, Utilities } from './'
+import { Resets, Utilities, Theme } from './'
 import './fonts/fonts.css'
 import { FONT_SIZES, LINE_HEIGHT, SPACING, MEDIA_QUERIES, VIEWPORT_SIZES } from './settings'
 
@@ -8,6 +8,7 @@ const GlobalStyles = () => (
   <Fragment>
     <Resets />
     <Utilities />
+    <Theme />
     <Global
       styles={css`
         ${VIEWPORT_SIZES.map(

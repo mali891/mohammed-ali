@@ -8,6 +8,7 @@ import { styles } from './Card.styles'
 const Card = ({ children, className, condensed, link, path, subtitle, title, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-card': true,
+    'u-bg--tertiary': true,
     'c-card--condensed': condensed,
     'c-card--link': link
   })

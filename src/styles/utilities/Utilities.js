@@ -5,6 +5,36 @@ import { COLOURS } from '../settings'
 const Utilities = () => (
   <Global
     styles={css`
+      /** COLOURS **/
+      .u-clr {
+        &--primary {
+          color: var(--colour-primary) !important;
+        }
+
+        &--secondary {
+          color: var(--colour-secondary) !important;
+        }
+
+        &--tertiary {
+          color: var(--colour-tertiary) !important;
+        }
+      }
+
+      /** BACKGROUND COLOURS **/
+      .u-bg {
+        &--primary {
+          background-color: var(--colour-primary) !important;
+        }
+
+        &--secondary {
+          background-color: var(--colour-secondary) !important;
+        }
+
+        &--tertiary {
+          background-color: var(--colour-tertiary) !important;
+        }
+      }
+
       /** FILL **/
       .u-fill {
         &--white {

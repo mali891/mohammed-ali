@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { Header, Container, ContentGroup, Link, CodeBlock } from '../components/'
 
 const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } }) => {
-  useEffect(() => Prism.highlightAll(), [])
-
   const { frontmatter, html } = markdownRemark
 
   const renderNextPrev = nextPrev => {

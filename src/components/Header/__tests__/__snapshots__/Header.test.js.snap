@@ -278,15 +278,14 @@ exports[`Header renders correctly 1`] = `
     </h1>
   </div>
   <button
-    className="c-header__more-link c-link"
+    className="c-header__more-link c-link u-clr--secondary"
     css={
       Object {
         "map": undefined,
-        "name": "jy9qpw",
+        "name": "1xzejfk",
         "next": undefined,
         "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
-  color: #ffffff;
   background: none;
   border: none;
   text-decoration: none;
@@ -310,7 +309,7 @@ exports[`Header renders correctly 1`] = `
       height: 0.4rem;
       width: 0;
       transition: all 100ms ease-in-out;
-      background-color: #ffffff;
+      background-color: var(--colour-secondary);
       border-radius: 2rem;
     }
   }

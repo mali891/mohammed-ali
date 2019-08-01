@@ -15,6 +15,11 @@ const Resets = () => (
         }
       }
 
+      :root {
+        --colour-primary: ${COLOURS.DARK};
+        --colour-secondary: ${COLOURS.LIGHT};
+      }
+
       html {
         font-size: 10px;
         min-height: 100%;
@@ -25,15 +30,15 @@ const Resets = () => (
         font-family: ${FONT_FAMILY.REGULAR};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: ${COLOURS.DARK};
-        color: ${COLOURS.LIGHT};
+        background-color: var(--colour-primary);
+        color: var(--colour-secondary);
         min-height: 100%;
         max-width: 100vw;
         overflow-x: hidden;
 
         &.mode--light {
-          background-color: ${COLOURS.LIGHT};
-          color: ${COLOURS.DARK};
+          --colour-primary: ${COLOURS.LIGHT};
+          --colour-secondary: ${COLOURS.DARK};
         }
       }
 

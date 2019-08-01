@@ -31,7 +31,7 @@ const Nav = React.memo(() => {
   return (
     <ThemeConsumer>
       {({ theme, setTheme }) => (
-        <nav css={styles} className="c-nav">
+        <nav css={styles} className="c-nav u-bg--primary u-clr--secondary">
           {
             <Link to={URLS.HOME} onClick={() => toggleTheme(theme, setTheme)} noHover>
               <Logo5 className="c-nav__logo" />

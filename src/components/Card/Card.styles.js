@@ -9,7 +9,6 @@ export const styles = css`
   flex-direction: column;
   justify-content: space-between;
   margin: 0 0 ${SPACING.MOBILE.SM} 0;
-  background-color: ${COLOURS.BLACK};
   transition: all ${EASINGS.QUICK};
   border-radius: ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG} 0 0;
   padding: ${SPACING.MOBILE.MD};
@@ -45,12 +44,6 @@ export const styles = css`
     position: relative;
     word-wrap: break-word;
     hyphens: manual;
-
-    /* .c-heading {
-      font-size: ${FONT_SIZES.MOBILE.SM};
-      line-height: ${LINE_HEIGHT.MOBILE.SM};
-      margin-bottom: 0;
-    } */
 
     &:after {
       content: '';
@@ -93,7 +86,7 @@ export const styles = css`
     bottom: 0;
     right: 0;
     height: 0.5rem;
-    background-color: ${COLOURS.LIGHT};
+    background-color: var(--colour-secondary);
     border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
 
     &:after {
