@@ -86,7 +86,6 @@ export const styles = css`
     bottom: 0;
     right: 0;
     height: 0.5rem;
-    background-color: var(--colour-secondary);
     border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
 
     &:after {

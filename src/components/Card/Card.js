@@ -13,36 +13,29 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
     'c-card--link': link
   })
 
+  const renderCard = () => (
+    <aside>
+      <div className="c-card__heading">
+        <HeadingBlock type="h3" size="sm" noMargin>
+          {title}
+        </HeadingBlock>
+        {subtitle && <span className="c-card__subtitle">{subtitle}</span>}
+      </div>
+
+      <div className="c-card__content">{children}</div>
+
+      <span className="c-card__border-bottom u-bg--secondary" />
+    </aside>
+  )
+
   return (
     <Fragment>
       {link ? (
         <Link css={styles} className={dynamicClassNames} to={path} noHover>
-          <aside>
-            <div className="c-card__heading">
-              <HeadingBlock type="h3" size="sm" noMargin>
-                {title}
-              </HeadingBlock>
-              {subtitle && <span className="c-card__subtitle">{subtitle}</span>}
-            </div>
-
-            <div className="c-card__content">{children}</div>
-
-            <span className="c-card__border-bottom" />
-          </aside>
+          {renderCard()}
         </Link>
       ) : (
-        <aside css={styles} className={dynamicClassNames}>
-          <div className="c-card__heading">
-            <HeadingBlock type="h3" size="sm" noMargin>
-              {title}
-            </HeadingBlock>
-            {subtitle && <span className="c-card__subtitle">{subtitle}</span>}
-          </div>
-
-          <div className="c-card__content">{children}</div>
-
-          <span className="c-card__border-bottom" />
-        </aside>
+        <Fragment>{renderCard()}</Fragment>
       )}
     </Fragment>
   )

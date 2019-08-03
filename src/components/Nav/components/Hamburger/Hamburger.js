@@ -22,7 +22,7 @@ const Hamburger = ({ menuExpanded, onClick }) => {
       onClick={onClick}
     >
       <span className="c-hamburger__box">
-        <span className="c-hamburger__inner"></span>
+        <span className="c-hamburger__inner u-bg--secondary"></span>
       </span>
     </button>
   )

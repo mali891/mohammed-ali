@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { FONT_SIZES, SPACING, COLOURS, MEDIA_QUERIES, EASINGS } from '../../styles/settings'
+import { FONT_SIZES, SPACING, MEDIA_QUERIES, EASINGS } from '../../styles/settings'
 
 export const styles = css`
   position: fixed;
@@ -39,7 +39,6 @@ export const styles = css`
     padding: ${SPACING.MOBILE.XL} ${SPACING.MOBILE.SM} ${SPACING.MOBILE.SM};
     background-color: var(--colour-tertiary);
     transform: translateX(100%);
-    transition: ${EASINGS.SLOW};
 
     &.c-nav__menu--is-expanded {
       transform: translateX(0);

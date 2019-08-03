@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
 
-import Hamburger from './components/Hamburger'
+import { Hamburger, ThemeToggle } from './components'
 import { ThemeConsumer } from '../../context/ThemeContext'
 import { Link } from '../'
 import Logo5 from '../../img/logo/Logo5'
@@ -20,6 +20,7 @@ const Nav = React.memo(() => {
 
   const dynamicClassNames = classNames([], {
     'c-nav__menu': true,
+    'u-bg--primary': true,
     'c-nav__menu--is-expanded': menuExpanded
   })
 
@@ -37,7 +38,7 @@ const Nav = React.memo(() => {
               <Logo5 className="c-nav__logo" />
             </Link>
           }
-          {/* <ThemeToggle /> */}
+          <ThemeToggle />
           <div className={dynamicClassNames} id="navigation">
             <ul className="c-nav__list">
               <li className="c-nav__list-item">

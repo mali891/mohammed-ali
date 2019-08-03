@@ -1,6 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
-import { COLOURS } from '../settings'
+import { COLOURS, EASINGS } from '../settings'
 
 const Utilities = () => (
   <Global
@@ -9,14 +9,17 @@ const Utilities = () => (
       .u-clr {
         &--primary {
           color: var(--colour-primary) !important;
+          transition: ${EASINGS.DEFAULT};
         }
 
         &--secondary {
           color: var(--colour-secondary) !important;
+          transition: ${EASINGS.DEFAULT};
         }
 
         &--tertiary {
           color: var(--colour-tertiary) !important;
+          transition: ${EASINGS.DEFAULT};
         }
       }
 
@@ -24,14 +27,17 @@ const Utilities = () => (
       .u-bg {
         &--primary {
           background-color: var(--colour-primary) !important;
+          transition: ${EASINGS.DEFAULT};
         }
 
         &--secondary {
           background-color: var(--colour-secondary) !important;
+          transition: ${EASINGS.DEFAULT};
         }
 
         &--tertiary {
           background-color: var(--colour-tertiary) !important;
+          transition: ${EASINGS.DEFAULT};
         }
       }
 

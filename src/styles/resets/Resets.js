@@ -36,7 +36,7 @@ const Resets = () => (
         max-width: 100vw;
         overflow-x: hidden;
 
-        &.mode--light {
+        &.theme--light {
           --colour-primary: ${COLOURS.LIGHT};
           --colour-secondary: ${COLOURS.DARK};
         }

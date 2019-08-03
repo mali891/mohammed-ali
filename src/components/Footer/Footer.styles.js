@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { FONT_SIZES, SPACING, COLOURS, MEDIA_QUERIES, VIEWPORT_SIZES } from '../../styles/settings'
+import { FONT_SIZES, SPACING, MEDIA_QUERIES, VIEWPORT_SIZES } from '../../styles/settings'
 
 export const styles = css`
   position: relative;

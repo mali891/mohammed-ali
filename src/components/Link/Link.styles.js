@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { COLOURS, FONT_FAMILY, EASINGS, BORDER_RADIUS } from '../../styles/settings'
+import { FONT_FAMILY, EASINGS, BORDER_RADIUS } from '../../styles/settings'
 
 export const styles = css`
   font-family: ${FONT_FAMILY.MEDIUM};

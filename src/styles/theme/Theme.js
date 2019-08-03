@@ -1,6 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
-import { COLOURS } from '../settings'
+import { COLOURS, EASINGS } from '../settings'
 
 const Theme = () => (
   <Global
@@ -13,10 +13,11 @@ const Theme = () => (
       }
 
       body {
+        transition: ${EASINGS.QUICK};
         background-color: var(--colour-primary);
         color: var(--colour-secondary);
 
-        &.mode--light {
+        &.theme--light {
           --colour-primary: ${COLOURS.LIGHT};
           --colour-secondary: ${COLOURS.DARK};
           --colour-tertiary: ${COLOURS.GREY};
