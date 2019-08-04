@@ -43,8 +43,27 @@ const Utilities = () => (
 
       /** FILL **/
       .u-fill {
-        &--white {
-          fill: ${COLOURS.LIGHT};
+        &--primary {
+          fill: var(--colour-primary);
+          transition: ${EASINGS.DEFAULT};
+        }
+
+        &--secondary {
+          fill: var(--colour-secondary);
+          transition: ${EASINGS.DEFAULT};
+        }
+      }
+
+      /** STROKE **/
+      .u-stroke {
+        &--primary {
+          stroke: var(--colour-primary);
+          transition: ${EASINGS.DEFAULT};
+        }
+
+        &--secondary {
+          stroke: var(--colour-secondary);
+          transition: ${EASINGS.DEFAULT};
         }
       }
 

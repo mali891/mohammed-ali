@@ -9,8 +9,7 @@ export const styles = css`
   flex-direction: column;
   justify-content: space-between;
   margin: 0 0 ${SPACING.MOBILE.SM} 0;
-  transition: all ${EASINGS.QUICK};
-  border-radius: ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG} 0 0;
+  border-radius: ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG} ${BORDER_RADIUS.MD} ${BORDER_RADIUS.MD};
   padding: ${SPACING.MOBILE.MD};
 
   &:hover {

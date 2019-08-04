@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Logo1 = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+const Logo1 = ({ className }) => (
+  <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <defs>
       <linearGradient id="a" x1="153.83" y1="187.54" x2="346.17" y2="187.54" gradientUnits="userSpaceOnUse">
         <stop offset="0" stopColor="#8fd3f4" />

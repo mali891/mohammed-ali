@@ -1,15 +1,10 @@
 import { css } from '@emotion/core'
-import {
-  COLOURS,
-  FONT_SIZES,
-  EASINGS,
-  SPACING,
-  BORDER_RADIUS,
-  LINE_HEIGHT,
-  MEDIA_QUERIES
-} from '../../../../styles/settings'
+import { COLOURS, EASINGS } from '../../../../styles/settings'
 
 export const styles = css`
+  display: flex;
+  height: 3.75rem;
+
   .c-theme-toggle__input {
     height: 0;
     width: 0;
@@ -19,28 +14,28 @@ export const styles = css`
   .c-theme-toggle__label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 100px;
-    height: 50px;
+    width: 7.5rem;
+    height: 3.75rem;
     background: grey;
     display: block;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: relative;
 
     &:after {
       content: '';
       position: absolute;
-      top: 2.5px;
-      left: 2.5px;
-      width: 45px;
-      height: 45px;
+      top: 0.1875rem;
+      left: 0.1875rem;
+      width: 3.375rem;
+      height: 3.375rem;
       background: #fff;
-      border-radius: 90px;
+      border-radius: 9rem;
       transition: 0.3s;
     }
 
     &:active {
       &:after {
-        width: 65px;
+        width: 4.5rem;
       }
     }
   }
@@ -50,7 +45,7 @@ export const styles = css`
   }
 
   .c-theme-toggle__input:checked + .c-theme-toggle__label:after {
-    left: calc(100% - 2.5px);
+    left: calc(100% - 0.1875rem);
     transform: translateX(-100%);
   }
 `

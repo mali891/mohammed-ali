@@ -13,7 +13,7 @@ const Theme = () => (
       }
 
       body {
-        transition: ${EASINGS.QUICK};
+        transition: ${EASINGS.DEFAULT};
         background-color: var(--colour-primary);
         color: var(--colour-secondary);
 
