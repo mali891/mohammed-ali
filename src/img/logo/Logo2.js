@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Logo2 = ({ className }) => (
   <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -40,5 +41,9 @@ const Logo2 = ({ className }) => (
     </g>
   </svg>
 )
+
+Logo2.propTypes = {
+  className: PropTypes.string
+}
 
 export default Logo2

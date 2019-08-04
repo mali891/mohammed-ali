@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { COLOURS, EASINGS } from '../../../../styles/settings'
+import { COLOURS } from '../../../../styles/settings'
 
 export const styles = css`
   display: flex;
