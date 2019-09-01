@@ -11,7 +11,7 @@ const CardContainer = ({ children, marginBottom, className, ...other }) => {
   })
 
   return (
-    <div className={dynamicClassNames} css={styles}>
+    <div className={dynamicClassNames} css={styles} {...other}>
       {children}
     </div>
   )

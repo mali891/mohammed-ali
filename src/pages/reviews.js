@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
 import { reviews } from '../reviews/reviews'
+import { DOCUMENT_TITLES } from '../constants'
+import { useDocumentTitle } from '../hooks'
 
 const renderReviews = (index1, index2) => (
   <CardContainer marginBottom>
@@ -14,6 +16,8 @@ const renderReviews = (index1, index2) => (
 )
 
 const Reviews = () => {
+  useDocumentTitle(DOCUMENT_TITLES.REVIEWS)
+
   return (
     <div className="u-anim--fade-in">
       <Header title="Reviews" />

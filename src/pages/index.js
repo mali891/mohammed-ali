@@ -3,9 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { Container, ContentGroup, HeadingBlock, Card, Header, CardContainer } from '../components'
+import { DOCUMENT_TITLES } from '../constants'
 import { formatDate } from '../functions'
+import { useDocumentTitle } from '../hooks'
 
 const Homepage = ({ data }) => {
+  useDocumentTitle(DOCUMENT_TITLES.HOME)
   const { edges } = data.allMarkdownRemark
 
   const renderBlogPosts = () =>
