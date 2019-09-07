@@ -10,6 +10,7 @@ import Link from './Link/Link'
 import ThemeToggle from './ThemeToggle/ThemeToggle'
 import CardContainer from './CardContainer/CardContainer'
 import CodeBlock from './CodeBlock/CodeBlock'
+import NextPrevLinks from './NextPrevLinks/NextPrevLinks'
 
 export {
   ContentGroup,
@@ -23,5 +24,6 @@ export {
   Link,
   ThemeToggle,
   CardContainer,
-  CodeBlock
+  CodeBlock,
+  NextPrevLinks
 }
