@@ -34,11 +34,11 @@ const Nav = React.memo(() => {
       {({ theme, setTheme }) => (
         <nav css={styles} className="c-nav u-bg--primary u-clr--secondary">
           {
-            <Link to={URLS.HOME} onClick={() => toggleTheme(theme, setTheme)} noHover>
+            <Link to={URLS.HOME} onClick={() => toggleTheme(theme, setTheme)} aria-label="Home link" noHover>
               <Logo5 className="c-nav__logo" />
             </Link>
           }
-          <ThemeToggle />
+
           <div className={dynamicClassNames} id="navigation">
             <ul className="c-nav__list">
               <li className="c-nav__list-item">
@@ -57,11 +57,12 @@ const Nav = React.memo(() => {
                 </Link>
               </li>
               <li className="c-nav__list-item">
-                <Link className="c-nav__link" to={URLS.BLOG} onClick={handleContactClick} type="button">
+                <Link className="c-nav__link" onClick={handleContactClick} type="button">
                   Contact
                 </Link>
               </li>
             </ul>
+            <ThemeToggle />
           </div>
 
           <Hamburger onClick={toggleMenu} menuExpanded={menuExpanded} />

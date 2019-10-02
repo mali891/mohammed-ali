@@ -21,30 +21,30 @@ export const styles = css`
     border-radius: 10rem;
     position: relative;
 
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0.1875rem;
-      left: 0.1875rem;
-      width: 3.375rem;
-      height: 3.375rem;
-      background: #fff;
-      border-radius: 9rem;
-      transition: 0.3s;
-    }
-
     &:active {
-      &:after {
+      .c-theme-toggle__toggle {
         width: 4.5rem;
       }
     }
+  }
+
+  .c-theme-toggle__toggle {
+    content: '';
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 3.375rem;
+    height: 3.375rem;
+    background: #fff;
+    border-radius: 9rem;
+    transition: 0.3s;
   }
 
   .c-theme-toggle__input:checked + .c-theme-toggle__label {
     background: ${COLOURS.GRADIENT_THREE.FIRST};
   }
 
-  .c-theme-toggle__input:checked + .c-theme-toggle__label:after {
+  .c-theme-toggle__input:checked + .c-theme-toggle__toggle {
     left: calc(100% - 0.1875rem);
     transform: translateX(-100%);
   }

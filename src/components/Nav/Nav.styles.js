@@ -29,6 +29,10 @@ export const styles = css`
   }
 
   .c-nav__menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
     position: absolute;
     height: 100vh;
     width: 80%;
@@ -39,6 +43,7 @@ export const styles = css`
     padding: ${SPACING.MOBILE.XL} ${SPACING.MOBILE.SM} ${SPACING.MOBILE.SM};
     background-color: var(--colour-tertiary);
     transform: translateX(100%);
+    border-left: 2px solid var(--colour-secondary);
 
     &.c-nav__menu--is-expanded {
       transform: translateX(0);
@@ -54,6 +59,9 @@ export const styles = css`
     }
 
     .c-nav__menu {
+      flex-direction: row;
+      align-items: center;
+      border-left: none;
       position: relative;
       height: unset;
       width: unset;
@@ -64,6 +72,10 @@ export const styles = css`
       background-color: transparent;
       transform: translateX(0);
       padding: 0;
+    }
+
+    .c-nav__list {
+      margin-right: 5rem;
     }
 
     .c-nav__list-item {
