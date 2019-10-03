@@ -30,16 +30,9 @@ const Resets = () => (
         font-family: ${FONT_FAMILY.REGULAR};
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: var(--colour-primary);
-        color: var(--colour-secondary);
         min-height: 100%;
         max-width: 100vw;
         overflow-x: hidden;
-
-        &.theme--light {
-          --colour-primary: ${COLOURS.LIGHT};
-          --colour-secondary: ${COLOURS.DARK};
-        }
       }
 
       ::selection {

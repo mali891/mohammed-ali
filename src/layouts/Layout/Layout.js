@@ -2,19 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { ThemeProvider } from '../../context/ThemeContext'
-import { Footer, HeadHelmet, Nav } from '../../components'
-import { GlobalStyles } from '../../styles/settings'
+import { Footer, Nav, AppWrapper } from '../../components'
 
 const Layout = ({ children }) => (
-  <div className="u-anim--fade-in">
-    <GlobalStyles />
-    <HeadHelmet />
-    <ThemeProvider>
+  <ThemeProvider>
+    <AppWrapper>
       <Nav />
       {children}
       <Footer />
-    </ThemeProvider>
-  </div>
+    </AppWrapper>
+  </ThemeProvider>
 )
 
 Layout.propTypes = {

@@ -11,6 +11,7 @@ import ThemeToggle from './ThemeToggle/ThemeToggle'
 import CardContainer from './CardContainer/CardContainer'
 import CodeBlock from './CodeBlock/CodeBlock'
 import NextPrevLinks from './NextPrevLinks/NextPrevLinks'
+import AppWrapper from './AppWrapper/AppWrapper'
 
 export {
   ContentGroup,
@@ -25,5 +26,6 @@ export {
   ThemeToggle,
   CardContainer,
   CodeBlock,
-  NextPrevLinks
+  NextPrevLinks,
+  AppWrapper
 }
