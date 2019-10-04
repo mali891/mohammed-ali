@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import { Hamburger, ThemeToggle } from './components'
@@ -8,9 +9,7 @@ import { URLS } from '../../constants'
 import { scrollTo } from '../../functions'
 import { styles } from './Nav.styles'
 
-const scrollToFooter = () => scrollTo(document.querySelector('.c-footer'))
-
-const Nav = React.memo(() => {
+const Nav = React.memo(({ footerRef }) => {
   const [menuExpanded, setMenuExpanded] = useState(false)
   const toggleMenu = () => setMenuExpanded(!menuExpanded)
   const closeMenu = () => setMenuExpanded(false)
@@ -22,12 +21,14 @@ const Nav = React.memo(() => {
   })
 
   const handleContactClick = () => {
-    scrollToFooter()
+    scrollTo(footerRef.current)
     closeMenu()
   }
 
   return (
     <nav css={styles} className="c-nav u-bg--primary u-clr--secondary">
+      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+      {menuExpanded && <div className="c-nav__overlay u-anim--fade-in" onClick={closeMenu} role="presentation"></div>}
       {
         <Link to={URLS.HOME} aria-label="Home link" noHover>
           <Logo5 className="c-nav__logo" />
@@ -64,5 +65,9 @@ const Nav = React.memo(() => {
     </nav>
   )
 })
+
+Nav.propTypes = {
+  footerRef: PropTypes.object.isRequired
+}
 
 export default Nav

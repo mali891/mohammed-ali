@@ -14,6 +14,17 @@ export const styles = css`
   padding: 0 ${SPACING.MOBILE.SM};
   z-index: 1;
 
+  .c-nav__overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
   .c-nav__logo {
     width: 5rem;
   }
@@ -40,7 +51,7 @@ export const styles = css`
     top: 0;
     right: 0;
     bottom: 0;
-    padding: ${SPACING.MOBILE.XL} ${SPACING.MOBILE.SM} ${SPACING.MOBILE.SM};
+    padding: ${SPACING.MOBILE.XL} ${SPACING.MOBILE.SM} ${SPACING.MOBILE.XL};
     background-color: var(--colour-tertiary);
     transform: translateX(100%);
     border-left: 2px solid var(--colour-secondary);

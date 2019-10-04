@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Link } from '../'
 import Logo5 from '../../img/logo/Logo5'
@@ -6,8 +7,8 @@ import { EnvelopeDark, GithubDark, LinkedInDark } from '../../icons'
 import { styles } from './Footer.styles'
 import { URLS } from '../../constants'
 
-const Footer = React.memo(() => (
-  <footer className="c-footer" css={styles}>
+const Footer = React.memo(({ footerRef }) => (
+  <footer className="c-footer" css={styles} ref={footerRef}>
     <Link to={URLS.HOME} noHover>
       <Logo5 className="c-footer__logo" />
     </Link>
@@ -41,5 +42,9 @@ const Footer = React.memo(() => (
     </section>
   </footer>
 ))
+
+Footer.propTypes = {
+  footerRef: PropTypes.object.isRequired
+}
 
 export default Footer

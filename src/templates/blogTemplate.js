@@ -10,7 +10,7 @@ const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } })
   return (
     <div className="u-anim--fade-in">
       <Header title={frontmatter.title} />
-
+      <div className="c-header-scroll" style={{ display: 'block', width: '100%', height: '1px' }}></div>
       <main className="c-main">
         <Container>
           <ContentGroup>
