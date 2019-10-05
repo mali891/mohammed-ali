@@ -11,6 +11,7 @@ export const styles = css`
   margin: 0 0 ${SPACING.MOBILE.SM} 0;
   border-radius: ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG} ${BORDER_RADIUS.MD} ${BORDER_RADIUS.MD};
   padding: ${SPACING.MOBILE.MD};
+  transition: all ${EASINGS.DEFAULT};
 
   &:hover {
     &.c-card--link {
@@ -118,14 +119,6 @@ export const styles = css`
 
   @media (min-width: ${MEDIA_QUERIES.NOTEBOOK}) {
     padding: ${SPACING.TABLET.MD};
-
-    .c-card__border-bottom {
-      height: ${SPACING.MOBILE.XS};
-
-      &:after {
-        height: ${SPACING.MOBILE.XS};
-      }
-    }
   }
 
   @media (min-width: ${MEDIA_QUERIES.DESKTOP}) {
@@ -161,14 +154,6 @@ export const styles = css`
 
     .c-card__content {
       font-size: ${FONT_SIZES.DESKTOP.XS};
-    }
-
-    .c-card__border-bottom {
-      height: ${SPACING.DESKTOP.XS};
-
-      &:after {
-        height: ${SPACING.DESKTOP.XS};
-      }
     }
   }
 `

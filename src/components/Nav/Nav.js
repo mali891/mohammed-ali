@@ -25,6 +25,33 @@ const Nav = React.memo(({ footerRef }) => {
     closeMenu()
   }
 
+  const navItems = [
+    {
+      title: 'Home',
+      toLink: URLS.HOME,
+      clickHandler: closeMenu,
+      reRoute: true
+    },
+    {
+      title: 'Reviews',
+      toLink: URLS.REVIEWS,
+      clickHandler: closeMenu,
+      reRoute: true
+    },
+    {
+      title: 'Blog',
+      toLink: URLS.BLOG,
+      clickHandler: closeMenu,
+      reRoute: true
+    },
+    {
+      title: 'Contact',
+      toLink: null,
+      clickHandler: handleContactClick,
+      reRoute: false
+    }
+  ]
+
   return (
     <nav css={styles} className="c-nav u-bg--primary u-clr--secondary">
       {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
@@ -37,26 +64,21 @@ const Nav = React.memo(({ footerRef }) => {
 
       <div className={dynamicClassNames} id="navigation">
         <ul className="c-nav__list">
-          <li className="c-nav__list-item">
-            <Link className="c-nav__link" to={URLS.HOME} onClick={closeMenu}>
-              Home
-            </Link>
-          </li>
-          <li className="c-nav__list-item">
-            <Link className="c-nav__link" to={URLS.REVIEWS} onClick={closeMenu}>
-              Reviews
-            </Link>
-          </li>
-          <li className="c-nav__list-item">
-            <Link className="c-nav__link" to={URLS.BLOG} onClick={closeMenu}>
-              Blog
-            </Link>
-          </li>
-          <li className="c-nav__list-item">
-            <Link className="c-nav__link" onClick={handleContactClick} type="button">
-              Contact
-            </Link>
-          </li>
+          {navItems.map(({ title, toLink, clickHandler, reRoute }) =>
+            reRoute ? (
+              <li className="c-nav__list-item" key={toLink}>
+                <Link className="c-nav__link" to={toLink} onClick={clickHandler}>
+                  {title}
+                </Link>
+              </li>
+            ) : (
+              <li className="c-nav__list-item">
+                <Link className="c-nav__link" onClick={clickHandler} type="button">
+                  {title}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
         <ThemeToggle />
       </div>

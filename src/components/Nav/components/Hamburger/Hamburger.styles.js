@@ -20,6 +20,8 @@ export const styles = css`
   border: 0;
   margin: 0;
   overflow: visible;
+  z-index: 2;
+  outline: none;
 
   .c-hamburger__box {
     width: 40px;

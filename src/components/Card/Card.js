@@ -14,7 +14,7 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
   })
 
   const renderCard = () => (
-    <aside css={link ? null : styles} className={link ? null : dynamicClassNames} {...other}>
+    <aside css={link ? null : styles} className={link ? '' : dynamicClassNames} {...other}>
       <div className="c-card__heading">
         <HeadingBlock type="h3" size="sm" noMargin>
           {title}

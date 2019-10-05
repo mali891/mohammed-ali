@@ -23,10 +23,15 @@ export const styles = css`
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
   }
 
   .c-nav__logo {
     width: 5rem;
+  }
+
+  .c-nav__list {
+    margin-bottom: ${SPACING.MOBILE.XL};
   }
 
   .c-nav__list-item {
@@ -42,7 +47,6 @@ export const styles = css`
   .c-nav__menu {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     flex-direction: column;
     position: absolute;
     height: 100vh;
@@ -54,7 +58,7 @@ export const styles = css`
     padding: ${SPACING.MOBILE.XL} ${SPACING.MOBILE.SM} ${SPACING.MOBILE.XL};
     background-color: var(--colour-tertiary);
     transform: translateX(100%);
-    border-left: 2px solid var(--colour-secondary);
+    z-index: 2;
 
     &.c-nav__menu--is-expanded {
       transform: translateX(0);
@@ -87,6 +91,7 @@ export const styles = css`
 
     .c-nav__list {
       margin-right: 5rem;
+      margin-bottom: unset;
     }
 
     .c-nav__list-item {
