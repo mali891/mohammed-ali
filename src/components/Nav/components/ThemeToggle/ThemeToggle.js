@@ -2,6 +2,7 @@ import React from 'react'
 
 import { ThemeConsumer } from '../../../../context/ThemeContext'
 import { styles } from './ThemeToggle.styles'
+import { Sun, Moon } from '../../../../icons'
 
 const toggleTheme = (theme, setTheme) => (theme === 'dark' ? setTheme('light') : setTheme('dark'))
 const handleKeyDown = (e, theme, setTheme) => e.keyCode === 13 && toggleTheme(theme, setTheme)
@@ -9,7 +10,7 @@ const handleKeyDown = (e, theme, setTheme) => e.keyCode === 13 && toggleTheme(th
 const ThemeToggle = () => (
   <ThemeConsumer>
     {({ theme, setTheme }) => (
-      <div css={styles} className="c-theme-toggle">
+      <div css={styles} className={`c-theme-toggle c-theme-toggle--${theme}`}>
         <input
           className="c-theme-toggle__input"
           type="checkbox"
@@ -24,7 +25,9 @@ const ThemeToggle = () => (
           htmlFor="theme-toggle"
           tabIndex={0}
         >
-          <div className="c-theme-toggle__toggle">Toggle theme</div>
+          <div className="c-theme-toggle__toggle">
+            {theme === 'light' ? <Moon className="c-theme-toggle__icon" /> : <Sun className="c-theme-toggle__icon" />}
+          </div>
         </label>
       </div>
     )}
