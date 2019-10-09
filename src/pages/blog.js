@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Card, ContentGroup, Link, CardContainer, HeaderScrollTarget } from '../components'
+import { Header, Card, ContentGroup, Link, CardContainer } from '../components'
 import { URLS, DOCUMENT_TITLES } from '../constants'
 import { formatDate } from '../functions'
 import { useDocumentTitle } from '../hooks'
