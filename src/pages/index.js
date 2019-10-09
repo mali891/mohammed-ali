@@ -26,7 +26,6 @@ const Homepage = ({ data }) => {
   return (
     <div className="u-anim--fade-in">
       <Header />
-      <div className="c-header-scroll" style={{ display: 'block', width: '100%', height: '1px' }}></div>
       <main className="c-main">
         <Container>
           <ContentGroup>

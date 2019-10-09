@@ -54,7 +54,6 @@ const Nav = React.memo(({ footerRef }) => {
 
   return (
     <nav css={styles} className="c-nav u-bg--primary u-clr--secondary">
-      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
       {menuExpanded && <div className="c-nav__overlay u-anim--fade-in" onClick={closeMenu} role="presentation"></div>}
       {
         <Link to={URLS.HOME} aria-label="Home link" noHover>
@@ -72,7 +71,7 @@ const Nav = React.memo(({ footerRef }) => {
                 </Link>
               </li>
             ) : (
-              <li className="c-nav__list-item">
+              <li className="c-nav__list-item" key={toLink}>
                 <Link className="c-nav__link" onClick={clickHandler} type="button">
                   {title}
                 </Link>

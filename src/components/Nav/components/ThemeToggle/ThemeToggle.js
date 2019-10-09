@@ -26,7 +26,7 @@ const ThemeToggle = () => (
           tabIndex={0}
         >
           <div className="c-theme-toggle__toggle">
-            {theme === 'light' ? <Moon className="c-theme-toggle__icon" /> : <Sun className="c-theme-toggle__icon" />}
+            {theme === 'light' ? <Sun className="c-theme-toggle__icon" /> : <Moon className="c-theme-toggle__icon" />}
           </div>
         </label>
       </div>

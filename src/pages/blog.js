@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Card, ContentGroup, Link, CardContainer } from '../components'
+import { Header, Card, ContentGroup, Link, CardContainer, HeaderScrollTarget } from '../components'
 import { URLS, DOCUMENT_TITLES } from '../constants'
 import { formatDate } from '../functions'
 import { useDocumentTitle } from '../hooks'
@@ -26,7 +26,6 @@ const Blog = ({ data }) => {
   return (
     <div className="u-anim--fade-in">
       <Header title="Blog" />
-      <div className="c-header-scroll" style={{ display: 'block', width: '100%', height: '1px' }}></div>
       <main className="c-main">
         <ContentGroup>
           <CardContainer>{renderBlogPosts()}</CardContainer>

@@ -3,6 +3,7 @@ export const COLOURS = {
   DARK: '#141414',
   BLACK: '#000000',
   GREY: '#eaeaed',
+  SUN: '#f89406',
   GRADIENT_ONE: {
     FIRST: '#FFA99F',
     SECOND: '#FFE29F'

@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<header
-  className="c-header"
-  css={
-    Object {
-      "map": undefined,
-      "name": "1lvjhbp",
-      "next": undefined,
-      "styles": "
+Array [
+  <header
+    className="c-header"
+    css={
+      Object {
+        "map": undefined,
+        "name": "1lvjhbp",
+        "next": undefined,
+        "styles": "
   height: 100vh;
   width: 100vw;
 
@@ -81,32 +82,32 @@ exports[`Header renders correctly 1`] = `
     }
   }
 ",
+      }
     }
-  }
->
-  <div
-    className="c-header__container c-container"
-    css={
-      Object {
-        "map": undefined,
-        "name": "3v6n4o",
-        "next": undefined,
-        "styles": "
+  >
+    <div
+      className="c-header__container c-container"
+      css={
+        Object {
+          "map": undefined,
+          "name": "3v6n4o",
+          "next": undefined,
+          "styles": "
   margin: 0 auto;
   width: auto;
   max-width: 100rem;
 ",
+        }
       }
-    }
-  >
-    <h1
-      className="c-heading c-heading--xl c-heading__no-margin"
-      css={
-        Object {
-          "map": undefined,
-          "name": "1ctrhck",
-          "next": undefined,
-          "styles": "
+    >
+      <h1
+        className="c-heading c-heading--xl c-heading__no-margin"
+        css={
+          Object {
+            "map": undefined,
+            "name": "1ctrhck",
+            "next": undefined,
+            "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
 
   @media (min-width: 0px) {
@@ -271,20 +272,20 @@ exports[`Header renders correctly 1`] = `
     margin-bottom: 0;
   }
 ",
+          }
         }
-      }
-    >
-      Dummy title
-    </h1>
-  </div>
-  <button
-    className="c-header__more-link c-link u-clr--secondary"
-    css={
-      Object {
-        "map": undefined,
-        "name": "1xzejfk",
-        "next": undefined,
-        "styles": "
+      >
+        Dummy title
+      </h1>
+    </div>
+    <button
+      className="c-header__more-link c-link u-clr--secondary"
+      css={
+        Object {
+          "map": undefined,
+          "name": "1xzejfk",
+          "next": undefined,
+          "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
   background: none;
   border: none;
@@ -322,11 +323,27 @@ exports[`Header renders correctly 1`] = `
     }
   }
 ",
+        }
+      }
+      onClick={[Function]}
+    >
+      More
+    </button>
+  </header>,
+  <div
+    className="c-header-scroll"
+    css={
+      Object {
+        "map": undefined,
+        "name": "1pj91ex",
+        "next": undefined,
+        "styles": "
+  display: block;
+  width: 100%;
+  height: 1px;
+",
       }
     }
-    onClick={[Function]}
-  >
-    More
-  </button>
-</header>
+  />,
+]
 `;
