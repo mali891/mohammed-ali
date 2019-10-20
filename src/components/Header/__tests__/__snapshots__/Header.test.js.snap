@@ -105,10 +105,11 @@ Array [
         css={
           Object {
             "map": undefined,
-            "name": "1ctrhck",
+            "name": "292j7n",
             "next": undefined,
             "styles": "
   font-family: 'Apercu Medium', 'Apercu Regular', 'system-ui', 'sans-serif';
+  display: block;
 
   @media (min-width: 0px) {
           &.c-heading {

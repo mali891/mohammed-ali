@@ -14,9 +14,9 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
   })
 
   const renderCard = () => (
-    <aside css={link ? null : styles} className={link ? '' : dynamicClassNames} {...other}>
+    <div css={link ? null : styles} className={link ? 'c-card--fullheight' : dynamicClassNames} {...other}>
       <div className="c-card__heading">
-        <HeadingBlock type="h3" size="sm" noMargin>
+        <HeadingBlock type="span" size="sm" noMargin>
           {title}
         </HeadingBlock>
         {subtitle && <span className="c-card__subtitle">{subtitle}</span>}
@@ -25,7 +25,7 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
       <div className="c-card__content">{children}</div>
 
       <span className="c-card__border-bottom u-bg--secondary" />
-    </aside>
+    </div>
   )
 
   return (

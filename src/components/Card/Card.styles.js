@@ -23,7 +23,7 @@ export const styles = css`
     }
   }
 
-  aside {
+  &--fullheight {
     height: 100%;
     display: flex;
     flex-direction: column;

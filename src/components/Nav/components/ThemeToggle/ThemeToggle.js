@@ -10,7 +10,11 @@ const handleKeyDown = (e, theme, setTheme) => e.keyCode === 13 && toggleTheme(th
 const ThemeToggle = () => (
   <ThemeConsumer>
     {({ theme, setTheme }) => (
-      <div css={styles} className={`c-theme-toggle c-theme-toggle--${theme}`}>
+      <div
+        css={styles}
+        className={`c-theme-toggle c-theme-toggle--${theme}`}
+        aria-label="Toggle theme and colour contrast"
+      >
         <input
           className="c-theme-toggle__input"
           type="checkbox"

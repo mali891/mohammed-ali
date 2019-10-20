@@ -29,6 +29,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    },
+    {
       resolve: 'gatsby-remark-embedded-codesandbox',
       options: {
         // Required:

@@ -16,7 +16,7 @@ const Homepage = ({ data }) => {
       const { path, title, date, length } = edge.node.frontmatter
 
       return (
-        <Card title={title} path={path} key={path.split('/')[2]} link>
+        <Card title={title} path={path} key={path.split('/')[2]} aria-label={title} link>
           <span>{formatDate(date)}</span>
           <span>{length} read</span>
         </Card>

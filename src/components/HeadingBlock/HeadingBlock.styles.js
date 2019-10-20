@@ -3,6 +3,7 @@ import { FONT_SIZES, LINE_HEIGHT, SPACING, FONT_FAMILY, MEDIA_QUERIES, VIEWPORT_
 
 export const styles = css`
   font-family: ${FONT_FAMILY.MEDIUM};
+  display: block;
 
   ${VIEWPORT_SIZES.map(
     viewport =>

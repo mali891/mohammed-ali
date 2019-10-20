@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import { Hamburger, ThemeToggle } from './components'
 import { Link } from '../'
-import Logo5 from '../../img/logo/Logo5'
+import Logo from '../../img/logo/Logo'
 import { URLS } from '../../constants'
 import { scrollTo } from '../../functions'
 import { styles } from './Nav.styles'
@@ -53,11 +53,11 @@ const Nav = React.memo(({ footerRef }) => {
   ]
 
   return (
-    <nav css={styles} className="c-nav u-bg--primary u-clr--secondary">
+    <nav css={styles} className="c-nav u-bg--primary u-clr--secondary" role="navigation">
       {menuExpanded && <div className="c-nav__overlay u-anim--fade-in" onClick={closeMenu} role="presentation"></div>}
       {
-        <Link to={URLS.HOME} aria-label="Home link" noHover>
-          <Logo5 className="c-nav__logo" />
+        <Link to={URLS.HOME} aria-label="Back to home page" noHover>
+          <Logo className="c-nav__logo" />
         </Link>
       }
 

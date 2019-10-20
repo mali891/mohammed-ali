@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Logo5 = ({ className }) => (
-  <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+const Logo5 = ({ className, instanceNo }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <defs>
       <linearGradient
-        id="linear-gradient"
+        id={`linear-gradient-${instanceNo.toString()}`}
         x1="53.83"
         y1="187.54"
         x2="246.17"
@@ -23,11 +23,11 @@ const Logo5 = ({ className }) => (
         <stop offset=".83" stopColor="#37ecba" />
       </linearGradient>
     </defs>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
         <path
           d="M205 193.66l-10-17.32-40-69.28c-2.75-4.77-7.25-4.77-10 0l-40 69.28-10 17.32-40 69.28c-2.75 4.77-.5 8.66 5 8.66h180c5.5 0 7.75-3.89 5-8.66zm-125 66c-5.5 0-7.75-3.9-5-8.66l30-52 10-17.32 30-52c2.75-4.77 7.25-4.77 10 0l30 52L195 199l30 52c2.75 4.76.5 8.66-5 8.66H80z"
-          fill="url(#linear-gradient)"
+          fill={`url(#linear-gradient-${instanceNo.toString()})`}
         />
         <path
           className="u-fill--secondary"
@@ -42,8 +42,14 @@ const Logo5 = ({ className }) => (
   </svg>
 )
 
+Logo5.defaultProps = {
+  className: '',
+  instanceNo: '1'
+}
+
 Logo5.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  instanceNo: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default Logo5
