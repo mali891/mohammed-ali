@@ -5,7 +5,7 @@ import { COLOURS } from '../../styles/settings'
 
 const Moon = ({ className }) => (
   <svg
-    className={`u-anim--fade-in ${className ? className : ''}`}
+    className={`u-anim--fade-in icon--moon ${className ? className : ''}`}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 487.42 513.3"
   >

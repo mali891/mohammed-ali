@@ -31,49 +31,4 @@ describe('Hamburger', () => {
     fireEvent.click(hamburger)
     expect(mockOnClickHandler).toHaveBeenCalledTimes(1)
   })
-
-  // it('renders correctly given a noHover prop', () => {
-  //   const { asFragment, container } = render(<Hamburger noHover />)
-
-  //   expect(container.querySelector('.c-Hamburger--no-hover')).toBeInTheDocument()
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
-
-  // it('renders correctly when given a specific to prop', () => {
-  //   const { asFragment, container } = render(<Hamburger type="anchor" to="test.com" />)
-
-  //   expect(container.querySelector('a[href="test.com"]')).toBeInTheDocument()
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
-
-  // it('renders correctly when given a gatsby type prop', () => {
-  //   const { asFragment } = render(<Hamburger type="gatsby" />)
-
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
-
-  // it('renders correctly when given an anchor type prop', () => {
-  //   const { asFragment, container } = render(<Hamburger type="anchor" />)
-
-  //   expect(container.querySelector('a')).toBeInTheDocument()
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
-
-  // it('renders correctly when given a button type prop', () => {
-  //   const { asFragment, container } = render(<Hamburger type="button" />)
-
-  //   expect(container.querySelector('button')).toBeInTheDocument()
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
-
-  // it('renders correctly when given an onClick prop', () => {
-  //   const mockOnClickHandler = jest.fn()
-  //   const { asFragment, container } = render(<Hamburger onClick={mockOnClickHandler} />)
-  //   const Hamburger = container.querySelector('.c-Hamburger')
-
-  //   expect(mockOnClickHandler).toHaveBeenCalledTimes(0)
-  //   fireEvent.click(Hamburger)
-  //   expect(mockOnClickHandler).toHaveBeenCalledTimes(1)
-  //   expect(asFragment()).toMatchSnapshot()
-  // })
 })
