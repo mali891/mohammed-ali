@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="c-link u-clr--secondary"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`Link renders correctly given a newTab prop 1`] = `
+<DocumentFragment>
+  <a
+    class="c-link u-clr--secondary"
+    css="[object Object]"
+    rel="noopener noreferrer"
+    target="_blank"
+  />
+</DocumentFragment>
+`;
+
+exports[`Link renders correctly given a noHover prop 1`] = `
+<DocumentFragment>
+  <a
+    class="c-link u-clr--secondary c-link--no-hover"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`Link renders correctly when given a button type prop 1`] = `
+<DocumentFragment>
+  <button
+    class="c-link u-clr--secondary"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`Link renders correctly when given a gatsby type prop 1`] = `
+<DocumentFragment>
+  <a
+    class="c-link u-clr--secondary"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`Link renders correctly when given a specific to prop 1`] = `
+<DocumentFragment>
+  <a
+    class="c-link u-clr--secondary"
+    css="[object Object]"
+    href="test.com"
+  />
+</DocumentFragment>
+`;
+
+exports[`Link renders correctly when given an anchor type prop 1`] = `
+<DocumentFragment>
+  <a
+    class="c-link u-clr--secondary"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;

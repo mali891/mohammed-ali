@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders a link when given a link prop 1`] = `
+<DocumentFragment>
+  <a
+    class="c-card u-bg--tertiary c-card--link c-link u-clr--secondary c-link--no-hover"
+    css="[object Object]"
+  >
+    <div
+      class="c-card--fullheight"
+    >
+      <div
+        class="c-card__heading"
+      >
+        <span
+          class="c-heading c-heading--sm c-heading__no-margin"
+          css="[object Object]"
+        >
+          Dummy title
+        </span>
+      </div>
+      <div
+        class="c-card__content"
+      />
+      <span
+        class="c-card__border-bottom u-bg--secondary"
+      />
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Card renders a subtitle when given a subtitle prop 1`] = `
+<DocumentFragment>
+  <div
+    class="c-card u-bg--tertiary"
+    css="[object Object]"
+  >
+    <div
+      class="c-card__heading"
+    >
+      <span
+        class="c-heading c-heading--sm c-heading__no-margin"
+        css="[object Object]"
+      >
+        Dummy title
+      </span>
+      <span
+        class="c-card__subtitle"
+      >
+        Dummy subtitle
+      </span>
+    </div>
+    <div
+      class="c-card__content"
+    />
+    <span
+      class="c-card__border-bottom u-bg--secondary"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="c-card u-bg--tertiary"
+    css="[object Object]"
+  >
+    <div
+      class="c-card__heading"
+    >
+      <span
+        class="c-heading c-heading--sm c-heading__no-margin"
+        css="[object Object]"
+      >
+        Dummy title
+      </span>
+    </div>
+    <div
+      class="c-card__content"
+    />
+    <span
+      class="c-card__border-bottom u-bg--secondary"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card renders correctly given a condensed prop 1`] = `
+<DocumentFragment>
+  <div
+    class="c-card u-bg--tertiary c-card--condensed"
+    css="[object Object]"
+  >
+    <div
+      class="c-card__heading"
+    >
+      <span
+        class="c-heading c-heading--sm c-heading__no-margin"
+        css="[object Object]"
+      >
+        Dummy title
+      </span>
+    </div>
+    <div
+      class="c-card__content"
+    />
+    <span
+      class="c-card__border-bottom u-bg--secondary"
+    />
+  </div>
+</DocumentFragment>
+`;

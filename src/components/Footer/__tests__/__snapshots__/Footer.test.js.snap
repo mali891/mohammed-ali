@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<DocumentFragment>
+  <footer
+    class="c-footer"
+    css="[object Object]"
+  >
+    <a
+      aria-label="Back to home page"
+      class="c-link u-clr--secondary c-link--no-hover"
+      css="[object Object]"
+      href="/"
+    >
+      <svg
+        class="c-footer__logo"
+        viewBox="0 0 400 400"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="linear-gradient-2"
+            x1="53.83"
+            x2="246.17"
+            y1="187.54"
+            y2="187.54"
+          >
+            <stop
+              offset="0"
+              stop-color="#8fd3f4"
+            />
+            <stop
+              offset=".11"
+              stop-color="#7dd8e8"
+            />
+            <stop
+              offset=".13"
+              stop-color="#7ad9e6"
+              stop-opacity=".97"
+            />
+            <stop
+              offset=".26"
+              stop-color="#6cdddd"
+              stop-opacity=".8"
+            />
+            <stop
+              offset=".33"
+              stop-color="#5de1d3"
+              stop-opacity=".86"
+            />
+            <stop
+              offset=".46"
+              stop-color="#46e8c4"
+              stop-opacity=".96"
+            />
+            <stop
+              offset=".53"
+              stop-color="#3deabe"
+            />
+            <stop
+              offset=".55"
+              stop-color="#3ceabe"
+            />
+            <stop
+              offset=".83"
+              stop-color="#37ecba"
+            />
+          </lineargradient>
+        </defs>
+        <g>
+          <g>
+            <path
+              d="M205 193.66l-10-17.32-40-69.28c-2.75-4.77-7.25-4.77-10 0l-40 69.28-10 17.32-40 69.28c-2.75 4.77-.5 8.66 5 8.66h180c5.5 0 7.75-3.89 5-8.66zm-125 66c-5.5 0-7.75-3.9-5-8.66l30-52 10-17.32 30-52c2.75-4.77 7.25-4.77 10 0l30 52L195 199l30 52c2.75 4.76.5 8.66-5 8.66H80z"
+              fill="url(#linear-gradient-2)"
+            />
+            <path
+              class="u-fill--secondary"
+              d="M305 193.66l-10-17.32-40-69.28c-2.75-4.77-7.25-4.77-10 0l-40 69.28-10 17.32-40 69.28c-2.75 4.77-.5 8.66 5 8.66h180c5.5 0 7.75-3.89 5-8.66zm-125 66c-5.5 0-7.75-3.9-5-8.66l30-52 10-17.32 30-52c2.75-4.77 7.25-4.77 10 0l30 52L295 199l30 52c2.75 4.76.5 8.66-5 8.66H180z"
+            />
+            <path
+              class="u-fill--secondary"
+              d="M200 0C89.54 0 0 89.54 0 200s89.54 200 200 200 200-89.54 200-200S310.46 0 200 0zm0 387.5C96.45 387.5 12.5 303.55 12.5 200S96.45 12.5 200 12.5s187.5 84 187.5 187.5S303.55 387.5 200 387.5z"
+            />
+          </g>
+        </g>
+      </svg>
+    </a>
+    <div
+      class="c-footer__social"
+    >
+      <a
+        aria-label="Send an email to Mohammed (will open your native email client)"
+        class="c-link u-clr--secondary c-link--no-hover"
+        css="[object Object]"
+        href="#!"
+      >
+        <i
+          class="c-footer__social__icon"
+        >
+          <svg
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <g>
+                <circle
+                  class="u-fill--primary u-stroke--secondary"
+                  cx="50"
+                  cy="50"
+                  r="49"
+                  stroke-width="3"
+                />
+                <path
+                  class="u-fill--secondary u-stroke--secondary"
+                  d="M80 29.79H20A1.25 1.25 0 0 0 18.75 31v32.8a6.38 6.38 0 0 0 6.37 6.37h49.76a6.38 6.38 0 0 0 6.37-6.37V31A1.25 1.25 0 0 0 80 29.79zm-1.24 34.05a3.88 3.88 0 0 1-3.88 3.88H25.12a3.88 3.88 0 0 1-3.88-3.88V33.75l28 22.9a1.25 1.25 0 0 0 1.58 0L72.43 39a1.24 1.24 0 0 0-1.57-2L50 54.08l-26.63-21.8h55.39z"
+                  stroke-miterlimit="10"
+                />
+              </g>
+            </g>
+          </svg>
+        </i>
+      </a>
+      <a
+        aria-label="Go to Mohammed's Github profile (opens in a new tab)"
+        class="c-link u-clr--secondary c-link--no-hover"
+        css="[object Object]"
+        href="#!"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          class="c-footer__social__icon"
+        >
+          <svg
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              dataname="Layer 2"
+            >
+              <g
+                dataname="Layer 1"
+              >
+                <circle
+                  class="u-fill--primary u-stroke--secondary"
+                  cx="50"
+                  cy="50"
+                  r="49"
+                  stroke-width="3"
+                />
+                <path
+                  class="u-fill--primary u-stroke--secondary"
+                  d="M44.88 7.45C24.73 9.64 8.52 25.85 6.33 45.56a43.5 43.5 0 0 0 30.23 46.87V82.36a18.52 18.52 0 0 1-4 .43c-6.13 0-8.76-5.25-9.19-8.32a9.18 9.18 0 0 0-2.63-4.38c-1.32-.44-1.76-.44-1.76-.87 0-.88 1.32-.88 1.76-.88 2.63 0 4.82 3.07 5.69 4.38 2.19 3.5 4.82 4.38 6.13 4.38a8.74 8.74 0 0 0 4-.88c.44-3.06 1.75-6.13 4.38-7.88-10.08-2.19-17.52-7.89-17.52-17.52a20.71 20.71 0 0 1 5.25-13.15 16.19 16.19 0 0 1-.87-6.13 15.07 15.07 0 0 1 1.31-7s6.13 0 12.27 5.7a23.58 23.58 0 0 1 8.32-1.32 28.11 28.11 0 0 1 8.76 1.32 18.89 18.89 0 0 1 12.27-5.7 21.94 21.94 0 0 1 .87 7c0 3.51-.44 5.26-.87 6.13A19.79 19.79 0 0 1 76 50.82c0 9.63-7.44 15.33-17.52 17.52a13.49 13.49 0 0 1 4.38 10.07v14.46a43.78 43.78 0 0 0 30.65-41.62c0-26.25-22.35-46.87-48.63-43.8z"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="2.5"
+                />
+              </g>
+            </g>
+          </svg>
+        </i>
+      </a>
+      <a
+        aria-label="Go to Mohammed's LinkedIn profile (opens in a new tab)"
+        class="c-link u-clr--secondary c-link--no-hover"
+        css="[object Object]"
+        href="#!"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          class="c-footer__social__icon"
+        >
+          <svg
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              dataname="Layer 2"
+            >
+              <g
+                dataname="Layer 1"
+              >
+                <circle
+                  class="u-fill--primary u-stroke--secondary"
+                  cx="50"
+                  cy="50"
+                  r="49"
+                  stroke-width="3"
+                />
+                <path
+                  class="u-fill--secondary"
+                  d="M31.52 26.64a7.25 7.25 0 0 0-4.61 1.47A5 5 0 0 0 25 32c0 3 2.67 5.29 6.2 5.43a1.12 1.12 0 0 0 .31 0 7.12 7.12 0 0 0 4.69-1.55A5.14 5.14 0 0 0 38 32v-.06c-.14-3-2.81-5.3-6.48-5.3zm0 2.15c2.84 0 4.24 1.39 4.36 3.24a2.92 2.92 0 0 1-1.06 2.27 5 5 0 0 1-3.3 1c-2.83 0-4.36-1.53-4.36-3.33a2.73 2.73 0 0 1 1.1-2.22 5.1 5.1 0 0 1 3.26-.96zm-5.43 10.88A1.08 1.08 0 0 0 25 40.75v31.53a1.08 1.08 0 0 0 1.09 1.08H37a1.08 1.08 0 0 0 1-1.08V40.75a1.08 1.08 0 0 0-1-1.08zm16.3 0a1.08 1.08 0 0 0-1.09 1.08v31.53a1.08 1.08 0 0 0 1.09 1.08h10.87a1.08 1.08 0 0 0 1.09-1.08V54.34a3.81 3.81 0 0 1 7.61 0v17.94A1.08 1.08 0 0 0 63 73.36h10.91A1.08 1.08 0 0 0 75 72.28V53.8c0-4.49-1.32-8-3.54-10.46a11.52 11.52 0 0 0-8.65-3.67 13 13 0 0 0-8.46 2.83v-1.75a1.08 1.08 0 0 0-1.09-1.08zm-15.22 2.17h8.7v29.35h-8.7zm16.31 0h8.69v2.87a1.09 1.09 0 0 0 1.9.73 12.39 12.39 0 0 1 8.74-3.6 9.26 9.26 0 0 1 7 3c1.8 2 3 4.92 3 9v17.35h-8.7V54.34a1.12 1.12 0 0 0-.11-.44 5.94 5.94 0 0 0-11.87.44v16.85h-8.65z"
+                />
+              </g>
+            </g>
+          </svg>
+        </i>
+      </a>
+    </div>
+    <section
+      class="c-footer__blurb"
+    >
+      <p>
+        Made with React, GraphQL and Gatsby. 
+        <a
+          aria-label="See the source code of this website on Mohammed's Github profile (opens in a new tab)"
+          class="c-link u-clr--secondary"
+          css="[object Object]"
+          href="#!"
+        >
+          See source code
+        </a>
+        .
+      </p>
+    </section>
+  </footer>
+</DocumentFragment>
+`;

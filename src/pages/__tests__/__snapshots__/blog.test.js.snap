@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="u-anim--fade-in"
+  >
+    <header
+      class="c-header"
+      css="[object Object]"
+    >
+      <div
+        class="c-header__container c-container"
+        css="[object Object]"
+      >
+        <h1
+          class="c-heading c-heading--xl c-heading__no-margin"
+          css="[object Object]"
+        >
+          Blog
+        </h1>
+      </div>
+      <button
+        class="c-header__more-link c-link u-clr--secondary"
+        css="[object Object]"
+      >
+        More
+      </button>
+    </header>
+    <div
+      class="c-header-scroll"
+      css="[object Object]"
+    />
+    <main
+      class="c-main"
+    >
+      <section
+        class="c-content-group"
+        css="[object Object]"
+      >
+        <div
+          class="c-card-container"
+          css="[object Object]"
+        >
+          <a
+            class="c-card u-bg--tertiary c-card--link c-link u-clr--secondary c-link--no-hover"
+            css="[object Object]"
+            href="/test-title/1"
+          >
+            <div
+              class="c-card--fullheight"
+            >
+              <div
+                class="c-card__heading"
+              >
+                <span
+                  class="c-heading c-heading--sm c-heading__no-margin"
+                  css="[object Object]"
+                >
+                  Test title 1
+                </span>
+              </div>
+              <div
+                class="c-card__content"
+              >
+                <span>
+                  1th Jan 2020
+                </span>
+                <span>
+                  3 min read
+                </span>
+              </div>
+              <span
+                class="c-card__border-bottom u-bg--secondary"
+              />
+            </div>
+          </a>
+          <a
+            class="c-card u-bg--tertiary c-card--link c-link u-clr--secondary c-link--no-hover"
+            css="[object Object]"
+            href="/test-title/2"
+          >
+            <div
+              class="c-card--fullheight"
+            >
+              <div
+                class="c-card__heading"
+              >
+                <span
+                  class="c-heading c-heading--sm c-heading__no-margin"
+                  css="[object Object]"
+                >
+                  Test title 2
+                </span>
+              </div>
+              <div
+                class="c-card__content"
+              >
+                <span>
+                  2th Feb 2020
+                </span>
+                <span>
+                  4 min read
+                </span>
+              </div>
+              <span
+                class="c-card__border-bottom u-bg--secondary"
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+      <br />
+      <a
+        class="c-link u-clr--secondary"
+        css="[object Object]"
+        href="/tags"
+      >
+        Tags
+      </a>
+    </main>
+  </div>
+</DocumentFragment>
+`;

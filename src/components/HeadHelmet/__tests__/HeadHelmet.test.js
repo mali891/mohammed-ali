@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import Header from '../Header'
+import HeadHelmet from '../HeadHelmet'
 
-describe('Header', () => {
+describe('HeadHelmet', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Header title="Dummy title" />)
+    const { asFragment } = render(<HeadHelmet title="Dummy page title" />)
     expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { styles } from './HeadingBlock.styles'
 import { TSHIRT_SIZES } from '../../styles/settings'
 
-const headingTypes = ['h1', 'h2', 'h3', 'h4', 'h5']
+const headingTypes = ['h1', 'h2', 'h3', 'h4', 'h5', 'span']
 
 const HeadingBlock = ({ children, className, type, size, noMargin, ...other }) => {
   const HeadingTag = type

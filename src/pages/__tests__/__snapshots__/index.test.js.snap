@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="u-anim--fade-in"
+  >
+    <header
+      class="c-header"
+      css="[object Object]"
+    >
+      <div
+        class="c-header__container c-container"
+        css="[object Object]"
+      >
+        <h1
+          class="c-heading c-heading--xl c-heading__no-margin"
+          css="[object Object]"
+        >
+          Blog
+        </h1>
+      </div>
+      <button
+        class="c-header__more-link c-link u-clr--secondary"
+        css="[object Object]"
+      >
+        More
+      </button>
+    </header>
+    <div
+      class="c-header-scroll"
+      css="[object Object]"
+    />
+    <main
+      class="c-main"
+    >
+      <section
+        class="c-content-group"
+        css="[object Object]"
+      >
+        <div
+          class="c-card-container"
+          css="[object Object]"
+        />
+      </section>
+      <br />
+      <a
+        class="c-link u-clr--secondary"
+        css="[object Object]"
+        href="/tags"
+      >
+        Tags
+      </a>
+    </main>
+  </div>
+</DocumentFragment>
+`;

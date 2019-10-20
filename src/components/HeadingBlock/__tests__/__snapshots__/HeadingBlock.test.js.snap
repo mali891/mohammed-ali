@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadingBlock renders correctly 1`] = `
+<DocumentFragment>
+  <span
+    class="c-heading c-heading--md"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`HeadingBlock renders correctly given a noMargin prop 1`] = `
+<DocumentFragment>
+  <span
+    class="c-heading c-heading--md c-heading__no-margin"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`HeadingBlock renders correctly given the size is lg 1`] = `
+<DocumentFragment>
+  <span
+    class="c-heading c-heading--lg"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`HeadingBlock renders correctly given the type is h1 1`] = `
+<DocumentFragment>
+  <h1
+    class="c-heading c-heading--md"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;

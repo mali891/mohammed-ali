@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentGroup renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="c-content-group"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`ContentGroup renders correctly given a noMargin prop 1`] = `
+<DocumentFragment>
+  <section
+    class="c-content-group c-content-group--no-margin"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;

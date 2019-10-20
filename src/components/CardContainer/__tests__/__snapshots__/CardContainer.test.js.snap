@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="c-card-container"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardContainer renders correctly given a marginBottom prop 1`] = `
+<DocumentFragment>
+  <div
+    class="c-card-container c-card-container--margin-bottom"
+    css="[object Object]"
+  />
+</DocumentFragment>
+`;

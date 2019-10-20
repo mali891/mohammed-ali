@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hamburger renders correctly 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="navigation"
+    aria-expanded="false"
+    aria-label="Menu"
+    class="c-hamburger c-hamburger--collapse"
+    css="[object Object]"
+    type="button"
+  >
+    <span
+      class="c-hamburger__box"
+    >
+      <span
+        class="c-hamburger__inner u-bg--secondary"
+      />
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Hamburger renders correctly given a menuExpanded prop 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="navigation"
+    aria-expanded="true"
+    aria-label="Menu"
+    class="c-hamburger c-hamburger--collapse c-hamburger--is-active"
+    css="[object Object]"
+    type="button"
+  >
+    <span
+      class="c-hamburger__box"
+    >
+      <span
+        class="c-hamburger__inner u-bg--secondary"
+      />
+    </span>
+  </button>
+</DocumentFragment>
+`;

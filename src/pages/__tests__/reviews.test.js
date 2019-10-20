@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import Header from '../Header'
+import Reviews from '../reviews'
 
-describe('Header', () => {
+describe('Reviews', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Header title="Dummy title" />)
+    const { asFragment } = render(<Reviews />)
     expect(asFragment()).toMatchSnapshot()
   })
 })
