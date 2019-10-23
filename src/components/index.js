@@ -7,7 +7,6 @@ import HeadingBlock from './HeadingBlock/HeadingBlock'
 import Card from './Card/Card'
 import Footer from './Footer/Footer'
 import Link from './Link/Link'
-import ThemeToggle from './ThemeToggle/ThemeToggle'
 import CardContainer from './CardContainer/CardContainer'
 import CodeBlock from './CodeBlock/CodeBlock'
 import NextPrevLinks from './NextPrevLinks/NextPrevLinks'
@@ -24,7 +23,6 @@ export {
   Card,
   Footer,
   Link,
-  ThemeToggle,
   CardContainer,
   CodeBlock,
   NextPrevLinks,

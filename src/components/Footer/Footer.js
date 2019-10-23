@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Link } from '../'
 import Logo from '../../img/logo/Logo'
-import { EnvelopeDark, GithubDark, LinkedInDark } from '../../icons'
+import { Envelope, Github, LinkedIn } from '../../icons'
 import { styles } from './Footer.styles'
 import { URLS } from '../../constants'
 
@@ -16,7 +16,7 @@ const Footer = React.memo(({ footerRef }) => (
     <div className="c-footer__social">
       <Link to="#!" aria-label="Send an email to Mohammed (will open your native email client)" noHover>
         <i className="c-footer__social__icon">
-          <EnvelopeDark />
+          <Envelope />
         </i>
       </Link>
       <Link
@@ -28,7 +28,7 @@ const Footer = React.memo(({ footerRef }) => (
         noHover
       >
         <i className="c-footer__social__icon">
-          <GithubDark />
+          <Github />
         </i>
       </Link>
       <Link
@@ -40,7 +40,7 @@ const Footer = React.memo(({ footerRef }) => (
         noHover
       >
         <i className="c-footer__social__icon">
-          <LinkedInDark />
+          <LinkedIn />
         </i>
       </Link>
     </div>

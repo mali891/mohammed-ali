@@ -1,11 +1,8 @@
-import EnvelopeDark from './Envelope/EnvelopeDark'
-import EnvelopeLight from './Envelope/EnvelopeLight'
-import GithubDark from './Github/GithubDark'
-import GithubLight from './Github/GithubLight'
-import LinkedInDark from './LinkedIn/LinkedInDark'
-import LinkedInLight from './LinkedIn/LinkedInLight'
+import Envelope from './Envelope/Envelope'
+import Github from './Github/Github'
+import LinkedIn from './LinkedIn/LinkedIn'
 import Arrow from './Arrow/Arrow'
 import Sun from './Sun/Sun'
 import Moon from './Moon/Moon'
 
-export { EnvelopeDark, EnvelopeLight, GithubDark, GithubLight, LinkedInDark, LinkedInLight, Arrow, Sun, Moon }
+export { Envelope, Github, LinkedIn, Arrow, Sun, Moon }
