@@ -50,8 +50,20 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test:nowatch && yarn lint"
+      "pre-commit": "yarn test:coverage && yarn lint"
     }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    },
+    "snapshotSerializers": [
+      "jest-serializer-html"
+    ]
   },
   "repository": {
     "type": "git",

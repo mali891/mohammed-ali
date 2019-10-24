@@ -64,7 +64,7 @@ exports[`Blog renders correctly 1`] = `
                 class="c-card__content"
               >
                 <span>
-                  1th Jan 2020
+                  1st Jan 2020
                 </span>
                 <span>
                   3 min read
@@ -97,7 +97,7 @@ exports[`Blog renders correctly 1`] = `
                 class="c-card__content"
               >
                 <span>
-                  2th Feb 2020
+                  2nd Feb 2020
                 </span>
                 <span>
                   4 min read

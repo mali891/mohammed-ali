@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeBlock renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="c-content-group"
+    css="[object Object]"
+  >
+    <pre
+      class=" language-javascript"
+      css="[object Object]"
+    >
+      <code
+        class=" language-javascript"
+      >
+        Dummy children
+      </code>
+    </pre>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`CodeBlock renders correctly given an alternative language prop 1`] = `
+<DocumentFragment>
+  <section
+    class="c-content-group"
+    css="[object Object]"
+  >
+    <pre
+      class=" language-scss"
+      css="[object Object]"
+    >
+      <code
+        class=" language-scss"
+      >
+        Dummy children
+      </code>
+    </pre>
+  </section>
+</DocumentFragment>
+`;

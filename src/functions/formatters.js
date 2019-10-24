@@ -24,13 +24,18 @@ export const formatDate = date => {
   // Days which end with 'nd'
   const nds = [2, 22]
 
+  // Days which end with 'rd'
+  const rds = [3, 23]
+
   if (parseInt(day) < 10) day = day.split('0')[1]
   if (parseInt(month) < 10) month = month.split('0')[1]
 
-  if (parseInt(day.includes(sts))) {
+  if (sts.includes(parseInt(day))) {
     day = `${day}st`
-  } else if (parseInt(day.includes(nds))) {
+  } else if (nds.includes(parseInt(day))) {
     day = `${day}nd`
+  } else if (rds.includes(parseInt(day))) {
+    day = `${day}rd`
   } else {
     day = `${day}th`
   }
