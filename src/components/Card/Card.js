@@ -10,7 +10,8 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
     'c-card': true,
     'u-bg--tertiary': true,
     'c-card--condensed': condensed,
-    'c-card--link': link
+    'c-card--link': link,
+    'c-card-fullheight': link
   })
 
   const renderCard = () => (
@@ -24,7 +25,7 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
 
       <div className="c-card__content">{children}</div>
 
-      <span className="c-card__border-bottom u-bg--secondary" />
+      {/* <span className="c-card__border-bottom u-bg--secondary" /> */}
     </div>
   )
 

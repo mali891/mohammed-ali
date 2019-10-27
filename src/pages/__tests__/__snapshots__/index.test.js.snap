@@ -43,14 +43,6 @@ exports[`Homepage renders correctly 1`] = `
           css="[object Object]"
         />
       </section>
-      <br />
-      <a
-        class="c-link u-clr--secondary"
-        css="[object Object]"
-        href="/tags"
-      >
-        Tags
-      </a>
     </main>
   </div>
 </DocumentFragment>

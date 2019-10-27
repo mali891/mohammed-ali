@@ -3,7 +3,7 @@
 exports[`Card renders a link when given a link prop 1`] = `
 <DocumentFragment>
   <a
-    class="c-card u-bg--tertiary c-card--link c-link u-clr--secondary c-link--no-hover"
+    class="c-card u-bg--tertiary c-card--link c-card-fullheight c-link u-clr--secondary c-link--no-hover"
     css="[object Object]"
   >
     <div
@@ -21,9 +21,6 @@ exports[`Card renders a link when given a link prop 1`] = `
       </div>
       <div
         class="c-card__content"
-      />
-      <span
-        class="c-card__border-bottom u-bg--secondary"
       />
     </div>
   </a>
@@ -54,9 +51,6 @@ exports[`Card renders a subtitle when given a subtitle prop 1`] = `
     <div
       class="c-card__content"
     />
-    <span
-      class="c-card__border-bottom u-bg--secondary"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -80,9 +74,6 @@ exports[`Card renders correctly 1`] = `
     <div
       class="c-card__content"
     />
-    <span
-      class="c-card__border-bottom u-bg--secondary"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -105,9 +96,6 @@ exports[`Card renders correctly given a condensed prop 1`] = `
     </div>
     <div
       class="c-card__content"
-    />
-    <span
-      class="c-card__border-bottom u-bg--secondary"
     />
   </div>
 </DocumentFragment>

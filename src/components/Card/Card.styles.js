@@ -9,11 +9,14 @@ export const styles = css`
   flex-direction: column;
   justify-content: space-between;
   margin: 0 0 ${SPACING.MOBILE.SM} 0;
-  border-radius: ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG} ${BORDER_RADIUS.MD} ${BORDER_RADIUS.MD};
+  border-radius: ${BORDER_RADIUS.LG};
   padding: ${SPACING.MOBILE.MD};
   transition: all ${EASINGS.DEFAULT};
+  border: 0.2rem solid transparent;
 
   &:hover {
+    border-color: var(--colour-secondary);
+
     &.c-card--link {
       .c-card__border-bottom {
         &:after {
@@ -23,7 +26,7 @@ export const styles = css`
     }
   }
 
-  &--fullheight {
+  .c-card--fullheight {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -79,7 +82,7 @@ export const styles = css`
     }
   }
 
-  .c-card__border-bottom {
+  /* .c-card__border-bottom {
     width: 100%;
     position: absolute;
     left: 0;
@@ -102,7 +105,7 @@ export const styles = css`
       background-image: linear-gradient(to right, ${COLOURS.GRADIENT_THREE.FIRST}, ${COLOURS.GRADIENT_THREE.SECOND});
       border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
     }
-  }
+  } */
 
   @media (min-width: ${MEDIA_QUERIES.TABLET}) {
     width: 48%;

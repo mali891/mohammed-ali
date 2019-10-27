@@ -18,27 +18,21 @@ export const formatDate = date => {
   let month = date.split('-')[1]
   const year = date.split('-')[0]
 
-  // Days which end with 'st'
+  // Dates which end with 'st'
   const sts = [1, 21, 31]
 
-  // Days which end with 'nd'
+  // Dates which end with 'nd'
   const nds = [2, 22]
 
-  // Days which end with 'rd'
+  // Dates which end with 'rd'
   const rds = [3, 23]
 
   if (parseInt(day) < 10) day = day.split('0')[1]
   if (parseInt(month) < 10) month = month.split('0')[1]
 
-  if (sts.includes(parseInt(day))) {
-    day = `${day}st`
-  } else if (nds.includes(parseInt(day))) {
-    day = `${day}nd`
-  } else if (rds.includes(parseInt(day))) {
-    day = `${day}rd`
-  } else {
-    day = `${day}th`
-  }
+  if (sts.includes(parseInt(day))) return `${day}st ${MONTHS[month]} ${year}`
+  if (nds.includes(parseInt(day))) return `${day}nd ${MONTHS[month]} ${year}`
+  if (rds.includes(parseInt(day))) return `${day}rd ${MONTHS[month]} ${year}`
 
-  return `${day} ${MONTHS[month]} ${year}`
+  return `${day}th ${MONTHS[month]} ${year}`
 }

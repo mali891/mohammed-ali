@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Card, ContentGroup, Link, CardContainer } from '../components'
-import { URLS, DOCUMENT_TITLES } from '../constants'
+import { Header, Card, ContentGroup, CardContainer } from '../components'
+import { DOCUMENT_TITLES } from '../constants'
 import { formatDate } from '../functions'
 import { useDocumentTitle } from '../hooks'
 
@@ -30,9 +30,8 @@ const Blog = ({ data }) => {
         <ContentGroup>
           <CardContainer>{renderBlogPosts()}</CardContainer>
         </ContentGroup>
-
-        <br />
-        <Link to={URLS.TAGS}>Tags</Link>
+        {/* <br />
+        <Link to={URLS.TAGS}>Tags</Link> */}
       </main>
     </div>
   )

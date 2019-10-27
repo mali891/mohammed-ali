@@ -43,7 +43,7 @@ exports[`Blog renders correctly 1`] = `
           css="[object Object]"
         >
           <a
-            class="c-card u-bg--tertiary c-card--link c-link u-clr--secondary c-link--no-hover"
+            class="c-card u-bg--tertiary c-card--link c-card-fullheight c-link u-clr--secondary c-link--no-hover"
             css="[object Object]"
             href="/test-title/1"
           >
@@ -70,13 +70,10 @@ exports[`Blog renders correctly 1`] = `
                   3 min read
                 </span>
               </div>
-              <span
-                class="c-card__border-bottom u-bg--secondary"
-              />
             </div>
           </a>
           <a
-            class="c-card u-bg--tertiary c-card--link c-link u-clr--secondary c-link--no-hover"
+            class="c-card u-bg--tertiary c-card--link c-card-fullheight c-link u-clr--secondary c-link--no-hover"
             css="[object Object]"
             href="/test-title/2"
           >
@@ -103,21 +100,10 @@ exports[`Blog renders correctly 1`] = `
                   4 min read
                 </span>
               </div>
-              <span
-                class="c-card__border-bottom u-bg--secondary"
-              />
             </div>
           </a>
         </div>
       </section>
-      <br />
-      <a
-        class="c-link u-clr--secondary"
-        css="[object Object]"
-        href="/tags"
-      >
-        Tags
-      </a>
     </main>
   </div>
 </DocumentFragment>
