@@ -82,6 +82,8 @@ export const styles = css`
     }
   }
 
+  /* *** Fix these styles post-mvp *** */
+
   /* .c-card__border-bottom {
     width: 100%;
     position: absolute;

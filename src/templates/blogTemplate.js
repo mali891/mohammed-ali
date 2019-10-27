@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Container, ContentGroup, CodeBlock, NextPrevLinks } from '../components/'
+import { Header, Container, ContentGroup, NextPrevLinks } from '../components/'
 
 const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } }) => {
   const { frontmatter, html } = markdownRemark
@@ -15,12 +15,6 @@ const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } })
           <ContentGroup>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </ContentGroup>
-
-          <CodeBlock>
-            {`const mapAllTheThings = () => (
-    things.map(thing => console.warn(\`hello I am \${thing}\`));
-)`}
-          </CodeBlock>
 
           <NextPrevLinks next={next} prev={prev} />
         </Container>
