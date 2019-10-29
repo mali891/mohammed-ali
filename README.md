@@ -61,11 +61,11 @@ Make sure you have a recent stable version of [NodeJS](https://nodejs.org/en/) i
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .
-    ├── __mocks__
-    ├── node_modules
-    ├── public
-    ├── src
-    ├── static
+    ├── __mocks__/
+    ├── node_modules/
+    ├── public/
+    ├── src/
+    ├── static/
     ├── .eslintrc
     ├── .gitignore
     ├── .prettierrc
@@ -77,7 +77,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── LICENSE
     ├── loadershim.js
     ├── package.json
-    └── README.md
+    ├── README.md
     └── setuptests.js
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
