@@ -5,31 +5,47 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Mohammed Ali's personal site
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Hey, I'm Mohammed, Freelance Front-end Engineer based in Huddersfield, West Yorkshire. This is my personal site. Thanks for visiting. Below is some blurb about how you can build and run the site locally if you wish, the tech choices I made, and future plans for the project.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## 🚀 Quick start
+## 🚀 Build and run the project locally
 
-1.  **Create a Gatsby site.**
+Make sure you have a recent stable version of [NodeJS](https://nodejs.org/en/) installed, along with a package manager such as [NPM](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/lang/en/docs/install/). To begin, clone the repository, and `cd` into the project root. The following list of commands can be run from inside the project root.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+1.  **Install dependencies**
 
-    ```sh
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    Use your package manager of choice to install the dependencies for the project.
+
+    npm:
+
+    ```
+    npm i
     ```
 
-1.  **Start developing.**
+    yarn:
 
-    Navigate into your new site’s directory and start it up.
+    ```
+    yarn
+    ```
 
-    ```sh
-    cd my-hello-world-starter/
-    gatsby develop
+1.  **Build and run project**
+
+    Either one of these commands will make the site available to view on `localhost:8000`.
+
+    npm:
+
+    ```
+    npm run develop
+    ```
+
+    yarn:
+
+    ```
+    yarn develop
     ```
 
 1.  **Open the source code and start editing!**
@@ -45,18 +61,24 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .
+    ├── __mocks__
     ├── node_modules
+    ├── public
     ├── src
+    ├── static
+    ├── .eslintrc
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
-    ├── gatsby-ssr.js
+    ├── jest-preprocess.js
+    ├── jest.config.js
     ├── LICENSE
-    ├── package-lock.json
+    ├── loadershim.js
     ├── package.json
     └── README.md
+    └── setuptests.js
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 

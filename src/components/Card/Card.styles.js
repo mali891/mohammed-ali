@@ -82,33 +82,6 @@ export const styles = css`
     }
   }
 
-  /* *** Fix these styles post-mvp *** */
-
-  /* .c-card__border-bottom {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 0.5rem;
-    border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
-
-    &:after {
-      content: '';
-      width: 0;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      height: 0.2rem;
-      width: 0;
-      height: 0.5rem;
-      transition: all ${EASINGS.DEFAULT};
-      background-image: linear-gradient(to right, ${COLOURS.GRADIENT_THREE.FIRST}, ${COLOURS.GRADIENT_THREE.SECOND});
-      border-radius: 0 0 ${BORDER_RADIUS.LG} ${BORDER_RADIUS.LG};
-    }
-  } */
-
   @media (min-width: ${MEDIA_QUERIES.TABLET}) {
     width: 48%;
     padding: ${SPACING.TABLET.MD};
