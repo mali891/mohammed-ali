@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Container, ContentGroup, NextPrevLinks } from '../components/'
+import { Header, Container, ContentGroup, NextPrevLinks, BlogIntro } from '../components/'
 
 const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } }) => {
   const { frontmatter, html } = markdownRemark
@@ -12,6 +12,10 @@ const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } })
       <Header title={frontmatter.title} />
       <main className="c-main">
         <Container>
+          <ContentGroup>
+            <BlogIntro date={frontmatter.date} length={frontmatter.length} excerpt={frontmatter.excerpt} />
+          </ContentGroup>
+
           <ContentGroup>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </ContentGroup>
@@ -28,6 +32,9 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
+        date
+        excerpt
+        length
         title
       }
     }

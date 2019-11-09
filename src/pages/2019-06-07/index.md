@@ -1,6 +1,6 @@
 ---
 date: '2019-06-07'
-excerpt: 'This is my second post'
+excerpt: "This is a dummy excerpt. It's a small bit of blurb, maybe a sentence or two, summarising the content of the blog post. This is a dummy excerpt. It's a small bit of blurb, maybe a sentence or two, summarising the content of the blog post."
 length: '2 min'
 path: '/blog/roll-your-own-scss-grid'
 tags: ['eS6', 'javascript', 'react']

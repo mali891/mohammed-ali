@@ -1,5 +1,5 @@
 import { css } from '@emotion/core'
-import { COLOURS, FONT_SIZES, EASINGS, SPACING, BORDER_RADIUS, LINE_HEIGHT, MEDIA_QUERIES } from '../../styles/settings'
+import { COLOURS, FONT_SIZES, EASINGS, SPACING, BORDER_RADIUS, MEDIA_QUERIES } from '../../styles/settings'
 
 export const styles = css`
   width: 100%;
@@ -65,7 +65,6 @@ export const styles = css`
 
   .c-card__subtitle {
     font-size: ${FONT_SIZES.MOBILE.XS};
-    line-height: ${LINE_HEIGHT.MOBILE.XS};
   }
 
   .c-card__content {
@@ -73,12 +72,10 @@ export const styles = css`
     display: flex;
     justify-content: space-between;
     font-size: ${FONT_SIZES.MOBILE.XS};
-    line-height: ${LINE_HEIGHT.MOBILE.XS};
     margin-top: ${SPACING.MOBILE.XL};
 
     p {
       font-size: ${FONT_SIZES.MOBILE.SM};
-      line-height: ${LINE_HEIGHT.MOBILE.SM};
     }
   }
 
@@ -127,7 +124,6 @@ export const styles = css`
 
     .c-card__subtitle {
       font-size: ${FONT_SIZES.DESKTOP.XS};
-      line-height: ${LINE_HEIGHT.DESKTOP.XS};
     }
 
     .c-card__content {

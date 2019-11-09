@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogIntro renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="c-blog-intro"
+    css="[object Object]"
+  >
+    <div
+      class="c-blog-intro__metadata"
+    >
+      <span
+        class="c-blog-intro__metadata__content"
+      >
+        Published on 1st Jan 2030
+      </span>
+       
+      <span
+        class="c-blog-intro__metadata__content"
+      >
+        1 min read
+      </span>
+    </div>
+    <div
+      class="c-blog-intro__excerpt"
+    >
+      <p>
+        <em>
+          lorem ipsum sit dolor amet
+        </em>
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;

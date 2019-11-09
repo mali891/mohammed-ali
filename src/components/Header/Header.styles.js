@@ -4,6 +4,7 @@ import { FONT_SIZES, SPACING, MEDIA_QUERIES, VIEWPORT_SIZES } from '../../styles
 export const styles = css`
   height: 100vh;
   width: 100vw;
+  line-height: 1.3;
 
   .c-header__container {
     height: 100%;

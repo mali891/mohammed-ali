@@ -24,6 +24,7 @@ const Resets = () => (
         font-size: 10px;
         min-height: 100%;
         scroll-behavior: smooth;
+        line-height: 1.6;
       }
 
       body {

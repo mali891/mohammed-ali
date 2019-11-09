@@ -11,6 +11,7 @@ import CardContainer from './CardContainer/CardContainer'
 import NextPrevLinks from './NextPrevLinks/NextPrevLinks'
 import AppWrapper from './AppWrapper/AppWrapper'
 import HeaderScrollTarget from './HeaderScrollTarget/HeaderScrollTarget'
+import BlogIntro from './BlogIntro/BlogIntro'
 
 export {
   ContentGroup,
@@ -25,5 +26,6 @@ export {
   CardContainer,
   NextPrevLinks,
   AppWrapper,
-  HeaderScrollTarget
+  HeaderScrollTarget,
+  BlogIntro
 }

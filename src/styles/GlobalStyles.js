@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Global, css } from '@emotion/core'
 import { Resets, Utilities, Theme, CodeHighlighting } from './'
 import './fonts/fonts.css'
-import { FONT_SIZES, LINE_HEIGHT, SPACING, MEDIA_QUERIES, VIEWPORT_SIZES } from './settings'
+import { FONT_SIZES, SPACING, MEDIA_QUERIES, VIEWPORT_SIZES } from './settings'
 
 const GlobalStyles = () => (
   <Fragment>
@@ -17,7 +17,6 @@ const GlobalStyles = () => (
             `@media (min-width: ${MEDIA_QUERIES[`${viewport}`]}) {
               p {
                 font-size: ${FONT_SIZES[`${viewport}`].SM};
-                line-height: ${LINE_HEIGHT[`${viewport}`].SM};
               }
 
               .c-main {

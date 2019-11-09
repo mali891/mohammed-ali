@@ -1,6 +1,6 @@
 ---
 date: '2019-06-08'
-excerpt: 'This is my fourth post'
+excerpt: "This is a dummy excerpt. It's a small bit of blurb, maybe a sentence or two, summarising the content of the blog post. This is a dummy excerpt. It's a small bit of blurb, maybe a sentence or two, summarising the content of the blog post."
 length: '3 min'
 path: '/blog/unit-testing-with-react-testing-library'
 tags: ['eS6', 'javascript', 'react']

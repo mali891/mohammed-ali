@@ -38,39 +38,3 @@ export const FONT_SIZES = {
   LG: '7.5rem',
   XL: '10rem'
 }
-
-export const LINE_HEIGHT = {
-  MOBILE: {
-    XS: '3rem',
-    SM: '3.4rem',
-    MD: '4rem',
-    LG: '5rem',
-    XL: '5.25rem'
-  },
-  TABLET: {
-    XS: '3rem',
-    SM: '4.25rem',
-    MD: '5.25rem',
-    LG: '7.5rem',
-    XL: '8.5rem'
-  },
-  NOTEBOOK: {
-    XS: '3rem',
-    SM: '4.25rem',
-    MD: '6rem',
-    LG: '9rem',
-    XL: '10rem'
-  },
-  DESKTOP: {
-    XS: '3rem',
-    SM: '4.5rem',
-    MD: '7.5rem',
-    LG: '11.25rem',
-    XL: '12rem'
-  },
-  XS: '3rem',
-  SM: '4.5rem',
-  MD: '7.5rem',
-  LG: '11.25rem',
-  XL: '12rem'
-}

@@ -1,6 +1,6 @@
 ---
 date: '2019-06-06'
-excerpt: 'This is an excerpt of my first post'
+excerpt: "This is a dummy excerpt. It's a small bit of blurb, maybe a sentence or two, summarising the content of the blog post. This is a dummy excerpt. It's a small bit of blurb, maybe a sentence or two, summarising the content of the blog post."
 length: '1 min'
 path: '/blog/a-comprehensive-guide-to-es6-iterables'
 tags: ['eS6', 'javascript', 'react']
