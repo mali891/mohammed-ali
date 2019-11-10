@@ -16,6 +16,7 @@ const Footer = React.memo(({ footerRef }) => (
     <div className="c-footer__social">
       <Link
         to="mailto:hi@mohammed-ali.co.uk"
+        type="anchor"
         aria-label="Send an email to Mohammed (will open your native email client)"
         noHover
       >
