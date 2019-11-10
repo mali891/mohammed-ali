@@ -14,13 +14,17 @@ const Footer = React.memo(({ footerRef }) => (
     </Link>
 
     <div className="c-footer__social">
-      <Link to="#!" aria-label="Send an email to Mohammed (will open your native email client)" noHover>
+      <Link
+        to="mailto:hi@mohammed-ali.co.uk"
+        aria-label="Send an email to Mohammed (will open your native email client)"
+        noHover
+      >
         <i className="c-footer__social__icon">
           <Envelope />
         </i>
       </Link>
       <Link
-        to="#!"
+        to="https://github.com/mali891"
         aria-label="Go to Mohammed's Github profile (opens in a new tab)"
         type="anchor"
         target="_blank"
@@ -32,7 +36,7 @@ const Footer = React.memo(({ footerRef }) => (
         </i>
       </Link>
       <Link
-        to="#!"
+        to="https://www.linkedin.com/in/mali89/"
         aria-label="Go to Mohammed's LinkedIn profile (opens in a new tab)"
         type="anchor"
         target="_blank"
@@ -50,8 +54,10 @@ const Footer = React.memo(({ footerRef }) => (
         Made with React, GraphQL and Gatsby.{' '}
         <Link
           type="anchor"
-          to="#!"
+          to="https://github.com/mali891/mohammed-ali"
           aria-label="See the source code of this website on Mohammed's Github profile (opens in a new tab)"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           See source code
         </Link>

@@ -93,7 +93,7 @@ exports[`Footer renders correctly 1`] = `
         aria-label="Send an email to Mohammed (will open your native email client)"
         class="c-link u-clr--secondary c-link--no-hover"
         css="[object Object]"
-        href="#!"
+        href="mailto:hi@mohammed-ali.co.uk"
       >
         <i
           class="c-footer__social__icon"
@@ -125,7 +125,7 @@ exports[`Footer renders correctly 1`] = `
         aria-label="Go to Mohammed's Github profile (opens in a new tab)"
         class="c-link u-clr--secondary c-link--no-hover"
         css="[object Object]"
-        href="#!"
+        href="https://github.com/mali891"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -165,7 +165,7 @@ exports[`Footer renders correctly 1`] = `
         aria-label="Go to Mohammed's LinkedIn profile (opens in a new tab)"
         class="c-link u-clr--secondary c-link--no-hover"
         css="[object Object]"
-        href="#!"
+        href="https://www.linkedin.com/in/mali89/"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -208,7 +208,9 @@ exports[`Footer renders correctly 1`] = `
           aria-label="See the source code of this website on Mohammed's Github profile (opens in a new tab)"
           class="c-link u-clr--secondary"
           css="[object Object]"
-          href="#!"
+          href="https://github.com/mali891/mohammed-ali"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           See source code
         </a>

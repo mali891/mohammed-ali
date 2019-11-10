@@ -24,8 +24,6 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
       </div>
 
       <div className="c-card__content">{children}</div>
-
-      {/* <span className="c-card__border-bottom u-bg--secondary" /> */}
     </div>
   )
 

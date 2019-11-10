@@ -6,7 +6,7 @@ import { Header, Link } from '../components'
 
 const AllTagsTemplate = ({ data, pageContext }) => (
   <Fragment>
-    <Header />
+    <Header title="Tags" />
     <p>Tags bro</p>
     <ul>
       {pageContext.tags.map(tag => (
