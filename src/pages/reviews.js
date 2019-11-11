@@ -2,21 +2,26 @@ import React from 'react'
 
 import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
 import { reviews } from '../reviews/reviews'
+import { splitArray } from '../functions'
 import { DOCUMENT_TITLES } from '../constants'
 import { useDocumentTitle } from '../hooks'
 
-const renderReviews = (index1, index2) => (
-  <CardContainer marginBottom>
-    {reviews.slice(index1, index2).map(({ name, jobTitle, quote }) => (
-      <Card title={name} subtitle={jobTitle} key={name} condensed>
-        <p>{quote}</p>
-      </Card>
-    ))}
-  </CardContainer>
-)
-
 const Reviews = () => {
   useDocumentTitle(DOCUMENT_TITLES.REVIEWS)
+
+  const renderReviews = () => (
+    <ContentGroup>
+      {splitArray(reviews, 4).map((reviewRow, i) => (
+        <CardContainer marginBottom key={`reviewRow-${i}`}>
+          {reviewRow.map(({ name, jobTitle, quote }) => (
+            <Card title={name} subtitle={jobTitle} key={name} condensed>
+              <p>{quote}</p>
+            </Card>
+          ))}
+        </CardContainer>
+      ))}
+    </ContentGroup>
+  )
 
   return (
     <div className="u-anim--fade-in">
@@ -31,11 +36,7 @@ const Reviews = () => {
           </ContentGroup>
         </Container>
 
-        <ContentGroup>
-          {renderReviews(0, 4)}
-          {renderReviews(4, 8)}
-          {renderReviews(8, 12)}
-        </ContentGroup>
+        {renderReviews()}
       </main>
     </div>
   )

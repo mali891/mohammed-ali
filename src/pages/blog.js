@@ -4,32 +4,38 @@ import { graphql } from 'gatsby'
 
 import { Header, Card, ContentGroup, CardContainer } from '../components'
 import { DOCUMENT_TITLES } from '../constants'
-import { formatDate } from '../functions'
+import { formatDate, splitArray } from '../functions'
 import { useDocumentTitle } from '../hooks'
 
 const Blog = ({ data }) => {
   useDocumentTitle(DOCUMENT_TITLES.BLOG)
   const { edges } = data.allMarkdownRemark
 
-  const renderBlogPosts = () =>
-    edges.map(edge => {
-      const { path, title, date, length } = edge.node.frontmatter
+  const renderBlogPosts = () => (
+    <ContentGroup>
+      {splitArray(edges, 4).map((blogPostRow, i) => (
+        <CardContainer marginBottom key={`blogPostRow-${i}`}>
+          {blogPostRow.map(blogPost => {
+            const { path, title, date, length } = blogPost.node.frontmatter
 
-      return (
-        <Card title={title} path={path} key={path.split('/')[2]} link>
-          <span>{formatDate(date)}</span>
-          <span>{length} read</span>
-        </Card>
-      )
-    })
+            return (
+              <Card title={title} path={path} key={path.split('/')[2]} link>
+                <span>{formatDate(date)}</span>
+                <span>{length} read</span>
+              </Card>
+            )
+          })}
+        </CardContainer>
+      ))}
+    </ContentGroup>
+  )
 
   return (
     <div className="u-anim--fade-in">
       <Header title="Blog" />
       <main className="c-main">
-        <ContentGroup>
-          <CardContainer>{renderBlogPosts()}</CardContainer>
-        </ContentGroup>
+        {renderBlogPosts()}
+
         {/* <br />
         <Link to={URLS.TAGS}>Tags</Link> */}
       </main>

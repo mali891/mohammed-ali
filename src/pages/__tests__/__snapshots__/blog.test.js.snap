@@ -39,7 +39,7 @@ exports[`Blog renders correctly 1`] = `
         css="[object Object]"
       >
         <div
-          class="c-card-container"
+          class="c-card-container c-card-container--margin-bottom"
           css="[object Object]"
         >
           <a
