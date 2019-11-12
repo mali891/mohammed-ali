@@ -103,6 +103,10 @@ exports[`Blog renders correctly 1`] = `
             </div>
           </a>
         </div>
+        <div
+          class="c-card-container c-card-container--margin-bottom"
+          css="[object Object]"
+        />
       </section>
     </main>
   </div>
