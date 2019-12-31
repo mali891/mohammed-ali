@@ -46,351 +46,147 @@ exports[`Reviews renders correctly 1`] = `
             I've been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
           </p>
         </section>
+        <section
+          class="c-content-group"
+          css="[object Object]"
+        >
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading__no-margin"
+                css="[object Object]"
+              >
+                Adam Morrell
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                Strategy Director
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                Mo is simply one of the most talented people I’ve ever worked with. In his time as my lead developer at Banc he continually delivered pixel-perfect digital experiences that worked beautifully for users as well as search engines, utilising a range of frameworks and technologies to bring them to life and never compromising on quality or performance. He combines an outstanding work ethic with a sharp problem-solving mind and great eye for design, and also possesses that rarest and most valuable of skills; the ability to communicate technical concepts to a non-technical audience in an engaging, inspiring way. I can’t recommend Mo highly enough.
+              </p>
+            </div>
+          </div>
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading__no-margin"
+                css="[object Object]"
+              >
+                Stephen Algeo
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                JavaScript Engineer
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                Mo is highly skilled in medium-large React.js web applications. He's able to manage complex data and state to guide a user through an intuitive experience. He is very comfortable with TDD and BDD paradigms and writing suitable unit, snapshot and behavioural tests of functions, React components and data stores. He creates user interfaces that are both to a very high standard visually and more recently has also become passionate about creating accessible experiences. I'd consider it a pleasure to work alongside him again in the future.
+              </p>
+            </div>
+          </div>
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading__no-margin"
+                css="[object Object]"
+              >
+                Vygantas Valys
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                Front-end Technical Lead
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                So far I worked with Mohammed (Mo) in same organisation for over a year. He’s a passionate front-end developer with genuine interest in what’s going on in the industry. Mo came with strong front-end skillset (HTML, SCSS, Vanilla JS and some React), and I was astounded how quickly his drive made him a very competent React.js/Redux developer, using different libraries for unit testing (jest, react testing library, enzyme). He has done a ton of research on accessibility in front-end and numerous times demonstrated his ability to be a patient mentor. Mo proven to have an eye for detail in design. I found him to posses analytical thinking, be approachable, humble and extremely competitive at foosball table. Mo is a reliable asset in any team and I’d highly recommend him.
+              </p>
+            </div>
+          </div>
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading__no-margin"
+                css="[object Object]"
+              >
+                Vicky Walton
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                Scrum Master
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                I worked with Mo for a year at Yorkshire Water and I have a lot of respect for him. Not only does he excel at the technical aspects of the role, he is very approachable and personable and could explain things in a non-technical way where necessary. He was a key part of our team and I'd be very happy to work with him again in the future.
+              </p>
+            </div>
+          </div>
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading__no-margin"
+                css="[object Object]"
+              >
+                Samantha Ockwell
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                Business Analyst
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                I worked with Mo for over a year whilst working on the Customer Self-Service project and found him very professional, engaged and passionate about what we were aiming to deliver. He delivers quality work and is very approachable and able to explain technical detail to a non-techy person like myself. I really hope to work with Mo again in the future!
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
-      <section
-        class="c-content-group"
-        css="[object Object]"
-      >
-        <div
-          class="c-card-container c-card-container--margin-bottom"
-          css="[object Object]"
-        >
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Gob Bluth 1
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Super Hans 2
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Gob Bluth 3
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Super Hans 4
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="c-card-container c-card-container--margin-bottom"
-          css="[object Object]"
-        >
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Gob Bluth 5
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Super Hans 6
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Gob Bluth 7
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Super Hans 8
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="c-card-container c-card-container--margin-bottom"
-          css="[object Object]"
-        >
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Gob Bluth 9
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Super Hans 10
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Gob Bluth 11
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-card u-bg--tertiary c-card--condensed"
-            css="[object Object]"
-          >
-            <div
-              class="c-card__heading"
-            >
-              <span
-                class="c-heading c-heading--sm c-heading__no-margin"
-                css="[object Object]"
-              >
-                Super Hans 12
-              </span>
-              <span
-                class="c-card__subtitle"
-              >
-                JavaScript Engineer
-              </span>
-            </div>
-            <div
-              class="c-card__content"
-            >
-              <p>
-                I’ve been lucky enough to work with some amazing people during my career. Here's what some of them have said about me.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   </div>
 </DocumentFragment>

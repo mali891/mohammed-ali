@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import { Header, Card, ContentGroup, CardContainer } from '../components'
 import { DOCUMENT_TITLES } from '../constants'
-import { formatDate, splitArray } from '../functions'
+import { formatDate } from '../functions'
 import { useDocumentTitle } from '../hooks'
 
 const Blog = ({ data }) => {

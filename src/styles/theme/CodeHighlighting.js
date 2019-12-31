@@ -5,18 +5,19 @@ import { COLOURS, FONT_SIZES, MEDIA_QUERIES, SPACING, VIEWPORT_SIZES } from '../
 const CodeHighlighting = () => (
   <Global
     styles={css`
+      pre,
+      code,
+      code[class*='language-'],
+      pre[class*='language-'] {
+        font-family: SF Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      }
+
       .gatsby-highlight {
         background-color: ${COLOURS.BLACK};
         font-size: ${FONT_SIZES.XS};
         padding: 2rem;
         border-radius: 1rem;
         overflow: auto;
-
-        pre,
-        code[class*='language-'],
-        pre[class*='language-'] {
-          font-family: SF Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-        }
 
         /**
         * Remove the default PrismJS theme background-color, border-radius, margin,

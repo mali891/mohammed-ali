@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-import { Header, Container, ContentGroup, Card, CardContainer } from '../components'
+import { Header, Container, ContentGroup, Card } from '../components'
 import { reviews } from '../reviews/reviews'
-import { splitArray } from '../functions'
 import { DOCUMENT_TITLES } from '../constants'
 import { useDocumentTitle } from '../hooks'
 
@@ -27,13 +26,13 @@ const Reviews = () => {
   // )
 
   const renderReviews = (index1, index2) => (
-    <CardContainer marginBottom>
+    <Fragment>
       {reviews.slice(index1, index2).map(({ name, jobTitle, quote }) => (
-        <Card title={name} subtitle={jobTitle} key={name} condensed>
+        <Card title={name} subtitle={jobTitle} key={name} fullWidth>
           <p>{quote}</p>
         </Card>
       ))}
-    </CardContainer>
+    </Fragment>
   )
 
   return (
@@ -47,13 +46,13 @@ const Reviews = () => {
               them have said about me.
             </p>
           </ContentGroup>
-        </Container>
 
-        <ContentGroup>
-          {renderReviews(0, 4)}
-          {renderReviews(4, 8)}
-          {renderReviews(8, 12)}
-        </ContentGroup>
+          <ContentGroup>
+            {renderReviews(0, 4)}
+            {renderReviews(4, 8)}
+            {renderReviews(8, 12)}
+          </ContentGroup>
+        </Container>
       </main>
     </div>
   )

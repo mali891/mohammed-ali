@@ -33,8 +33,11 @@ export const styles = css`
     justify-content: space-between;
   }
 
-  &.c-card--condensed {
-    min-height: 20rem;
+  &.c-card--fullwidth {
+    width: 100%;
+    max-width: unset;
+    min-height: unset;
+    margin: 0 0 5rem 0;
 
     .c-card {
       &__heading {
@@ -84,11 +87,15 @@ export const styles = css`
     padding: ${SPACING.TABLET.MD};
 
     &:nth-of-type(odd) {
-      margin-right: 1%;
+      &:not(.c-card--fullwidth) {
+        margin-right: 1%;
+      }
     }
 
     &:nth-of-type(even) {
-      margin-left: 1%;
+      &:not(.c-card--fullwidth) {
+        margin-left: 1%;
+      }
     }
   }
 

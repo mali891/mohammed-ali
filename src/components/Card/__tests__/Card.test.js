@@ -14,10 +14,10 @@ describe('Card', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('renders correctly given a condensed prop', () => {
-    const { asFragment, container } = render(<Card {...defaultProps} condensed />)
+  it('renders correctly given a fullWidth prop', () => {
+    const { asFragment, container } = render(<Card {...defaultProps} fullWidth />)
 
-    expect(container.querySelector('.c-card--condensed')).toBeInTheDocument()
+    expect(container.querySelector('.c-card--fullwidth')).toBeInTheDocument()
     expect(asFragment()).toMatchSnapshot()
   })
 

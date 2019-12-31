@@ -5,11 +5,11 @@ import classNames from 'classnames'
 import { HeadingBlock, Link } from '../'
 import { styles } from './Card.styles'
 
-const Card = ({ children, className, condensed, link, path, subtitle, title, ...other }) => {
+const Card = ({ children, className, fullWidth, link, path, subtitle, title, ...other }) => {
   const dynamicClassNames = classNames([className], {
     'c-card': true,
     'u-bg--tertiary': true,
-    'c-card--condensed': condensed,
+    'c-card--fullwidth': fullWidth,
     'c-card--link': link,
     'c-card-fullheight': link
   })
@@ -41,14 +41,14 @@ const Card = ({ children, className, condensed, link, path, subtitle, title, ...
 }
 
 Card.defaultProps = {
-  condensed: false,
+  fullWidth: false,
   link: false
 }
 
 Card.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
   className: PropTypes.string,
-  condensed: PropTypes.bool,
+  fullWidth: PropTypes.bool,
   link: PropTypes.bool,
   path: PropTypes.string,
   subtitle: PropTypes.string,
