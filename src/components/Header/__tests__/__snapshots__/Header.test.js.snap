@@ -11,7 +11,7 @@ exports[`Header renders correctly 1`] = `
       css="[object Object]"
     >
       <h1
-        class="c-heading c-heading--xl c-heading__no-margin"
+        class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
         css="[object Object]"
       >
         Dummy title

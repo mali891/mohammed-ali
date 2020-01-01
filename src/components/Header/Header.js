@@ -10,7 +10,7 @@ const renderMainHeader = (title, handleScroll, scrollRef) => (
   <Fragment>
     <header className="c-header" css={styles}>
       <Container className="c-header__container">
-        <HeadingBlock type="h1" size="xl" noMargin>
+        <HeadingBlock type="h1" size="xl" align="center" noMargin>
           {title}
         </HeadingBlock>
       </Container>

@@ -1,28 +1,32 @@
 ---
 date: '2019-12-23'
-excerpt: 'The concept of `this` in JavaScript can be confusing. I decided I needed to understand this key feaure of JavaScript better. This is what I learned. Pun somewhat intended.'
+excerpt: 'The concept of `this` in JavaScript can be confusing. I decided I needed to understand this key feaure of JavaScript better. This is what I learned (pun somewhat intended).'
 length: '7 min'
 path: '/blog/we-need-to-talk-about-this'
 tags: ['javascript']
-title: 'We need to talk about `this`'
+title: 'We Need to Talk about `this`'
 ---
 
 In JavaScript (JS), `this` is a dynamic keyword which can have different values associated with it depending on where and how it is invoked. Let’s look at how `this` works in the global execution context.
 
 <br/>
 
-When used outside of any function, `this` is a reference to the global object. In a browser setting `this` refers to `Window`.
+When used outside of any function, `this` is a reference to the global object. In a browser setting `this` has a value of `Window`.
 
 ```javascript
 console.log(this)
 // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window...}
 ```
 
-In a node repl `this` refers to `global`, however inside a node module `this` refers to `module.exports`. The node engine runs each module of code inside of a wrapper function, and that wrapper function is invoked with the `this` value set to `module.exports`. For the purpose of this post, we'll be working in a browser environment.
+In a node repl `this` has a value of `global`, however inside a node module `this` has a value of `module.exports`. The node engine runs each module of code inside of a wrapper function, and that wrapper function is invoked with the `this` value set to `module.exports`.
+
+<br/>
+
+For the purpose of this post, we'll be working in a browser environment.
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles"><code class="language-text">`this`</code> in Function Calls</h2>
+<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Function Calls</h2>
 
 <br/>
 
@@ -74,7 +78,7 @@ Here we try to reference the variable `Gob` on line 8, but get `undefined`. This
 
 <br/>
 
-This is almost never the desired behaviour. If we tried the same code in strict mode, we'd get an error, preventing us from assigning properties to global variables.
+This is almost never the desired behaviour. If we tried the same code in strict mode, we'd get an error, preventing us from assigning properties to the global object.
 
 ```javascript
 function Person(firstName, lastName) {
@@ -106,7 +110,7 @@ console.log(Gob)
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles"><code class="language-text">`this`</code> in Constructor Calls</h2>
+<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Constructor Calls</h2>
 
 <br/>
 
@@ -135,7 +139,7 @@ Here we can see the output of the constructor function in action line by line. W
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles"><code class="language-text">`this`</code> in Method Calls</h2>
+<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Method Calls</h2>
 
 <br/>
 
@@ -174,11 +178,11 @@ person.sayHey()
 // "Hey I'm Super Hans!"
 ```
 
-Sometimes, methods are called several layers deep on an object using the dot notation. In this case, ‘this’ is set to the very next property to the left of the method being called.
+Sometimes, methods are called several layers deep on an object using the dot notation. In this case, `this` is set to the very next property to the left of the method being called.
 
 <br/>
 
-Depending on the circumstances, the intended receiver of the `this` call can be lost. For example, if we initialise a new variable and set it's value to the object method, we lost the receiver:
+Depending on the circumstances, the intended receiver of the `this` call can be lost. For example, if we initialise a new variable and set it's value to the object method, we lose the receiver:
 
 ```javascript
 function greeting() {
@@ -202,7 +206,7 @@ greet()
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles">Specify <code class="language-text">this</code> using <code class="language-text">.call()</code> and <code class="language-text">.apply()</code></h2>
+<h2 class="c-heading c-heading--md css-40h810-styles">Specify <code class="language-text">this</code> using <code class="language-text">.call()</code> and <code class="language-text">.apply()</code></h2>
 
 We can attach methods to objects without explicitly declaring them using `.call()` or `.apply()`.
 
@@ -225,9 +229,11 @@ console.log(person)
 // { firstName: "Super Hans" }
 ```
 
+`.call()` and `.apply()` invoke the function, and on lines 10 and 13 we can see that `greeting` has access to the `this` value of `person`.
+
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles">Specify <code class="language-text">this</code> using <code class="language-text">.bind()</code></h2>
+<h2 class="c-heading c-heading--md css-40h810-styles">Specify <code class="language-text">this</code> using <code class="language-text">.bind()</code></h2>
 
 In certain circumstances, we can lose our intended value of `this`. We can modify the value of `this` in some instances by using the `.bind()` method.
 
@@ -250,7 +256,7 @@ Here, `.bind()` creates a new `greeting` function, and permanently sets it's `th
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles"><code class="language-text">`this`</code> in Arrow Functions</h2>
+<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Arrow Functions</h2>
 
 Arrow functions do not have their own value for `this`. Instead, they inherit the value for `this` from the enclosing execution context, i.e. one level up.
 
@@ -294,7 +300,7 @@ counter.increment()
 // NaN
 ```
 
-This example can be re-written as an arrow function, with better results:
+The `this` value of `setInterval` is the global `Window` object, which doesn't have a `count` property associated with it, and so we get `NaN`. This example can be re-written as an arrow function, with better results:
 
 ```javascript
 const counter = {
@@ -312,4 +318,133 @@ counter.increment()
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-q2v293-styles"><code class="language-text">`this`</code> in Class Bodies</h2>
+<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Class Bodies</h2>
+
+Here we have a class, and everything looks like it's working as we might expect:
+
+```javascript
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  sayHi() {
+    console.log(`Hi, my name is ${this.firstName}!`)
+  }
+}
+
+const tommy = new Person('Tommy', 'Haverford')
+
+tommy.sayHi()
+// "Hi, my name is Tommy!"
+```
+
+In the constructor, `this` refers to the newly created instance of the class. `tommy` is a newly created object, and is the receiver for the method call `sayHi()`. However, if we save the method reference to a variable, and try to invoke that variable, we lose the receiver, and we lose the intended `this` value along with it.
+
+```javascript
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  sayHi() {
+    console.log(`Hi, my name is ${this.firstName}!`)
+  }
+}
+
+const tommy = new Person('Tommy', 'Haverford')
+
+tommy.sayHi()
+// "Hi, my name is Tommy!"
+
+const introduceTommy = tommy.sayHi
+
+introduceTommy()
+// TypeError: Cannot read property 'firstName' of undefined
+```
+
+This is because class bodies are implicitly set in strict mode, and we're attempting to invoke `introduceTommy` as an ordinary function. We can work around this by using the `.bind()` method:
+
+```javascript
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  sayHi() {
+    console.log(`Hi, my name is ${this.firstName}!`)
+  }
+}
+
+const tommy = new Person('Tommy', 'Haverford')
+
+tommy.sayHi()
+// "Hi, my name is Tommy!"
+
+const introduceTommy = tommy.sayHi.bind(tommy)
+
+introduceTommy()
+// TypeError: Cannot read property 'firstName' of undefined
+```
+
+A variation of this would be to bind the `sayHi` method in the constructor:
+
+```javascript
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.sayHi = this.sayHi.bind(this)
+  }
+
+  sayHi() {
+    console.log(`Hi, my name is ${this.firstName}!`)
+  }
+}
+
+const tommy = new Person('Tommy', 'Haverford')
+
+tommy.sayHi()
+// "Hi, my name is Tommy!"
+
+const introduceTommy = tommy.sayHi
+
+introduceTommy()
+// "Hi, my name is Tommy!"
+```
+
+Another solution would be to use an arrow function:
+
+```javascript
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  sayHi = () => {
+    console.log(`Hi, my name is ${this.firstName}!`)
+  }
+}
+
+const tommy = new Person('Tommy', 'Haverford')
+
+tommy.sayHi()
+// "Hi, my name is Tommy!"
+
+const introduceTommy = tommy.sayHi
+
+introduceTommy()
+// "Hi, my name is Tommy!"
+```
+
+Now we don't need to call `.bind()` because `this` is automatically set to the instance of the class.
+
+<br/><br/><br/>
+
+<h2 class="c-heading c-heading--md css-40h810-styles">Thanks for reading!</h2>
+
+That's it. That's all I've got for today. I hope you found it useful. Feel free to get in touch if I've made any mistakes in this post, if you fancy a chat about `this`, or for anything else, by using one of the links below.

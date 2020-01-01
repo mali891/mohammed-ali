@@ -14,7 +14,7 @@ exports[`Reviews renders correctly 1`] = `
         css="[object Object]"
       >
         <h1
-          class="c-heading c-heading--xl c-heading__no-margin"
+          class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
           css="[object Object]"
         >
           Reviews
@@ -58,7 +58,7 @@ exports[`Reviews renders correctly 1`] = `
               class="c-card__heading"
             >
               <span
-                class="c-heading c-heading--sm c-heading__no-margin"
+                class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
                 Adam Morrell
@@ -85,7 +85,7 @@ exports[`Reviews renders correctly 1`] = `
               class="c-card__heading"
             >
               <span
-                class="c-heading c-heading--sm c-heading__no-margin"
+                class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
                 Stephen Algeo
@@ -112,7 +112,7 @@ exports[`Reviews renders correctly 1`] = `
               class="c-card__heading"
             >
               <span
-                class="c-heading c-heading--sm c-heading__no-margin"
+                class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
                 Vygantas Valys
@@ -139,7 +139,7 @@ exports[`Reviews renders correctly 1`] = `
               class="c-card__heading"
             >
               <span
-                class="c-heading c-heading--sm c-heading__no-margin"
+                class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
                 Vicky Walton
@@ -166,7 +166,7 @@ exports[`Reviews renders correctly 1`] = `
               class="c-card__heading"
             >
               <span
-                class="c-heading c-heading--sm c-heading__no-margin"
+                class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
                 Samantha Ockwell

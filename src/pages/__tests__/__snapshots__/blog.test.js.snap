@@ -14,7 +14,7 @@ exports[`Blog renders correctly 1`] = `
         css="[object Object]"
       >
         <h1
-          class="c-heading c-heading--xl c-heading__no-margin"
+          class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
           css="[object Object]"
         >
           Blog
@@ -54,7 +54,7 @@ exports[`Blog renders correctly 1`] = `
                 class="c-card__heading"
               >
                 <span
-                  class="c-heading c-heading--sm c-heading__no-margin"
+                  class="c-heading c-heading--sm c-heading--no-margin"
                   css="[object Object]"
                 >
                   Test title 1
@@ -84,7 +84,7 @@ exports[`Blog renders correctly 1`] = `
                 class="c-card__heading"
               >
                 <span
-                  class="c-heading c-heading--sm c-heading__no-margin"
+                  class="c-heading c-heading--sm c-heading--no-margin"
                   css="[object Object]"
                 >
                   Test title 2

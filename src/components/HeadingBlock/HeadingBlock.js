@@ -7,7 +7,7 @@ import { TSHIRT_SIZES } from '../../styles/settings'
 
 const headingTypes = ['h1', 'h2', 'h3', 'h4', 'h5', 'span']
 
-const HeadingBlock = ({ children, className, type, size, noMargin, ...other }) => {
+const HeadingBlock = ({ align, children, className, type, size, noMargin, ...other }) => {
   const HeadingTag = type
   const dynamicClassNames = classNames([className], {
     'c-heading': true,
@@ -16,7 +16,8 @@ const HeadingBlock = ({ children, className, type, size, noMargin, ...other }) =
     'c-heading--md': size === 'md',
     'c-heading--lg': size === 'lg',
     'c-heading--xl': size === 'xl',
-    'c-heading__no-margin': noMargin
+    'c-heading--no-margin': noMargin,
+    'c-heading--align-center': align === 'center'
   })
 
   return (
@@ -27,6 +28,7 @@ const HeadingBlock = ({ children, className, type, size, noMargin, ...other }) =
 }
 
 HeadingBlock.propTypes = {
+  align: PropTypes.oneOf(['left', 'center', 'right']),
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
   className: PropTypes.string,
   noMargin: PropTypes.bool,

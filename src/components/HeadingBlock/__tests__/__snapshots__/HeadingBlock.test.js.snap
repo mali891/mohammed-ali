@@ -12,7 +12,7 @@ exports[`HeadingBlock renders correctly 1`] = `
 exports[`HeadingBlock renders correctly given a noMargin prop 1`] = `
 <DocumentFragment>
   <span
-    class="c-heading c-heading--md c-heading__no-margin"
+    class="c-heading c-heading--md c-heading--no-margin"
     css="[object Object]"
   />
 </DocumentFragment>

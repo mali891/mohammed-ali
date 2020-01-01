@@ -10,6 +10,8 @@
 
 Hey, I'm Mohammed, Freelance Front-end Engineer based in Huddersfield, West Yorkshire. This is my personal site. Thanks for visiting. Below is some blurb about how you can build and run the site locally if you wish, the tech choices I made, and future plans for the project.
 
+Uses context API and CSS variables to control the colour theme, React hooks to control the document title, and React refs
+
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Build and run the project locally

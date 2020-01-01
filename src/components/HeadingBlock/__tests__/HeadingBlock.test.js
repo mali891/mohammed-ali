@@ -32,7 +32,7 @@ describe('HeadingBlock', () => {
   it('renders correctly given a noMargin prop', () => {
     const { asFragment, container } = render(<HeadingBlock {...defaultProps} noMargin />)
 
-    expect(container.querySelector('.c-heading__no-margin')).toBeInTheDocument()
+    expect(container.querySelector('.c-heading--no-margin')).toBeInTheDocument()
     expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -13,7 +13,7 @@ exports[`Card renders a link when given a link prop 1`] = `
         class="c-card__heading"
       >
         <span
-          class="c-heading c-heading--sm c-heading__no-margin"
+          class="c-heading c-heading--sm c-heading--no-margin"
           css="[object Object]"
         >
           Dummy title
@@ -37,7 +37,7 @@ exports[`Card renders a subtitle when given a subtitle prop 1`] = `
       class="c-card__heading"
     >
       <span
-        class="c-heading c-heading--sm c-heading__no-margin"
+        class="c-heading c-heading--sm c-heading--no-margin"
         css="[object Object]"
       >
         Dummy title
@@ -65,7 +65,7 @@ exports[`Card renders correctly 1`] = `
       class="c-card__heading"
     >
       <span
-        class="c-heading c-heading--sm c-heading__no-margin"
+        class="c-heading c-heading--sm c-heading--no-margin"
         css="[object Object]"
       >
         Dummy title
@@ -88,7 +88,7 @@ exports[`Card renders correctly given a fullWidth prop 1`] = `
       class="c-card__heading"
     >
       <span
-        class="c-heading c-heading--sm c-heading__no-margin"
+        class="c-heading c-heading--sm c-heading--no-margin"
         css="[object Object]"
       >
         Dummy title

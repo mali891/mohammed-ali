@@ -44,7 +44,11 @@ export const styles = css`
         }`
   )}
 
-  &.c-heading__no-margin {
+  &.c-heading--no-margin {
     margin-bottom: 0;
+  }
+
+  &.c-heading--align-center {
+    text-align: center;
   }
 `
