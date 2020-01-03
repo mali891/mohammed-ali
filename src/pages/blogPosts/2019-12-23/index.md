@@ -1,7 +1,7 @@
 ---
 date: '2019-12-23'
 excerpt: 'The concept of `this` in JavaScript can be confusing. I decided I needed to understand this key feaure of JavaScript better. This is what I learned (pun somewhat intended).'
-length: '7 min'
+length: '9 min'
 path: '/blog/we-need-to-talk-about-this'
 tags: ['javascript']
 title: 'We Need to Talk about `this`'
@@ -71,7 +71,8 @@ console.log(Gob)
 // undefined
 
 console.log(Window.firstName, Window.lastName)
-// "Gob", "Bluth"
+// "Gob
+Bluth"
 ```
 
 Here we try to reference the variable `Gob` on line 8, but get `undefined`. This is because the properties `firstName` and `lastName` have been assigned to the global `Window` object, as illustrated on line 9.
