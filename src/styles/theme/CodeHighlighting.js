@@ -1,7 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
-import { COLOURS, FONT_SIZES, MEDIA_QUERIES, SPACING, VIEWPORT_SIZES } from '../settings'
-import './prism-tomorrow.css'
+import { COLOURS, MEDIA_QUERIES, SPACING, VIEWPORT_SIZES } from '../settings'
 
 const CodeHighlighting = () => (
   <Global
@@ -11,19 +10,13 @@ const CodeHighlighting = () => (
       code[class*='language-'],
       pre[class*='language-'] {
         font-family: SF Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-        font-size: 2rem !important;
       }
 
       .gatsby-highlight {
         background-color: ${COLOURS.BLACK};
-        font-size: 2rem !important;
         padding: 2rem;
         border-radius: 1rem;
         overflow: auto;
-
-        * {
-          font-size: 2rem !important;
-        }
 
         /**
         * Remove the default PrismJS theme background-color, border-radius, margin,
@@ -36,7 +29,7 @@ const CodeHighlighting = () => (
         pre[class*='language-'] {
           background-color: transparent;
           margin: 0;
-          padding: 0 0 0 5rem;
+          padding: 0 0 0 6rem;
           overflow: initial;
           float: left; /* 1 */
           min-width: 100%; /* 2 */
@@ -55,6 +48,12 @@ const CodeHighlighting = () => (
               margin: ${SPACING[`${viewport}`].MD} 0;  
             }`
         )}
+
+        @media (min-width: ${MEDIA_QUERIES.TABLET}) {
+          pre[class*='language-'] {
+            padding: 0 0 0 7rem;
+          }
+        }
 
         &-code-line {
           background-color: ${COLOURS.BLACK};

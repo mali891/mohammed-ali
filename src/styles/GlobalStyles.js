@@ -16,7 +16,11 @@ const GlobalStyles = () => (
         ${VIEWPORT_SIZES.map(
           viewport =>
             `@media (min-width: ${MEDIA_QUERIES[`${viewport}`]}) {
-              p {
+              p,
+              pre,
+              code,
+              code[class*='language-'],
+              pre[class*='language-'] {
                 font-size: ${FONT_SIZES[`${viewport}`].SM};
               }
 
