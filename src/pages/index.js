@@ -44,7 +44,7 @@ const Homepage = ({ data }) => {
             </HeadingBlock>
 
             <p>
-              HTML5, CSS3, SCSS, BEM, JavaScript (ES5 - 8), React, Redux, Webpack, Grunt, Gulp, Jest, Enzyme, React
+              JavaScript (ES5 - 8), React, Redux, HTML5, CSS3, SCSS, BEM, Webpack, Grunt, Gulp, Jest, Enzyme, React
               Testing Library, GraphQL, Gatsby, Git, Agile, accessibility.
             </p>
           </ContentGroup>
