@@ -10,6 +10,7 @@ const GlobalStyles = () => (
     <Utilities />
     <Theme />
     <CodeHighlighting />
+
     <Global
       styles={css`
         ${VIEWPORT_SIZES.map(

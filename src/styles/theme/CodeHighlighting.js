@@ -1,6 +1,7 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
 import { COLOURS, FONT_SIZES, MEDIA_QUERIES, SPACING, VIEWPORT_SIZES } from '../settings'
+import './prism-tomorrow.css'
 
 const CodeHighlighting = () => (
   <Global
