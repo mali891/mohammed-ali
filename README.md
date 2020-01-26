@@ -6,6 +6,10 @@
 
 Hey, I'm Mohammed, Freelance Front-end Engineer based in Huddersfield, West Yorkshire. This is my personal site. Thanks for visiting. Below is some blurb about how you can build and run the site locally if you wish, the tech choices I made, known bugs, and future plans for the project.
 
+## 🔗 Visit site
+
+[Portfolio site](https://mohammed-ali.co.uk)
+
 ## 📱 Contact
 
 [hello@mohammed-ali.co.uk](mailto:hello@mohammed-ali.co.uk)
