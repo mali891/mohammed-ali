@@ -10,6 +10,11 @@ const CodeHighlighting = () => (
       code[class*='language-'],
       pre[class*='language-'] {
         font-family: SF Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        font-size: 1.5rem !important;
+
+        @media (min-width: ${MEDIA_QUERIES.TABLET}) {
+          font-size: ${FONT_SIZES.XS} !important;
+        }
       }
 
       .gatsby-highlight {
@@ -33,16 +38,11 @@ const CodeHighlighting = () => (
 
         pre[class*='language-'] {
           background-color: transparent;
-          font-size: 1.5rem !important;
           margin: 0;
           padding: 0 0 0 5rem;
           overflow: initial;
           float: left; /* 1 */
           min-width: 100%; /* 2 */
-
-          @media (min-width: ${MEDIA_QUERIES.TABLET}) {
-            font-size: ${FONT_SIZES.XS} !important;
-          }
 
           /* Adjust the position of the line numbers */
           .line-numbers {
