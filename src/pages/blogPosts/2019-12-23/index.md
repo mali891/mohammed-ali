@@ -1,7 +1,7 @@
 ---
 date: '2019-12-23'
 excerpt: 'The concept of `this` in JavaScript can be confusing. I decided I needed to understand this key feaure of JavaScript better. This is what I learned (pun somewhat intended).'
-length: '9 min'
+length: '13 min'
 path: '/blog/we-need-to-talk-about-this'
 tags: ['javascript']
 title: 'We Need to Talk about `this`'
@@ -30,7 +30,7 @@ For the purpose of this post, we'll be working in a browser environment.
 
 <br/>
 
-In most cases, the value of a function’s `this` argument is determined by how the function is called. That means `this` can be different each time the function is executed. In a plain, undecorated function call, if you are not using strict mode, the value of `this` is set to the global `Window` object.
+In most cases, the value of a function’s `this` argument is determined by how the function is called. That means `this` can be different each time the function is executed. In a plain, undecorated function call, if you are not using strict mode, the value of `this` is set to the `global` object.
 
 ```javascript
 function myFunc() {
@@ -70,9 +70,9 @@ const Gob = Person('Gob', 'Bluth')
 console.log(Gob)
 // undefined
 
-console.log(Window.firstName, Window.lastName)
-// "Gob
-Bluth"
+console.log(global.firstName, global.lastName)
+// "Gob"
+// "Bluth"
 ```
 
 Here we try to reference the variable `Gob` on line 8, but get `undefined`. This is because the properties `firstName` and `lastName` have been assigned to the global `Window` object, as illustrated on line 9.

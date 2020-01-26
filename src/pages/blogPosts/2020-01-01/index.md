@@ -14,7 +14,7 @@ _"When it comes to inheritance, JavaScript only has one construct: objects. Each
 
 <br/><br/>
 
-Prototypes are the mechanisms which power inheritance in JavaScript (JS). Prototypes are simply objects which contain a predefined set of values, which we can access and make use of.
+Prototypes are the mechanisms which power inheritance in JavaScript (JS). Prototypes are simply objects which contain a predefined set of values, which we can access and make use of. Each type has it's own predefined prototypal object.
 
 ```javascript
 const myObj = {}
@@ -54,11 +54,11 @@ console.log(myObj.toString())
 // "[object Object]"
 ```
 
-We're able to access a property `toString()` on `myObj`, yet we haven't declared a property called `toString` inside `myObj`. `myObj` is just an empty object literal. Notice also the log statement doesn't return an error.
+We're able to access a property `toString()` on `myObj`, yet we haven't declared a property called `toString` inside `myObj`. `myObj` is just an empty object literal. Notice also the log statement doesn't return `undefined`.
 
 <br/>
 
-What's happening is that when calling a property on an object (or other primitive type), JS will first look inside the definition of the object for the property that is called. If the property does not exist inside the object definition, then JS looks inside the `__proto__` object for the property. In a nutshell, this is what prototypal inheritance means in JS.
+When calling a property on an object (or other primitive type), JS will first look inside the definition of the object for the property that is called. If the property does not exist inside the object definition, then JS looks inside the `__proto__` object for the property. In a nutshell, this is what prototypal inheritance is in JS.
 
 <br/>
 
@@ -75,7 +75,11 @@ console.log(myObj.toString())
 // "New property `toString` invoked!!"
 ```
 
-All types of objects within JS have their own built-in global prototype objects which are linked as soon as the object is instantiated. This is also true for object sub-types such as arrays, maps, sets and functions.
+<br/><br/><br/>
+
+<h2 class="c-heading c-heading--md css-40h810-styles">Primitive Types and Sub-Types</h2>
+
+All types of objects within JS have their own built-in global prototype objects which are linked as soon as the object is instantiated. This is also true for other primitive types (more on this later), and also object sub-types, such as arrays, maps, sets and functions.
 
 ```javascript
 const myArr = []
@@ -146,11 +150,11 @@ console.log(myFunc.prototype)
 ```javascript
 function myFunc() {}
 
-myFunc.prototype.something = 'Hello I am a new string'
+myFunc.prototype.newString = 'Hello I am a new string'
 
 console.log(myFunc.prototype)
-// { something: "Hello I am a new string", constructor: ƒ }
-//   something: "Hello I am a new string"
+// { newString: "Hello I am a new string", constructor: ƒ }
+//   newString: "Hello I am a new string"
 //   constructor: ƒ myFunc()
 //   __proto__: Object
 
@@ -159,7 +163,7 @@ const myNewFunc = new myFunc()
 console.log(myNewFunc)
 // myFunc {}
 //   __proto__:
-//     something: "Hello I am a new string"
+//     newString: "Hello I am a new string"
 //     constructor: ƒ myFunc()
 //     __proto__: Object
 
@@ -167,7 +171,7 @@ console.log(myNewFunc.prototype)
 // undefined
 ```
 
-Here we've added a new property `something` to `myFunc`. Then we instantiated a new constructor of `myFunc` called `myNewFunc`. When adding a property to a function, it is added to the `.prototype` object. But, if we declare a new instance of that function using the `new` keyword, the new instance will have that new property available to it in the `__proto__` object, rather than the `.prototype` object.
+Here we've added a new property `newString` to `myFunc`. Then we instantiated a new constructor of `myFunc` called `myNewFunc`. When adding a property to a function, it is added to the `.prototype` object. But, if we declare a new instance of that function using the `new` keyword, the new instance will have that new property available to it in the `__proto__` object, rather than the `.prototype` object.
 
 <br/>
 
@@ -189,7 +193,7 @@ console.log(Set)
 // ƒ Set() { [native code] }
 ```
 
-These are all global functions, not objects. They all have access to a `.prototype` property, which has methods inside of it, which we use on a regular basis without even thinking about it. For example, every time you `map` or `forEach` through an array, you're actually using the global `array.prototype.map` or global `array.prototype.forEach` method. When the array is created, JS automatically creates a connection between our new array, and the corresponding `__proto__` property.
+These are all global functions, not objects. They all have access to a `.prototype` property, which has methods inside of it. Many JS developers use these on a regular basis without even thinking about it. For example, every time you `map` or `forEach` through an array, you're actually using the global `array.prototype.map` or global `array.prototype.forEach` method. When the array is created, JS automatically creates a connection between our new array, and the corresponding `__proto__` property.
 
 ```javascript
 console.log(Object.prototype)

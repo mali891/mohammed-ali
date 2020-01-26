@@ -10,12 +10,17 @@ exports[`Header renders correctly 1`] = `
       class="c-header__container c-container"
       css="[object Object]"
     >
-      <h1
-        class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
-        css="[object Object]"
-      >
-        Dummy title
-      </h1>
+      <div>
+        <h1
+          class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
+          css="[object Object]"
+        >
+          Dummy title
+        </h1>
+      </div>
+      <path
+        d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
+      />
     </div>
     <button
       class="c-header__more-link c-link u-clr--secondary"
