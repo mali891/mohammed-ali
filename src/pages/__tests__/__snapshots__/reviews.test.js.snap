@@ -13,17 +13,12 @@ exports[`Reviews renders correctly 1`] = `
         class="c-header__container c-container"
         css="[object Object]"
       >
-        <div>
-          <h1
-            class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
-            css="[object Object]"
-          >
-            Reviews
-          </h1>
-        </div>
-        <path
-          d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-        />
+        <h1
+          class="c-heading c-heading--xl c-heading--no-margin c-heading--align-center"
+          css="[object Object]"
+        >
+          Reviews
+        </h1>
       </div>
       <button
         class="c-header__more-link c-link u-clr--secondary"
