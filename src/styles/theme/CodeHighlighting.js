@@ -10,30 +10,18 @@ const CodeHighlighting = () => (
       code[class*='language-'],
       pre[class*='language-'] {
         font-family: SF Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-        font-size: 1.5rem !important;
-
-        @media (min-width: ${MEDIA_QUERIES.TABLET}) {
-          font-size: ${FONT_SIZES.XS} !important;
-        }
+        font-size: ${FONT_SIZES.XS} !important;
       }
 
       .gatsby-highlight {
         background-color: ${COLOURS.BLACK};
+        font-size: ${FONT_SIZES.XS} !important;
         padding: 2rem;
         border-radius: 1rem;
         overflow: auto;
-        font-size: 1.5rem !important;
-
-        @media (min-width: ${MEDIA_QUERIES.TABLET}) {
-          font-size: ${FONT_SIZES.XS} !important;
-        }
 
         * {
-          font-size: 1.5rem !important;
-
-          @media (min-width: ${MEDIA_QUERIES.TABLET}) {
-            font-size: ${FONT_SIZES.XS} !important;
-          }
+          font-size: ${FONT_SIZES.XS} !important;
         }
 
         /**
