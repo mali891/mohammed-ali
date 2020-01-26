@@ -14,10 +14,14 @@ const CodeHighlighting = () => (
 
       .gatsby-highlight {
         background-color: ${COLOURS.BLACK};
-        font-size: ${FONT_SIZES.XS};
+        font-size: 1.5rem !important;
         padding: 2rem;
         border-radius: 1rem;
         overflow: auto;
+
+        @media (min-width: ${MEDIA_QUERIES.TABLET}) {
+          font-size: ${FONT_SIZES.XS} !important;
+        }
 
         /**
         * Remove the default PrismJS theme background-color, border-radius, margin,
