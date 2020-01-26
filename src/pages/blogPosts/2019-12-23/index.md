@@ -26,7 +26,7 @@ For the purpose of this post, we'll be working in a browser environment.
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Function Calls</h2>
+<h2 class="c-heading c-heading--md"><code class="language-text">this</code> in Function Calls</h2>
 
 <br/>
 
