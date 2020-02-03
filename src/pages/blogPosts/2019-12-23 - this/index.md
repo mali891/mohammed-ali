@@ -4,7 +4,7 @@ excerpt: 'The concept of `this` in JavaScript can be confusing. I decided I need
 length: '13 min'
 path: '/blog/we-need-to-talk-about-this'
 tags: ['javascript']
-title: 'We Need to Talk about `this`'
+title: '`this`'
 ---
 
 In JavaScript (JS), `this` is a dynamic keyword which can have different values associated with it depending on where and how it is invoked. Let’s look at how `this` works in the global execution context.
@@ -111,7 +111,7 @@ console.log(Gob)
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Constructor Calls</h2>
+<h2 class="c-heading c-heading--md"><code class="language-text">this</code> in Constructor Calls</h2>
 
 <br/>
 
@@ -140,7 +140,7 @@ Here we can see the output of the constructor function in action line by line. W
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Method Calls</h2>
+<h2 class="c-heading c-heading--md"><code class="language-text">this</code> in Method Calls</h2>
 
 <br/>
 
@@ -207,7 +207,7 @@ greet()
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Specify <code class="language-text">this</code> using <code class="language-text">.call()</code> and <code class="language-text">.apply()</code></h2>
+<h2 class="c-heading c-heading--md">Specify <code class="language-text">this</code> using <code class="language-text">.call()</code> and <code class="language-text">.apply()</code></h2>
 
 We can attach methods to objects without explicitly declaring them using `.call()` or `.apply()`.
 
@@ -234,7 +234,7 @@ console.log(person)
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Specify <code class="language-text">this</code> using <code class="language-text">.bind()</code></h2>
+<h2 class="c-heading c-heading--md">Specify <code class="language-text">this</code> using <code class="language-text">.bind()</code></h2>
 
 In certain circumstances, we can lose our intended value of `this`. We can modify the value of `this` in some instances by using the `.bind()` method.
 
@@ -257,7 +257,7 @@ Here, `.bind()` creates a new `greeting` function, and permanently sets it's `th
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Arrow Functions</h2>
+<h2 class="c-heading c-heading--md"><code class="language-text">this</code> in Arrow Functions</h2>
 
 Arrow functions do not have their own value for `this`. Instead, they inherit the value for `this` from the enclosing execution context, i.e. one level up.
 
@@ -319,7 +319,7 @@ counter.increment()
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles"><code class="language-text">this</code> in Class Bodies</h2>
+<h2 class="c-heading c-heading--md"><code class="language-text">this</code> in Class Bodies</h2>
 
 Here we have a class, and everything looks like it's working as we might expect:
 
@@ -446,6 +446,6 @@ Now we don't need to call `.bind()` because `this` is automatically set to the i
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Thanks for reading!</h2>
+<h2 class="c-heading c-heading--md">Thanks for reading!</h2>
 
 That's it. That's all I've got for today. I hope you found it useful. Feel free to get in touch if I've made any mistakes in this post, if you fancy a chat about `this`, or for anything else, by using one of the links below.

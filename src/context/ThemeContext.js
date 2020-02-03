@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { createContext, useState } from 'react'
 import PropTypes from 'prop-types'
 
-const { Provider, Consumer } = React.createContext()
+const { Provider, Consumer } = createContext()
 
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark')

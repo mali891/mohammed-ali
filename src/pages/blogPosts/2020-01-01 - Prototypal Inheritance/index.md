@@ -7,7 +7,7 @@ tags: ['javascript']
 title: 'Prototypal Inheritance in JavaScript'
 ---
 
-<h2 class="c-heading c-heading--md css-40h810-styles">What is Prototypal Inheritance?</h2>
+<h2 class="c-heading c-heading--md">What is Prototypal Inheritance?</h2>
 
 According to the <a class="c-link u-clr--secondary" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain" target="_blank" rel="noopener noreferrer">MDN docs</a>:
 _"When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain."_
@@ -77,7 +77,7 @@ console.log(myObj.toString())
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Primitive Types and Sub-Types</h2>
+<h2 class="c-heading c-heading--md">Primitive Types and Sub-Types</h2>
 
 All types of objects within JS have their own built-in global prototype objects which are linked as soon as the object is instantiated. This is also true for other primitive types (more on this later), and also object sub-types, such as arrays, maps, sets and functions.
 
@@ -128,7 +128,7 @@ console.log(myArr)
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">The Difference Between <code class="language-text">.prototype</code> and <code class="language-text">__proto__</code></h2>
+<h2 class="c-heading c-heading--md">The Difference Between <code class="language-text">.prototype</code> and <code class="language-text">__proto__</code></h2>
 
 Functions in JS are first-class objects. This means they can have functions and methods associated with them as properties just like objects can.
 
@@ -213,7 +213,7 @@ In other words, you're using prototypal inhheritance any time you use any type o
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Primitive Types and the Prototype Chain</h2>
+<h2 class="c-heading c-heading--md">Primitive Types and the Prototype Chain</h2>
 
 It's not just objects that have access to the prototype chain:
 
@@ -238,7 +238,7 @@ While these primitive types are not technically objects, JS gives them behaviour
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Summary</h2>
+<h2 class="c-heading c-heading--md">Summary</h2>
 
 Objects in JS give us the ability to create a group of key/value pairs. We can look up properties in objects using the dot notation. As expected, if we tried to look up a property which hasn't been declared on an object, we'd get `undefined`:
 
@@ -272,6 +272,6 @@ In which case we can make use of JavaScript's prototypal inheritance system.
 
 <br/><br/><br/>
 
-<h2 class="c-heading c-heading--md css-40h810-styles">Thanks for reading!</h2>
+<h2 class="c-heading c-heading--md">Thanks for reading!</h2>
 
 That's it. That's all I've got for today. I hope you found it useful. Feel free to get in touch if I've made any mistakes in this post, if you fancy a chat about prototypal inheritance, or for anything else, by using one of the links below.

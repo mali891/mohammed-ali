@@ -34,6 +34,7 @@ const Resets = () => (
         min-height: 100%;
         max-width: 100vw;
         overflow-x: hidden;
+        background-color: var(--colour-primary);
       }
 
       ::selection {

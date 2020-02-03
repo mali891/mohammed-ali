@@ -51,7 +51,7 @@ const CodeHighlighting = () => (
 
         @media (min-width: ${MEDIA_QUERIES.TABLET}) {
           pre[class*='language-'] {
-            padding: 0 0 0 7rem;
+            padding: 0 5rem 0 7rem;
           }
         }
 

@@ -130,7 +130,7 @@ export const styles = css`
     }
 
     .c-card__subtitle {
-      font-size: ${FONT_SIZES.DESKTOP.XS};
+      font-size: 2.2rem;
     }
 
     .c-card__content {

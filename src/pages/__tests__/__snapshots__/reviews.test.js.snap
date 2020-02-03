@@ -169,6 +169,33 @@ exports[`Reviews renders correctly 1`] = `
                 class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
+                Stu Bamforth
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                Interaction Designer
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                Mo is a fantastic front end developer and was a great addition to our squad. He hit the ground running from day one and made an instant difference to the overall quality of the work our team was producing. He has a fine grasp of motion and how it can be used to aid usability, a good eye for detail and meticulously high standards. He's got a great sense of humour and is a pleasure to work with, it's just a shame he's a Manchester United fan!
+              </p>
+            </div>
+          </div>
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading--no-margin"
+                css="[object Object]"
+              >
                 Vicky Walton
               </span>
               <span

@@ -24,6 +24,12 @@ export const reviews = [
       'So far I worked with Mohammed (Mo) in same organisation for over a year. He’s a passionate front-end developer with genuine interest in what’s going on in the industry. Mo came with strong front-end skillset (HTML, SCSS, Vanilla JS and some React), and I was astounded how quickly his drive made him a very competent React.js/Redux developer, using different libraries for unit testing (jest, react testing library, enzyme). He has done a ton of research on accessibility in front-end and numerous times demonstrated his ability to be a patient mentor. Mo proven to have an eye for detail in design. I found him to posses analytical thinking, be approachable, humble and extremely competitive at foosball table. Mo is a reliable asset in any team and I’d highly recommend him.'
   },
   {
+    name: 'Stu Bamforth',
+    jobTitle: 'Interaction Designer',
+    quote:
+      "Mo is a fantastic front end developer and was a great addition to our squad. He hit the ground running from day one and made an instant difference to the overall quality of the work our team was producing. He has a fine grasp of motion and how it can be used to aid usability, a good eye for detail and meticulously high standards. He's got a great sense of humour and is a pleasure to work with, it's just a shame he's a Manchester United fan!"
+  },
+  {
     name: 'Vicky Walton',
     jobTitle: 'Scrum Master',
     quote:
