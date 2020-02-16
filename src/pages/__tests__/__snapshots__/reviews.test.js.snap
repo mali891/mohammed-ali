@@ -169,6 +169,33 @@ exports[`Reviews renders correctly 1`] = `
                 class="c-heading c-heading--sm c-heading--no-margin"
                 css="[object Object]"
               >
+                Alex Colbeck
+              </span>
+              <span
+                class="c-card__subtitle"
+              >
+                UX Designer
+              </span>
+            </div>
+            <div
+              class="c-card__content"
+            >
+              <p>
+                 Mo is a very capable and professional contractor who was a pleasure to work alongside for our client, Yorkshire Water. He not only excels at creating front-end user interfaces that seamlessly interact with APIs, but also has a great eye for design detail. Mo relished the opportunity to learn more about building accessible web-apps for users with impairments, and was crucial in helping to create a design system for the client.
+              </p>
+            </div>
+          </div>
+          <div
+            class="c-card u-bg--tertiary c-card--fullwidth"
+            css="[object Object]"
+          >
+            <div
+              class="c-card__heading"
+            >
+              <span
+                class="c-heading c-heading--sm c-heading--no-margin"
+                css="[object Object]"
+              >
                 Stu Bamforth
               </span>
               <span

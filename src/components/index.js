@@ -12,6 +12,7 @@ import NextPrevLinks from './NextPrevLinks/NextPrevLinks'
 import AppWrapper from './AppWrapper/AppWrapper'
 import HeaderScrollTarget from './HeaderScrollTarget/HeaderScrollTarget'
 import BlogIntro from './BlogIntro/BlogIntro'
+import BlogContents from './BlogContents/BlogContents'
 
 export {
   ContentGroup,
@@ -27,5 +28,6 @@ export {
   NextPrevLinks,
   AppWrapper,
   HeaderScrollTarget,
-  BlogIntro
+  BlogIntro,
+  BlogContents
 }

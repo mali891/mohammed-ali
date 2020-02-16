@@ -13,7 +13,10 @@ const Type = () => (
           pre,
           code,
           code[class*='language-'],
-          pre[class*='language-'] {
+          pre[class*='language-'],
+          ol,
+          ul,
+          li {
             font-size: ${FONT_SIZES[`${viewport}`].SM};
           }
 

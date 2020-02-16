@@ -1,8 +1,7 @@
 import { css } from '@emotion/core'
-import { FONT_FAMILY, EASINGS, BORDER_RADIUS } from '../../styles/settings'
+import { EASINGS, BORDER_RADIUS } from '../../styles/settings'
 
 export const styles = css`
-  font-family: ${FONT_FAMILY.MEDIUM};
   background: none;
   border: none;
   text-decoration: none;

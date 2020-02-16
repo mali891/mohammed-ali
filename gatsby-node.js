@@ -1,18 +1,18 @@
 const path = require(`path`)
 
+const PATHS = {
+  TEMPLATES: 'src/templates/'
+}
+
 const TEMPLATES = {
-  BLOG: "blogTemplate.js",
-  ALL_TAGS: "allTagsTemplate.js",
-  SINGLE_TAGS: "singleTagTemplate.js",
+  BLOG: 'BlogTemplate.js',
+  ALL_TAGS: 'AllTagsTemplate.js',
+  SINGLE_TAGS: 'SingleTagTemplate.js'
 }
 
 const createTagPages = (createPage, posts) => {
-  const allTagsIndexTemplate = path.resolve(
-    `src/templates/${TEMPLATES.ALL_TAGS}`
-  )
-  const singleTagIndexTemplate = path.resolve(
-    `src/templates/${TEMPLATES.SINGLE_TAGS}`
-  )
+  const allTagsIndexTemplate = path.resolve(`${PATHS.TEMPLATES}${TEMPLATES.ALL_TAGS}`)
+  const singleTagIndexTemplate = path.resolve(`${PATHS.TEMPLATES}${TEMPLATES.SINGLE_TAGS}`)
 
   const postsByTag = {}
 
@@ -31,11 +31,11 @@ const createTagPages = (createPage, posts) => {
   const tags = Object.keys(postsByTag)
 
   createPage({
-    path: "/tags",
+    path: '/tags',
     component: allTagsIndexTemplate,
     context: {
-      tags: tags.sort(),
-    },
+      tags: tags.sort()
+    }
   })
 
   tags.forEach(tag => {
@@ -46,8 +46,8 @@ const createTagPages = (createPage, posts) => {
       component: singleTagIndexTemplate,
       context: {
         posts,
-        tag,
-      },
+        tag
+      }
     })
   })
 }
@@ -58,15 +58,13 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve(`src/templates/${TEMPLATES.BLOG}`)
+    const blogPostTemplate = path.resolve(`${PATHS.TEMPLATES}${TEMPLATES.BLOG}`)
     // Query for markdown nodes to use in creating pages.
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(
-              sort: { order: ASC, fields: [frontmatter___date] }
-            ) {
+            allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }) {
               edges {
                 node {
                   frontmatter {
@@ -100,8 +98,8 @@ exports.createPages = ({ graphql, actions }) => {
               path,
               tags,
               prev: i === 0 ? null : posts[i - 1].node,
-              next: i === posts.length - 1 ? null : posts[i + 1].node,
-            },
+              next: i === posts.length - 1 ? null : posts[i + 1].node
+            }
           })
         })
       })

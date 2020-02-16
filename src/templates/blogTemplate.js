@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Container, ContentGroup, NextPrevLinks, BlogIntro } from '../components/'
+import { Header, Container, ContentGroup, NextPrevLinks, BlogIntro, BlogContents } from '../components/'
 
-const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } }) => {
+const BlogTemplate = ({ data: { markdownRemark }, pageContext, pageContext: { next, prev } }) => {
   const { frontmatter, html } = markdownRemark
 
   return (
@@ -15,6 +15,8 @@ const blogTemplate = ({ data: { markdownRemark }, pageContext: { next, prev } })
           <ContentGroup>
             <BlogIntro date={frontmatter.date} length={frontmatter.length} excerpt={frontmatter.excerpt} />
           </ContentGroup>
+
+          <BlogContents />
 
           <ContentGroup>
             <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -36,14 +38,15 @@ export const query = graphql`
         excerpt
         length
         title
+        contents
       }
     }
   }
 `
 
-blogTemplate.propTypes = {
+BlogTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   pageContext: PropTypes.object.isRequired
 }
 
-export default blogTemplate
+export default BlogTemplate

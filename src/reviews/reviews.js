@@ -24,6 +24,12 @@ export const reviews = [
       'So far I worked with Mohammed (Mo) in same organisation for over a year. He’s a passionate front-end developer with genuine interest in what’s going on in the industry. Mo came with strong front-end skillset (HTML, SCSS, Vanilla JS and some React), and I was astounded how quickly his drive made him a very competent React.js/Redux developer, using different libraries for unit testing (jest, react testing library, enzyme). He has done a ton of research on accessibility in front-end and numerous times demonstrated his ability to be a patient mentor. Mo proven to have an eye for detail in design. I found him to posses analytical thinking, be approachable, humble and extremely competitive at foosball table. Mo is a reliable asset in any team and I’d highly recommend him.'
   },
   {
+    name: 'Alex Colbeck',
+    jobTitle: 'UX Designer',
+    quote:
+      ' Mo is a very capable and professional contractor who was a pleasure to work alongside for our client, Yorkshire Water. He not only excels at creating front-end user interfaces that seamlessly interact with APIs, but also has a great eye for design detail. Mo relished the opportunity to learn more about building accessible web-apps for users with impairments, and was crucial in helping to create a design system for the client.'
+  },
+  {
     name: 'Stu Bamforth',
     jobTitle: 'Interaction Designer',
     quote:
