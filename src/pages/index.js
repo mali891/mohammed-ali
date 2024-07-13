@@ -30,12 +30,10 @@ const Homepage = ({ data }) => {
         <Container>
           <ContentGroup>
             <p>
-              I’m from sunny Huddersfield, and I&apos;ve helped companies like Yorkshire Water and Intercept IP build
-              React applications. I’ve worked on various other front-end projects for companies like Gazprom, Capita,
-              and The Institute of Customer Service.
+              I’m from sunny Huddersfield, and I&apos;ve helped companies like Yorkshire Water and EIDCYMRU build
+              large-scale React &amp; React Native applications. I’ve worked on various other projects for companies
+              like Gazprom, Capita, and The Institute of Customer Service.
             </p>
-            <br />
-            <p>I get a kick out of working on complex web applications, and crafting beautiful, pixel-perfect UIs.</p>
           </ContentGroup>
 
           <ContentGroup>
@@ -43,10 +41,7 @@ const Homepage = ({ data }) => {
               Technologies
             </HeadingBlock>
 
-            <p>
-              JavaScript (ES5 - 8), React, Redux, HTML5, CSS3, SCSS, BEM, Webpack, Grunt, Gulp, Jest, Enzyme, React
-              Testing Library, GraphQL, Gatsby, Git, Agile, accessibility.
-            </p>
+            <p>React, React Native, JS, TypeScript, HTML, CSS, NodeJS, MongoDB, PouchDB, Supabase, Azure, CI/CD.</p>
           </ContentGroup>
 
           <ContentGroup>
@@ -54,14 +49,14 @@ const Homepage = ({ data }) => {
               Currently learning
             </HeadingBlock>
 
-            <p>NodeJS, TypeScript</p>
+            <p>Python, AWS, Comptia (cybersecurity)</p>
           </ContentGroup>
         </Container>
 
         <ContentGroup>
           <Container>
             <HeadingBlock type="h2" size="md">
-              Nerd talk
+              Articles
             </HeadingBlock>
           </Container>
 

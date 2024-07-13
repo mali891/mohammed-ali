@@ -1,5 +1,5 @@
 import React from 'react'
-import { Global, css } from '@emotion/core'
+import { Global, css } from '@emotion/react'
 import { FONT_SIZES, MEDIA_QUERIES, SPACING, VIEWPORT_SIZES } from '../settings'
 import '../fonts/fonts.css'
 

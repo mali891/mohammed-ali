@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { SPACING, MEDIA_QUERIES, VIEWPORT_SIZES, FONT_SIZES, COLOURS } from '../../styles/settings'
 
 export const styles = css`

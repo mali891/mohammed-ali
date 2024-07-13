@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Mohammed Ali',
     description: 'Freelance Front-end Developer',
-    strapline: "Hey! I'm Mohammed,\nfreelance Front-end Engineer."
+    strapline: "Hey! I'm Mohammed,\nfreelance Full Stack Engineer."
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -22,12 +22,12 @@ module.exports = {
         path: `${__dirname}/src/pages/blogPosts`
       }
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './static/favicon.png'
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: './static/favicon.png'
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {

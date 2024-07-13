@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { EASINGS, BORDER_RADIUS } from '../../styles/settings'
 
 export const styles = css`

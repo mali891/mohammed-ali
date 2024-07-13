@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { COLOURS, EASINGS } from '../../styles/settings'
 
 export const styles = css`
