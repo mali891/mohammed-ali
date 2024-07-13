@@ -5,7 +5,7 @@ const PATHS = {
 }
 
 const TEMPLATES = {
-  BLOG: 'BlogTemplate.js',
+  BLOG: 'blogTemplate.js',
   ALL_TAGS: 'AllTagsTemplate.js',
   SINGLE_TAGS: 'SingleTagTemplate.js'
 }

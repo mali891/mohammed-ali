@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Header, Container, ContentGroup, NextPrevLinks, BlogIntro, BlogContents } from '../components/'
+import { Header, Container, ContentGroup, NextPrevLinks, BlogIntro, BlogContents } from '../components'
 
 const BlogTemplate = ({ data: { markdownRemark }, pageContext, pageContext: { next, prev } }) => {
   const { frontmatter, html } = markdownRemark
