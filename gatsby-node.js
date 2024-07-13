@@ -6,8 +6,8 @@ const PATHS = {
 
 const TEMPLATES = {
   BLOG: 'blogTemplate.js',
-  ALL_TAGS: 'AllTagsTemplate.js',
-  SINGLE_TAGS: 'SingleTagTemplate.js'
+  ALL_TAGS: 'allTagsTemplate.js',
+  SINGLE_TAGS: 'singleTagTemplate.js'
 }
 
 const createTagPages = (createPage, posts) => {
